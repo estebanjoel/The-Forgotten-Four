@@ -1,0 +1,1864 @@
+fileFormatVersion: 2
+guid: 0b2cfe478b1d5544cb62ef61c8c16775
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3768875475964112741
+    second: efectosrpgsinfondo_0
+  - first:
+      213: -8065022600006853865
+    second: efectosrpgsinfondo_1
+  - first:
+      213: -7679596227434967924
+    second: efectosrpgsinfondo_2
+  - first:
+      213: -7154761122114380159
+    second: efectosrpgsinfondo_3
+  - first:
+      213: -2675718936332317248
+    second: efectosrpgsinfondo_4
+  - first:
+      213: 3823265842307156546
+    second: efectosrpgsinfondo_5
+  - first:
+      213: 794259275798071658
+    second: efectosrpgsinfondo_6
+  - first:
+      213: 3037067063918197792
+    second: PsionicControl_0
+  - first:
+      213: 2682475381459677694
+    second: PsionicControl_4
+  - first:
+      213: -4942698834841582856
+    second: efectosrpgsinfondo_9
+  - first:
+      213: 930384459143758585
+    second: efectosrpgsinfondo_10
+  - first:
+      213: -6335066743906355897
+    second: efectosrpgsinfondo_11
+  - first:
+      213: -4470171820790511929
+    second: efectosrpgsinfondo_12
+  - first:
+      213: 4242846828920928182
+    second: efectosrpgsinfondo_13
+  - first:
+      213: 1151811126452551804
+    second: efectosrpgsinfondo_14
+  - first:
+      213: 2846973811829473815
+    second: efectosrpgsinfondo_15
+  - first:
+      213: -3147848248127448417
+    second: efectosrpgsinfondo_16
+  - first:
+      213: 8560877766085502594
+    second: efectosrpgsinfondo_17
+  - first:
+      213: -2459398280753946983
+    second: efectosrpgsinfondo_18
+  - first:
+      213: 1233239971365282041
+    second: efectosrpgsinfondo_19
+  - first:
+      213: -7703046594497522810
+    second: efectosrpgsinfondo_20
+  - first:
+      213: -1304728954922475698
+    second: efectosrpgsinfondo_21
+  - first:
+      213: -4784705347013981959
+    second: efectosrpgsinfondo_22
+  - first:
+      213: -9027971074989104764
+    second: efectosrpgsinfondo_23
+  - first:
+      213: 6690180779324909822
+    second: efectosrpgsinfondo_24
+  - first:
+      213: -2565398275444978287
+    second: efectosrpgsinfondo_25
+  - first:
+      213: -3670754201391886884
+    second: efectosrpgsinfondo_26
+  - first:
+      213: 4561851002527976649
+    second: efectosrpgsinfondo_27
+  - first:
+      213: 354856704674699077
+    second: efectosrpgsinfondo_28
+  - first:
+      213: -2226917239620770975
+    second: efectosrpgsinfondo_29
+  - first:
+      213: -8246670381339538511
+    second: efectosrpgsinfondo_30
+  - first:
+      213: -7368835468418391560
+    second: efectosrpgsinfondo_31
+  - first:
+      213: -2959523958405244951
+    second: efectosrpgsinfondo_32
+  - first:
+      213: -1507085608256025888
+    second: efectosrpgsinfondo_33
+  - first:
+      213: 876887274734808686
+    second: efectosrpgsinfondo_34
+  - first:
+      213: 1589999266002506961
+    second: efectosrpgsinfondo_35
+  - first:
+      213: -4723828036162994133
+    second: efectosrpgsinfondo_36
+  - first:
+      213: 7224550213924392404
+    second: efectosrpgsinfondo_37
+  - first:
+      213: -1645723302488110695
+    second: efectosrpgsinfondo_38
+  - first:
+      213: -1493230869479395139
+    second: efectosrpgsinfondo_39
+  - first:
+      213: 5575213647234126067
+    second: efectosrpgsinfondo_40
+  - first:
+      213: 8275126199762064835
+    second: efectosrpgsinfondo_41
+  - first:
+      213: -3370024295296993667
+    second: efectosrpgsinfondo_42
+  - first:
+      213: -7846113419175418662
+    second: efectosrpgsinfondo_43
+  - first:
+      213: 3310158182397653551
+    second: efectosrpgsinfondo_44
+  - first:
+      213: 5293072299605559888
+    second: efectosrpgsinfondo_45
+  - first:
+      213: 9050912989604171294
+    second: efectosrpgsinfondo_46
+  - first:
+      213: -2378806755081039066
+    second: efectosrpgsinfondo_47
+  - first:
+      213: -780380189442980304
+    second: efectosrpgsinfondo_48
+  - first:
+      213: 6467763729436997182
+    second: efectosrpgsinfondo_49
+  - first:
+      213: 6285725474894503178
+    second: efectosrpgsinfondo_50
+  - first:
+      213: 5506610328390540527
+    second: efectosrpgsinfondo_51
+  - first:
+      213: 5893404388303403058
+    second: efectosrpgsinfondo_52
+  - first:
+      213: -5456803454884528117
+    second: efectosrpgsinfondo_53
+  - first:
+      213: 3284913485972560047
+    second: efectosrpgsinfondo_54
+  - first:
+      213: 1932598567386041236
+    second: efectosrpgsinfondo_55
+  - first:
+      213: -1686913027495107210
+    second: efectosrpgsinfondo_56
+  - first:
+      213: -663135068754246770
+    second: efectosrpgsinfondo_57
+  - first:
+      213: -8048598711361885049
+    second: efectosrpgsinfondo_58
+  - first:
+      213: -7249098997757620844
+    second: efectosrpgsinfondo_59
+  - first:
+      213: -8489503505904068819
+    second: efectosrpgsinfondo_60
+  - first:
+      213: 5144429315339702672
+    second: efectosrpgsinfondo_61
+  - first:
+      213: 6661421407963565709
+    second: efectosrpgsinfondo_62
+  - first:
+      213: 4413158379072622451
+    second: efectosrpgsinfondo_63
+  - first:
+      213: 5440182737422245395
+    second: efectosrpgsinfondo_64
+  - first:
+      213: 3954631369961705647
+    second: efectosrpgsinfondo_65
+  - first:
+      213: -5296907781500830743
+    second: efectosrpgsinfondo_66
+  - first:
+      213: -4714991923800513669
+    second: efectosrpgsinfondo_67
+  - first:
+      213: -6103073219594827771
+    second: efectosrpgsinfondo_68
+  - first:
+      213: -4206452206853293779
+    second: efectosrpgsinfondo_69
+  - first:
+      213: -3210426972845959558
+    second: efectosrpgsinfondo_70
+  - first:
+      213: 5489393177927507401
+    second: efectosrpgsinfondo_71
+  - first:
+      213: -3413526846275860506
+    second: efectosrpgsinfondo_72
+  - first:
+      213: -6105101270402138691
+    second: efectosrpgsinfondo_73
+  - first:
+      213: 2490591969218447333
+    second: efectosrpgsinfondo_74
+  - first:
+      213: -4788966062431323889
+    second: efectosrpgsinfondo_75
+  - first:
+      213: -6287029468035475318
+    second: efectosrpgsinfondo_76
+  - first:
+      213: -8804773888383176722
+    second: efectosrpgsinfondo_77
+  - first:
+      213: -7433388550771748358
+    second: efectosrpgsinfondo_78
+  - first:
+      213: 1677279262573825366
+    second: efectosrpgsinfondo_79
+  - first:
+      213: 6694332364069690609
+    second: efectosrpgsinfondo_80
+  - first:
+      213: -2744688219734820150
+    second: efectosrpgsinfondo_81
+  - first:
+      213: -7949014832944767198
+    second: efectosrpgsinfondo_82
+  - first:
+      213: 7718985168180012049
+    second: efectosrpgsinfondo_83
+  - first:
+      213: -8002531589360233087
+    second: efectosrpgsinfondo_84
+  - first:
+      213: 1765577717690740160
+    second: efectosrpgsinfondo_85
+  - first:
+      213: -6026914092580819499
+    second: efectosrpgsinfondo_86
+  - first:
+      213: 8810946395974777923
+    second: efectosrpgsinfondo_87
+  - first:
+      213: 300093948071568275
+    second: efectosrpgsinfondo_88
+  - first:
+      213: 4232826968119618897
+    second: efectosrpgsinfondo_89
+  - first:
+      213: -2628832434051688288
+    second: efectosrpgsinfondo_90
+  - first:
+      213: 4424624342920209109
+    second: efectosrpgsinfondo_91
+  - first:
+      213: -4584699167052572520
+    second: efectosrpgsinfondo_92
+  - first:
+      213: 2396916734122893390
+    second: efectosrpgsinfondo_93
+  - first:
+      213: -3301315046370614990
+    second: efectosrpgsinfondo_94
+  - first:
+      213: -597502988117619127
+    second: efectosrpgsinfondo_95
+  - first:
+      213: 8047648728852646737
+    second: efectosrpgsinfondo_96
+  - first:
+      213: 7400277028347122980
+    second: efectosrpgsinfondo_97
+  - first:
+      213: 5411651480937847568
+    second: efectosrpgsinfondo_98
+  - first:
+      213: 19367433246471664
+    second: efectosrpgsinfondo_99
+  - first:
+      213: 4019687901210726969
+    second: efectosrpgsinfondo_100
+  - first:
+      213: 8086552246231635416
+    second: efectosrpgsinfondo_101
+  - first:
+      213: -8887609862696400629
+    second: efectosrpgsinfondo_102
+  - first:
+      213: -4371744073552096975
+    second: efectosrpgsinfondo_103
+  - first:
+      213: -1187593577294549557
+    second: efectosrpgsinfondo_104
+  - first:
+      213: -3410128523495397428
+    second: efectosrpgsinfondo_105
+  - first:
+      213: -4485828782127396212
+    second: efectosrpgsinfondo_106
+  - first:
+      213: -4936013180110779489
+    second: efectosrpgsinfondo_107
+  - first:
+      213: 302868984864652038
+    second: efectosrpgsinfondo_108
+  - first:
+      213: -4261812599183807065
+    second: efectosrpgsinfondo_109
+  - first:
+      213: 1277102936312016086
+    second: efectosrpgsinfondo_110
+  - first:
+      213: -4982627353830324055
+    second: efectosrpgsinfondo_111
+  - first:
+      213: -8007344625985678345
+    second: efectosrpgsinfondo_112
+  - first:
+      213: 2265714959009316504
+    second: efectosrpgsinfondo_113
+  - first:
+      213: -9113764572198527768
+    second: efectosrpgsinfondo_114
+  - first:
+      213: -981409078242151222
+    second: efectosrpgsinfondo_115
+  - first:
+      213: -7199142589253674173
+    second: efectosrpgsinfondo_116
+  - first:
+      213: 5631603926389783529
+    second: efectosrpgsinfondo_117
+  - first:
+      213: 639873756978559886
+    second: efectosrpgsinfondo_118
+  - first:
+      213: 304926853870949864
+    second: efectosrpgsinfondo_119
+  - first:
+      213: -1006031094822971091
+    second: efectosrpgsinfondo_120
+  - first:
+      213: -5829769540222164494
+    second: efectosrpgsinfondo_121
+  - first:
+      213: -7644778678577380301
+    second: efectosrpgsinfondo_122
+  - first:
+      213: 144069361012604540
+    second: efectosrpgsinfondo_123
+  - first:
+      213: -4938944897071453533
+    second: efectosrpgsinfondo_124
+  - first:
+      213: -2513413645192513931
+    second: efectosrpgsinfondo_125
+  - first:
+      213: -5491823545793696273
+    second: efectosrpgsinfondo_126
+  - first:
+      213: 7532641838745174180
+    second: efectosrpgsinfondo_127
+  - first:
+      213: 9215913311516518256
+    second: efectosrpgsinfondo_128
+  - first:
+      213: -3269202764383003380
+    second: efectosrpgsinfondo_129
+  - first:
+      213: -42607573471366018
+    second: efectosrpgsinfondo_130
+  - first:
+      213: -3760615887779211078
+    second: efectosrpgsinfondo_131
+  - first:
+      213: 8788499655934518921
+    second: efectosrpgsinfondo_132
+  - first:
+      213: -3047554395629587381
+    second: efectosrpgsinfondo_133
+  - first:
+      213: 7976526449146518254
+    second: efectosrpgsinfondo_134
+  - first:
+      213: 2023242442550313914
+    second: efectosrpgsinfondo_135
+  - first:
+      213: -4722641960799697910
+    second: efectosrpgsinfondo_136
+  - first:
+      213: -4874778476779673295
+    second: efectosrpgsinfondo_137
+  - first:
+      213: 6111216125840092834
+    second: efectosrpgsinfondo_138
+  - first:
+      213: 4736357958789976226
+    second: efectosrpgsinfondo_139
+  - first:
+      213: 6561429599831887864
+    second: efectosrpgsinfondo_140
+  - first:
+      213: -2540368215617714633
+    second: efectosrpgsinfondo_141
+  - first:
+      213: 995134511512483681
+    second: efectosrpgsinfondo_142
+  - first:
+      213: 7935764636776028739
+    second: efectosrpgsinfondo_143
+  - first:
+      213: -6705592806208864185
+    second: efectosrpgsinfondo_144
+  - first:
+      213: -5438807906095752786
+    second: efectosrpgsinfondo_145
+  - first:
+      213: -9207769689258642235
+    second: efectosrpgsinfondo_146
+  - first:
+      213: 8224377463109936059
+    second: efectosrpgsinfondo_147
+  - first:
+      213: -3348544153821476327
+    second: efectosrpgsinfondo_148
+  - first:
+      213: 8117205418114588183
+    second: efectosrpgsinfondo_149
+  - first:
+      213: 6532959363858510279
+    second: efectosrpgsinfondo_150
+  - first:
+      213: 1437777154151681284
+    second: efectosrpgsinfondo_151
+  - first:
+      213: 2914701670235216332
+    second: efectosrpgsinfondo_152
+  - first:
+      213: -4316110246049294637
+    second: efectosrpgsinfondo_153
+  - first:
+      213: 5868318135072569724
+    second: efectosrpgsinfondo_154
+  - first:
+      213: 3292913803606997243
+    second: efectosrpgsinfondo_155
+  - first:
+      213: 3694153691375735191
+    second: efectosrpgsinfondo_156
+  - first:
+      213: -665782335200346951
+    second: efectosrpgsinfondo_157
+  - first:
+      213: -7401220589677981163
+    second: efectosrpgsinfondo_158
+  - first:
+      213: -5725658687454539649
+    second: efectosrpgsinfondo_159
+  - first:
+      213: 195633426706446252
+    second: efectosrpgsinfondo_160
+  - first:
+      213: 4793035499886440978
+    second: efectosrpgsinfondo_161
+  - first:
+      213: 8932810568226959314
+    second: efectosrpgsinfondo_162
+  - first:
+      213: -1408738237518025810
+    second: efectosrpgsinfondo_163
+  - first:
+      213: 3764805099231958841
+    second: efectosrpgsinfondo_164
+  - first:
+      213: 819403460819529959
+    second: efectosrpgsinfondo_165
+  - first:
+      213: -2501119796547942973
+    second: efectosrpgsinfondo_166
+  - first:
+      213: -5709378986853786811
+    second: efectosrpgsinfondo_167
+  - first:
+      213: -6405729450094791368
+    second: efectosrpgsinfondo_168
+  - first:
+      213: 3497335803919750983
+    second: efectosrpgsinfondo_169
+  - first:
+      213: 6096920360640210392
+    second: efectosrpgsinfondo_170
+  - first:
+      213: -8489288347914336823
+    second: efectosrpgsinfondo_171
+  - first:
+      213: -5321059766102757299
+    second: efectosrpgsinfondo_172
+  - first:
+      213: 3987004286151924214
+    second: efectosrpgsinfondo_173
+  - first:
+      213: -857925901697141441
+    second: efectosrpgsinfondo_174
+  - first:
+      213: 6431537573044808235
+    second: efectosrpgsinfondo_175
+  - first:
+      213: -5875232714171600430
+    second: efectosrpgsinfondo_176
+  - first:
+      213: 6036711675842603305
+    second: efectosrpgsinfondo_177
+  - first:
+      213: 958064887046376086
+    second: efectosrpgsinfondo_178
+  - first:
+      213: -5901340399597954340
+    second: efectosrpgsinfondo_179
+  - first:
+      213: -1511492894999544985
+    second: efectosrpgsinfondo_180
+  - first:
+      213: 7028955198163301902
+    second: efectosrpgsinfondo_181
+  - first:
+      213: 1107962587523762351
+    second: efectosrpgsinfondo_182
+  - first:
+      213: 4592061957142895368
+    second: efectosrpgsinfondo_183
+  - first:
+      213: 7473326297290274890
+    second: efectosrpgsinfondo_184
+  - first:
+      213: 2321261579324385436
+    second: efectosrpgsinfondo_185
+  - first:
+      213: -6790118328703074454
+    second: efectosrpgsinfondo_186
+  - first:
+      213: -7288628289316579046
+    second: efectosrpgsinfondo_187
+  - first:
+      213: -1014109097479143933
+    second: efectosrpgsinfondo_188
+  - first:
+      213: 4053658418838956284
+    second: efectosrpgsinfondo_189
+  - first:
+      213: -2869284545114435203
+    second: efectosrpgsinfondo_190
+  - first:
+      213: 6460000718320737541
+    second: efectosrpgsinfondo_191
+  - first:
+      213: -7032687784822153165
+    second: efectosrpgsinfondo_192
+  - first:
+      213: -4661469724889583608
+    second: efectosrpgsinfondo_193
+  - first:
+      213: 6635071102064421981
+    second: efectosrpgsinfondo_194
+  - first:
+      213: -5143946963334330464
+    second: efectosrpgsinfondo_195
+  - first:
+      213: -1231865651766019745
+    second: efectosrpgsinfondo_196
+  - first:
+      213: 2666072172021877403
+    second: efectosrpgsinfondo_197
+  - first:
+      213: 2919011333834366556
+    second: efectosrpgsinfondo_198
+  - first:
+      213: -3086588016585945308
+    second: efectosrpgsinfondo_199
+  - first:
+      213: 5824678467608163555
+    second: efectosrpgsinfondo_200
+  - first:
+      213: -5652806639403911905
+    second: efectosrpgsinfondo_201
+  - first:
+      213: -2914681069839039843
+    second: efectosrpgsinfondo_202
+  - first:
+      213: -3817161750673465418
+    second: efectosrpgsinfondo_203
+  - first:
+      213: 691413390796731451
+    second: efectosrpgsinfondo_204
+  - first:
+      213: -5921064874948766450
+    second: efectosrpgsinfondo_205
+  - first:
+      213: 2837157512710124616
+    second: efectosrpgsinfondo_206
+  - first:
+      213: -2048559829073118469
+    second: efectosrpgsinfondo_207
+  - first:
+      213: 5463646864076482979
+    second: efectosrpgsinfondo_208
+  - first:
+      213: 8992987884677473414
+    second: efectosrpgsinfondo_209
+  - first:
+      213: -3754592746006649656
+    second: efectosrpgsinfondo_210
+  - first:
+      213: -445552307148244670
+    second: efectosrpgsinfondo_211
+  - first:
+      213: 3154588472188149796
+    second: efectosrpgsinfondo_212
+  - first:
+      213: -2356837156499912712
+    second: efectosrpgsinfondo_213
+  - first:
+      213: 753945491418221010
+    second: efectosrpgsinfondo_214
+  - first:
+      213: -7897077675954849291
+    second: efectosrpgsinfondo_215
+  - first:
+      213: -5750535299800696758
+    second: efectosrpgsinfondo_216
+  - first:
+      213: 1408513503820641231
+    second: efectosrpgsinfondo_217
+  - first:
+      213: -4493771791815743574
+    second: efectosrpgsinfondo_218
+  - first:
+      213: 7337367141941111028
+    second: efectosrpgsinfondo_219
+  - first:
+      213: 234295866663886496
+    second: efectosrpgsinfondo_220
+  - first:
+      213: 3929943273671821993
+    second: efectosrpgsinfondo_221
+  - first:
+      213: 7843853436357848275
+    second: efectosrpgsinfondo_222
+  - first:
+      213: -1643059151923914477
+    second: efectosrpgsinfondo_223
+  - first:
+      213: 2270337916748274921
+    second: efectosrpgsinfondo_224
+  - first:
+      213: -514516532512478826
+    second: efectosrpgsinfondo_225
+  - first:
+      213: 2041590267273466656
+    second: efectosrpgsinfondo_226
+  - first:
+      213: -5610776981769808775
+    second: efectosrpgsinfondo_227
+  - first:
+      213: 222569922711831758
+    second: efectosrpgsinfondo_228
+  - first:
+      213: 4290011106637102560
+    second: efectosrpgsinfondo_229
+  - first:
+      213: -5120383828331228571
+    second: efectosrpgsinfondo_230
+  - first:
+      213: 8699873957332478001
+    second: efectosrpgsinfondo_231
+  - first:
+      213: -8689237501333500649
+    second: efectosrpgsinfondo_232
+  - first:
+      213: 1410536392140624054
+    second: efectosrpgsinfondo_233
+  - first:
+      213: 3912593714236098697
+    second: efectosrpgsinfondo_234
+  - first:
+      213: 5231297608856458145
+    second: efectosrpgsinfondo_235
+  - first:
+      213: -976498629926267759
+    second: efectosrpgsinfondo_236
+  - first:
+      213: -7447860325494395280
+    second: efectosrpgsinfondo_237
+  - first:
+      213: 1077742829754155060
+    second: efectosrpgsinfondo_238
+  - first:
+      213: 8869260805840556932
+    second: efectosrpgsinfondo_239
+  - first:
+      213: 844216943261131551
+    second: efectosrpgsinfondo_240
+  - first:
+      213: -7106457773154699990
+    second: efectosrpgsinfondo_241
+  - first:
+      213: -4585325853331054904
+    second: efectosrpgsinfondo_242
+  - first:
+      213: 5732455183012003381
+    second: efectosrpgsinfondo_243
+  - first:
+      213: -6766677462126189319
+    second: efectosrpgsinfondo_244
+  - first:
+      213: 898305701031232454
+    second: efectosrpgsinfondo_245
+  - first:
+      213: -7560491587519493475
+    second: efectosrpgsinfondo_246
+  - first:
+      213: -8718147744834332676
+    second: efectosrpgsinfondo_247
+  - first:
+      213: 1545968334341945934
+    second: efectosrpgsinfondo_248
+  - first:
+      213: 930909390799938201
+    second: efectosrpgsinfondo_249
+  - first:
+      213: 4512719439776477381
+    second: efectosrpgsinfondo_250
+  - first:
+      213: -3310439610978588920
+    second: efectosrpgsinfondo_251
+  - first:
+      213: -4916050496066545682
+    second: efectosrpgsinfondo_252
+  - first:
+      213: -303961134233922989
+    second: efectosrpgsinfondo_253
+  - first:
+      213: 4828592214897646677
+    second: efectosrpgsinfondo_254
+  - first:
+      213: 3064699848964994349
+    second: efectosrpgsinfondo_255
+  - first:
+      213: 5879055607398167619
+    second: efectosrpgsinfondo_256
+  - first:
+      213: -4863045194055073284
+    second: efectosrpgsinfondo_257
+  - first:
+      213: -898058218347034922
+    second: efectosrpgsinfondo_258
+  - first:
+      213: -8882353537409973952
+    second: efectosrpgsinfondo_259
+  - first:
+      213: 1696776949302769708
+    second: efectosrpgsinfondo_260
+  - first:
+      213: 8913539610821630770
+    second: efectosrpgsinfondo_261
+  - first:
+      213: 467484155186862701
+    second: efectosrpgsinfondo_262
+  - first:
+      213: -2789761283371087626
+    second: efectosrpgsinfondo_263
+  - first:
+      213: 2119377036197215564
+    second: efectosrpgsinfondo_264
+  - first:
+      213: -4622288507215651995
+    second: efectosrpgsinfondo_265
+  - first:
+      213: 8198570685903740044
+    second: efectosrpgsinfondo_266
+  - first:
+      213: 5473552866866893096
+    second: efectosrpgsinfondo_267
+  - first:
+      213: -8226144028122730110
+    second: efectosrpgsinfondo_268
+  - first:
+      213: -1781855235321234587
+    second: efectosrpgsinfondo_269
+  - first:
+      213: 7954963425948538014
+    second: efectosrpgsinfondo_270
+  - first:
+      213: 1404503867627627100
+    second: efectosrpgsinfondo_271
+  - first:
+      213: -8226772027359685628
+    second: efectosrpgsinfondo_272
+  - first:
+      213: 6215707573209684126
+    second: efectosrpgsinfondo_273
+  - first:
+      213: -3502469426002307959
+    second: efectosrpgsinfondo_274
+  - first:
+      213: 5080703357660984901
+    second: efectosrpgsinfondo_275
+  - first:
+      213: 5091351358008090357
+    second: efectosrpgsinfondo_276
+  - first:
+      213: 588053362212326053
+    second: efectosrpgsinfondo_277
+  - first:
+      213: 4732468154650087100
+    second: efectosrpgsinfondo_278
+  - first:
+      213: 5566746872226688294
+    second: efectosrpgsinfondo_279
+  - first:
+      213: 8760415636225127484
+    second: efectosrpgsinfondo_280
+  - first:
+      213: -7892015792362182392
+    second: efectosrpgsinfondo_281
+  - first:
+      213: 4410986372948829016
+    second: efectosrpgsinfondo_282
+  - first:
+      213: -3263929779270135577
+    second: efectosrpgsinfondo_283
+  - first:
+      213: 1579516458100459599
+    second: efectosrpgsinfondo_284
+  - first:
+      213: -6008546394836853660
+    second: efectosrpgsinfondo_285
+  - first:
+      213: 6835159542342584560
+    second: efectosrpgsinfondo_286
+  - first:
+      213: -743667742243477994
+    second: efectosrpgsinfondo_287
+  - first:
+      213: -2657052882086486696
+    second: efectosrpgsinfondo_288
+  - first:
+      213: -2833154285915768917
+    second: efectosrpgsinfondo_289
+  - first:
+      213: 4400194055618616023
+    second: efectosrpgsinfondo_290
+  - first:
+      213: -8790121886192858039
+    second: efectosrpgsinfondo_291
+  - first:
+      213: -7439834269182007841
+    second: efectosrpgsinfondo_292
+  - first:
+      213: -3978060725414822998
+    second: efectosrpgsinfondo_293
+  - first:
+      213: 2925070134950302040
+    second: efectosrpgsinfondo_294
+  - first:
+      213: -7042035284822835224
+    second: efectosrpgsinfondo_295
+  - first:
+      213: -2514666614970031283
+    second: efectosrpgsinfondo_296
+  - first:
+      213: -7576186816509420599
+    second: efectosrpgsinfondo_297
+  - first:
+      213: 1445646361884441426
+    second: efectosrpgsinfondo_298
+  - first:
+      213: -2603824868494379983
+    second: efectosrpgsinfondo_299
+  - first:
+      213: 2223031828513662123
+    second: efectosrpgsinfondo_300
+  - first:
+      213: -7593151491958720072
+    second: efectosrpgsinfondo_301
+  - first:
+      213: 7179408771392446340
+    second: efectosrpgsinfondo_302
+  - first:
+      213: 3672568776682831342
+    second: efectosrpgsinfondo_303
+  - first:
+      213: 7547465292855634377
+    second: efectosrpgsinfondo_304
+  - first:
+      213: -6728037347444863244
+    second: efectosrpgsinfondo_305
+  - first:
+      213: 4919504320636061724
+    second: efectosrpgsinfondo_306
+  - first:
+      213: -4740853086307210240
+    second: efectosrpgsinfondo_307
+  - first:
+      213: -6321528758066612347
+    second: efectosrpgsinfondo_308
+  - first:
+      213: -978168052522940596
+    second: efectosrpgsinfondo_309
+  - first:
+      213: -7079095767276763205
+    second: efectosrpgsinfondo_310
+  - first:
+      213: 871322610617947667
+    second: efectosrpgsinfondo_311
+  - first:
+      213: -4797703577603524120
+    second: efectosrpgsinfondo_312
+  - first:
+      213: -4138764039282532661
+    second: efectosrpgsinfondo_313
+  - first:
+      213: -767519222579982979
+    second: efectosrpgsinfondo_314
+  - first:
+      213: 3494566901852617900
+    second: efectosrpgsinfondo_315
+  - first:
+      213: 3395660706553591776
+    second: efectosrpgsinfondo_316
+  - first:
+      213: -7767434055915070799
+    second: efectosrpgsinfondo_317
+  - first:
+      213: 7598177545192610732
+    second: efectosrpgsinfondo_318
+  - first:
+      213: 2022821058284649700
+    second: efectosrpgsinfondo_319
+  - first:
+      213: 6410352997071503094
+    second: PsionicControl_1
+  - first:
+      213: -1125218041329611868
+    second: PsionicControl_2
+  - first:
+      213: -426156978109730713
+    second: PsionicControl_3
+  - first:
+      213: -7204259117043169037
+    second: ElectricImpact_0
+  - first:
+      213: -3228056891093805944
+    second: ElectricImpact_1
+  - first:
+      213: 8447684610076429150
+    second: ElectricImpact_2
+  - first:
+      213: 301312235053541987
+    second: ElectricImpact_3
+  - first:
+      213: 7709006455074848575
+    second: FastBooster_0
+  - first:
+      213: 751609012127552969
+    second: FastBooster_1
+  - first:
+      213: 3531465641112154686
+    second: FastBooster_2
+  - first:
+      213: 7005581710990479330
+    second: FastBooster_3
+  - first:
+      213: 6452319324536737659
+    second: FastBooster_4
+  - first:
+      213: 1652593519858370836
+    second: FastBooster_5
+  - first:
+      213: -4800467879200213939
+    second: FastBooster_6
+  - first:
+      213: 143284721061541442
+    second: FastBooster_7
+  - first:
+      213: -2265350770817945452
+    second: FastBooster_8
+  - first:
+      213: 359732811635555402
+    second: FastBooster_9
+  - first:
+      213: -1071513772115292397
+    second: FastBooster_10
+  - first:
+      213: 7143302098362079087
+    second: FastBooster_11
+  - first:
+      213: 1289429985558105297
+    second: FastBooster_12
+  - first:
+      213: 7036024251859025565
+    second: FastBooster_13
+  - first:
+      213: 8467410083248537370
+    second: FastBooster_14
+  - first:
+      213: 8517604889646858747
+    second: FastBooster_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: efectosrpgsinfondo_0
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 552
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a9daaa796a06047b1776816e6435f6
+      internalID: -3768875475964112741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efectosrpgsinfondo_1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 550
+        width: 66
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27758b1c1e693974491649d7f6602ef2
+      internalID: -8065022600006853865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efectosrpgsinfondo_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 546
+        width: 78
+        height: 69
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf263822a24a79644a49da46c4683de3
+      internalID: -7679596227434967924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efectosrpgsinfondo_3
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 549
+        width: 99
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ac1b3acb8496f48b78f2cd64c99f4f
+      internalID: -7154761122114380159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efectosrpgsinfondo_4
+      rect:
+        serializedVersion: 2
+        x: 526
+        y: 551
+        width: 115
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99a14079bb416774f9910805f83a3c6a
+      internalID: -2675718936332317248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efectosrpgsinfondo_5
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 549
+        width: 130
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0d37cb52da54e4688f325303646efd
+      internalID: 3823265842307156546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: efectosrpgsinfondo_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 446
+        width: 122
+        height: 102
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70dd7f593c545d14ebf9bca828621345
+      internalID: 794259275798071658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsionicControl_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 331
+        width: 109
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f18514e6cde3b34281f9ddff22b16e0
+      internalID: 3037067063918197792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsionicControl_1
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 331
+        width: 109
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ddb38645e74af438b81c4e752cbfef
+      internalID: 6410352997071503094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsionicControl_2
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 331
+        width: 109
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7434638212f372f418a3b154d397ed8c
+      internalID: -1125218041329611868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsionicControl_3
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 331
+        width: 109
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bf78617aa1950479179b2e16aa3553
+      internalID: -426156978109730713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PsionicControl_4
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 331
+        width: 109
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d178f03bec67c4698ec9d8c6272a96
+      internalID: 2682475381459677694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricImpact_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 145
+        width: 104
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba590f2d3e4dde4ca0ecad06a1f3189
+      internalID: -7204259117043169037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricImpact_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 145
+        width: 104
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad9bf03ee0486314595652921d0994f2
+      internalID: -3228056891093805944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricImpact_2
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 145
+        width: 104
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb63817cc13d2d84391b8bec72c3fa4c
+      internalID: 8447684610076429150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ElectricImpact_3
+      rect:
+        serializedVersion: 2
+        x: 313
+        y: 145
+        width: 104
+        height: 60
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 580b584dd4328074fa7609e908d04ad5
+      internalID: 301312235053541987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efda62aa756fd4f4b8fb5de9ec871683
+      internalID: 7709006455074848575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_1
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da451aeb1dc3064baf370fe508e35ff
+      internalID: 751609012127552969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_2
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74477e673e1c0ed43a2ef366689393de
+      internalID: 3531465641112154686
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_3
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4918ef7fa559ad344a530cabeff0f632
+      internalID: 7005581710990479330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_4
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41698440bb8826047936478557a25424
+      internalID: 6452319324536737659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_5
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e37423f7580e147ad85b373282a934
+      internalID: 1652593519858370836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_6
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec957f99b9571194b80ab7e0f54bc51c
+      internalID: -4800467879200213939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_7
+      rect:
+        serializedVersion: 2
+        x: 351
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 298fe025f85e0d4418c1515e535fd572
+      internalID: 143284721061541442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_8
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17d39573e570c2e4097f686775831559
+      internalID: -2265350770817945452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_9
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9140a947903bb42bed0ab60ebe1828
+      internalID: 359732811635555402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_10
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0a597dce8c4914f9759114c1c2ab9e
+      internalID: -1071513772115292397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_11
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11066b2b05cd7334b9002cbcc015b202
+      internalID: 7143302098362079087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_12
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d36c74d1e14d0f4b905e03cd04a5dc7
+      internalID: 1289429985558105297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_13
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fcbf6532ab79f43a7571bcb86fad37
+      internalID: 7036024251859025565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_14
+      rect:
+        serializedVersion: 2
+        x: 701
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c7313560bf62e4b824bb957834f881
+      internalID: 8467410083248537370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FastBooster_15
+      rect:
+        serializedVersion: 2
+        x: 751
+        y: 1230
+        width: 50
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0349f89d3ec71a4e901f87e2c6e9ebe
+      internalID: 8517604889646858747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

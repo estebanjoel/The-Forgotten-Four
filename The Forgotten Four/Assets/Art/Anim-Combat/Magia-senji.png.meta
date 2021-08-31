@@ -1,0 +1,295 @@
+fileFormatVersion: 2
+guid: 9e9766942507659468829d41f1fadc55
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5570633330245034740
+    second: Magia-senji_0
+  - first:
+      213: -499396209035742993
+    second: Magia-senji_1
+  - first:
+      213: -1237264094328219908
+    second: Magia-senji_2
+  - first:
+      213: -8271970799885192540
+    second: Magia-senji_3
+  - first:
+      213: -2344525079265095137
+    second: Magia-senji_4
+  - first:
+      213: 8375148676405193939
+    second: Magia-senji_5
+  - first:
+      213: 8074105794338717181
+    second: Magia-senji_6
+  - first:
+      213: 2537341378109664946
+    second: Magia-senji_8
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Magia-senji_0
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 6
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401eeb72f24d61d448ecad5864452b68
+      internalID: -5570633330245034740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magia-senji_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 6
+        width: 26
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0848dc22553969745bfa34abe6f8a823
+      internalID: -499396209035742993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magia-senji_2
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 6
+        width: 27
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.48979592}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6923e77710f26ab42bb4f3ae739f1353
+      internalID: -1237264094328219908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magia-senji_3
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 6
+        width: 30
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5102041}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e9fd732c25f26849a308182858980c2
+      internalID: -8271970799885192540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magia-senji_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 6
+        width: 48
+        height: 48
+      alignment: 9
+      pivot: {x: 0.33333334, y: 0.5208334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee861ad3fb8c204296a8dcb07e89597
+      internalID: -2344525079265095137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magia-senji_5
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 6
+        width: 66
+        height: 48
+      alignment: 9
+      pivot: {x: 0.16666667, y: 0.5208334}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571a769783069f2419beeff49ef95729
+      internalID: 8375148676405193939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magia-senji_6
+      rect:
+        serializedVersion: 2
+        x: 251
+        y: 6
+        width: 103
+        height: 48
+      alignment: 9
+      pivot: {x: 0.14563107, y: 0.5416667}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85439b94229c7b543b7149eab3d3fd95
+      internalID: 8074105794338717181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Magia-senji_8
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 6
+        width: 26
+        height: 49
+      alignment: 9
+      pivot: {x: 0.34615386, y: 0.53061223}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4bb606976affcd45b10f23b6babfbb5
+      internalID: 2537341378109664946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

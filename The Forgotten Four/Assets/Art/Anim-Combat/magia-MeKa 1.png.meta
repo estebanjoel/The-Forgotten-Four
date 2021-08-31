@@ -1,0 +1,352 @@
+fileFormatVersion: 2
+guid: fe622f6c9e6370d4d92d9effbc84bf1e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1669754184394696344
+    second: magia-MeKa 1_0
+  - first:
+      213: -7536669401011089359
+    second: magia-MeKa 1_1
+  - first:
+      213: 1901694981480071619
+    second: magia-MeKa 1_2
+  - first:
+      213: -1757990562553269351
+    second: magia-MeKa 1_3
+  - first:
+      213: 5286499985202139890
+    second: magia-MeKa 1_4
+  - first:
+      213: 3362499605904034282
+    second: magia-MeKa 1_5
+  - first:
+      213: 2245613038861240203
+    second: magia-MeKa 1_6
+  - first:
+      213: -8519884992266760612
+    second: magia-MeKa 1_7
+  - first:
+      213: -1398314596032338458
+    second: magia-MeKa 1_8
+  - first:
+      213: -3923653784909059381
+    second: magia-MeKa 1_9
+  - first:
+      213: -5392466384654579375
+    second: magia-MeKa 1_10
+  - first:
+      213: 294526880213951980
+    second: magia-MeKa 1_11
+  - first:
+      213: -4897410135163211432
+    second: magia-MeKa 1_12
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magia-MeKa 1_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 87
+        width: 37
+        height: 57
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a1468599685d184cb7ad721967e19fc
+      internalID: 1669754184394696344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 87
+        width: 39
+        height: 58
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4483407e933694d95339aacdf457f3
+      internalID: -7536669401011089359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_2
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 87
+        width: 51
+        height: 61
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a4c481b61c4f794b84c99a67ba80afd
+      internalID: 1901694981480071619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_3
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 87
+        width: 45
+        height: 63
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 538139a724caf084c81810573889f15c
+      internalID: -1757990562553269351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 87
+        width: 43
+        height: 63
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05ae58276bc7fe14a86ca9b10e335784
+      internalID: 5286499985202139890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_5
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 87
+        width: 43
+        height: 63
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 745cfe9562b545740901eb1bce17c3ad
+      internalID: 3362499605904034282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_6
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 6
+        width: 53
+        height: 63
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea8cd52b9b5ea664b80e08571d4ac342
+      internalID: 2245613038861240203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_7
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 6
+        width: 90
+        height: 60
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eba64b3ad8f97b841879dbc413935516
+      internalID: -8519884992266760612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_9
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 6
+        width: 108
+        height: 61
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d6bbd3f90178244394ad0b77956870b
+      internalID: -3923653784909059381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-MeKa 1_12
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 6
+        width: 39
+        height: 58
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2648444404a9a5c44b14a82b209b0cdf
+      internalID: -4897410135163211432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

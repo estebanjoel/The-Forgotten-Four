@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: a2e79ab255479f44cbaab578215c3a12
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2314889123387286222
+    second: Golte-magia-Jakov_0
+  - first:
+      213: -8998254112815999752
+    second: Golte-magia-Jakov_1
+  - first:
+      213: 4007350452162253128
+    second: Golte-magia-Jakov_2
+  - first:
+      213: -7350971261213617127
+    second: Golte-magia-Jakov_3
+  - first:
+      213: -8279425433875393917
+    second: Golte-magia-Jakov_4
+  - first:
+      213: -2641941695116357235
+    second: Golte-magia-Jakov_5
+  - first:
+      213: -5214700445885621540
+    second: Golte-magia-Jakov_6
+  - first:
+      213: -1396684638497534424
+    second: Golte-magia-Jakov_7
+  - first:
+      213: -9105806722544675905
+    second: Golte-magia-Jakov_8
+  - first:
+      213: 451048763762614241
+    second: Golte-magia-Jakov_9
+  - first:
+      213: 1944424020992522266
+    second: Golte-magia-Jakov_10
+  - first:
+      213: -6608944404432406786
+    second: Golte-magia-Jakov_11
+  - first:
+      213: 2863743500761881664
+    second: Golte-magia-Jakov_12
+  - first:
+      213: -1701026834955190989
+    second: Golte-magia-Jakov_13
+  - first:
+      213: 3372680412887557504
+    second: Golte-magia-Jakov_14
+  - first:
+      213: -925701285014890885
+    second: Golte-magia-Jakov_15
+  - first:
+      213: -32985607725185020
+    second: Golte-magia-Jakov_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 161
+        width: 38
+        height: 48
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68d5b2bab98afb4fa79087f4dc76532
+      internalID: 2314889123387286222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_1
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 161
+        width: 39
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4494d7dd21bc846a4123bceb7c8c0d
+      internalID: -8998254112815999752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_2
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 161
+        width: 39
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4db895c97658543ad11af7a2d2a018
+      internalID: 4007350452162253128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_3
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 161
+        width: 39
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65c1e1e44b0ad574abdbe5ecd67fb6f1
+      internalID: -7350971261213617127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_4
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 161
+        width: 47
+        height: 55
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd480d9b1cc6784684b686ba51398c8
+      internalID: -8279425433875393917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_5
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 161
+        width: 39
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49d36ade42352184f8020c5dbbd2fb59
+      internalID: -2641941695116357235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 161
+        width: 38
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22bc21f566bbbd94fa465bd117538d44
+      internalID: -5214700445885621540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_7
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 98
+        width: 38
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bd6d45d94f6fe84984f0ef0d978cd64
+      internalID: -1396684638497534424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_8
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 98
+        width: 41
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc472c1b49b96e3449e25ecd876465c9
+      internalID: -9105806722544675905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_9
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 98
+        width: 42
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c9e4f1d1450cd41b5e785d90240869
+      internalID: 451048763762614241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_10
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 98
+        width: 44
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2049ae1ef740e46a5537e85b7c808f
+      internalID: 1944424020992522266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_11
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 98
+        width: 44
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0433cd8c4591734ca3d1d2be9c30cbd
+      internalID: -6608944404432406786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_12
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 98
+        width: 45
+        height: 53
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc9ca5fe24dfa84282623778c57e6b7
+      internalID: 2863743500761881664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_13
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 98
+        width: 47
+        height: 54
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0314fa2223f8b494783fbe03febe7d03
+      internalID: -1701026834955190989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_14
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 41
+        width: 44
+        height: 52
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3c6a65bb5526c469388441ad9f4c5f
+      internalID: 3372680412887557504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_15
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 41
+        width: 46
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7f7ba49ac6d6e4aad443e66ee9d41c
+      internalID: -925701285014890885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Golte-magia-Jakov_16
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 41
+        width: 44
+        height: 51
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75b10d08225c1d24e98c389365ef80a4
+      internalID: -32985607725185020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

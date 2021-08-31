@@ -1,0 +1,14 @@
+Instances:
+- GameManager
+- BattleManager
+- Hero
+- UICanvas
+- Custom Camera
+
+Necesarios para los niveles:
+
+- LevelMusic
+- Enemies (Contenedor de Enemigos)
+- Starting Point
+- LevelCrates (Contenedor de Cofres)
+- LevelBounds (Contenedor de los límites de la cámara)

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Ground
+  - MovingPlatform
+  - Battle
+  - Wall
+  - JumpWall
+  - Cliff
+  - CheckPoint
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 2600167463
+    locked: 0
+  - name: Decoration
+    uniqueID: 4004422329
+    locked: 0
+  - name: Item
+    uniqueID: 2109240451
+    locked: 0
+  - name: Enemy
+    uniqueID: 386912313
+    locked: 0
+  - name: Hero
+    uniqueID: 2846250223
+    locked: 0
+  - name: BattleBG
+    uniqueID: 2386641139
+    locked: 0
+  - name: BattleChar
+    uniqueID: 4127309533
+    locked: 0
+  - name: BattleEffect
+    uniqueID: 1444001873
+    locked: 0
+  - name: BattleUI
+    uniqueID: 2642944859
+    locked: 0

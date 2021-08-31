@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 96a99eef9e9696247b4accff785e11f3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8681758420870266499
+    second: magia-Hela_0
+  - first:
+      213: -7704621823371671086
+    second: magia-Hela_1
+  - first:
+      213: -2102149237129273512
+    second: magia-Hela_2
+  - first:
+      213: -8902290126368388485
+    second: magia-Hela_3
+  - first:
+      213: -8397124340118791715
+    second: magia-Hela_4
+  - first:
+      213: 1776269086146553860
+    second: magia-Hela_5
+  - first:
+      213: -7083611425488399739
+    second: magia-Hela_6
+  - first:
+      213: -7815014998270886108
+    second: magia-Hela_7
+  - first:
+      213: -2949156900884458432
+    second: magia-Hela_8
+  - first:
+      213: 5017510965983503316
+    second: magia-Hela_9
+  - first:
+      213: 8284946476332561636
+    second: magia-Hela_10
+  - first:
+      213: 8125759355968473053
+    second: magia-Hela_11
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: magia-Hela_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 6
+        width: 19
+        height: 51
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe83ac0d357e8442811801329e828d3
+      internalID: 8681758420870266499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 6
+        width: 22
+        height: 48
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c9c7efaaede5e44b93f4bb81f152aef
+      internalID: -7704621823371671086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_2
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 6
+        width: 25
+        height: 34
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152d7e0e1db79394d81883747f462d75
+      internalID: -2102149237129273512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 6
+        width: 25
+        height: 34
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf5a8e25ba82e174db052ccb80fa3a34
+      internalID: -8902290126368388485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_4
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 5
+        width: 26
+        height: 38
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53889fa6c8d501f419bed8f7f87c54d0
+      internalID: -8397124340118791715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_5
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 6
+        width: 27
+        height: 43
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d1b321899d65e4d8c8a47c1b695b90
+      internalID: 1776269086146553860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 6
+        width: 26
+        height: 50
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 595f6b3598ce92640a54829a3aeb5f80
+      internalID: -7083611425488399739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_7
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 6
+        width: 31
+        height: 51
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e981c493ca2cba94688c0d84827e791f
+      internalID: -7815014998270886108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_8
+      rect:
+        serializedVersion: 2
+        x: 261
+        y: 6
+        width: 33
+        height: 51
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d629092e9c29c54fadde56b7e7307ea
+      internalID: -2949156900884458432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_9
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 6
+        width: 30
+        height: 51
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480e452b2dc00214d913f2be0dbc5604
+      internalID: 5017510965983503316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_10
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 6
+        width: 20
+        height: 51
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b13e867a55d60bf4283437a940dc5902
+      internalID: 8284946476332561636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magia-Hela_11
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 6
+        width: 18
+        height: 51
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25aebbe1e9b5ff247b0e8166db0f3222
+      internalID: 8125759355968473053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

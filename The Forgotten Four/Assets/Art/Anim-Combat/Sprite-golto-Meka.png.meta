@@ -1,0 +1,322 @@
+fileFormatVersion: 2
+guid: d04f24b7fa4890548aa2a67389a1dbfe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 540327075764018862
+    second: Sprite-golto-Meka_0
+  - first:
+      213: 844690912893133964
+    second: Sprite-golto-Meka_1
+  - first:
+      213: -1666609415674112864
+    second: Sprite-golto-Meka_2
+  - first:
+      213: -5189893973412780701
+    second: Sprite-golto-Meka_3
+  - first:
+      213: 1390271182808841547
+    second: Sprite-golto-Meka_4
+  - first:
+      213: 3609369483585124528
+    second: Sprite-golto-Meka_5
+  - first:
+      213: 4285882298773686569
+    second: Sprite-golto-Meka_6
+  - first:
+      213: 7384710756207430681
+    second: Sprite-golto-Meka_7
+  - first:
+      213: 92844114089896972
+    second: Sprite-golto-Meka_8
+  - first:
+      213: 1026602046503524956
+    second: Sprite-golto-Meka_9
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 6
+        width: 37
+        height: 57
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c612d7051b6b4a54fb2963ce35de1a84
+      internalID: 540327075764018862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_1
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 6
+        width: 39
+        height: 58
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e379e1d606b1a41a6f7081904ad443
+      internalID: 844690912893133964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_2
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 6
+        width: 39
+        height: 58
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdef14b25a051f641aaef6c1bf1372fe
+      internalID: -1666609415674112864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_3
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 6
+        width: 39
+        height: 57
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6e3680a6787e64ca8458c180abd0a3
+      internalID: -5189893973412780701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_4
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 6
+        width: 39
+        height: 57
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9e72f6d154a97e4cafeb5ed07dfb28e
+      internalID: 1390271182808841547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_5
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 6
+        width: 51
+        height: 58
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eb5897ec6ed9564ba6fd36e2a6e0a58
+      internalID: 3609369483585124528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 6
+        width: 53
+        height: 58
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd8c0b4c6bd55044396037c8622d815c
+      internalID: 4285882298773686569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_7
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 6
+        width: 28
+        height: 57
+      alignment: 9
+      pivot: {x: -0.4166667, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16472ec09462567409ea1654b09b982a
+      internalID: 7384710756207430681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprite-golto-Meka_9
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 6
+        width: 39
+        height: 57
+      alignment: 6
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f586f5758a73dd40a5ec53255896872
+      internalID: 1026602046503524956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

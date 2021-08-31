@@ -1,0 +1,295 @@
+fileFormatVersion: 2
+guid: 231e480998fdfd846b56c6a812687325
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8519953216438944569
+    second: Muerte-Senji1_0
+  - first:
+      213: -1782510005010110835
+    second: Muerte-Senji1_1
+  - first:
+      213: 8851051932939076727
+    second: Muerte-Senji1_2
+  - first:
+      213: -6063318512215648
+    second: Muerte-Senji1_3
+  - first:
+      213: -2240659778945520389
+    second: Muerte-Senji1_4
+  - first:
+      213: 8646004347460591766
+    second: Muerte-Senji1_5
+  - first:
+      213: -5906984701146386657
+    second: Muerte-Senji1_6
+  - first:
+      213: -3273701644921112547
+    second: Muerte-Senji1_7
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Muerte-Senji1_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 6
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3d463b1117430044824a9f606b5b373
+      internalID: 8519953216438944569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte-Senji1_1
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 6
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e12f95fa1382884eb72d529f46b5a74
+      internalID: -1782510005010110835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte-Senji1_2
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 6
+        width: 31
+        height: 46
+      alignment: 9
+      pivot: {x: 0.41935483, y: 0.54347825}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb415a69cc93dd45aa5881243c93a23
+      internalID: 8851051932939076727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte-Senji1_3
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 6
+        width: 35
+        height: 42
+      alignment: 9
+      pivot: {x: 0.4857143, y: 0.5952381}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23cbda3d499a2b7428b704c869912bd6
+      internalID: -6063318512215648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte-Senji1_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 5
+        width: 35
+        height: 41
+      alignment: 9
+      pivot: {x: 0.4857143, y: 0.63414633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2309f919674f0fb46aeb1fff8625c96b
+      internalID: -2240659778945520389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte-Senji1_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 5
+        width: 35
+        height: 38
+      alignment: 9
+      pivot: {x: 0.51428574, y: 0.68421054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eef378067c6e8c645a3c04703fa5ea7a
+      internalID: 8646004347460591766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte-Senji1_6
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 5
+        width: 35
+        height: 36
+      alignment: 9
+      pivot: {x: 0.4857143, y: 0.7222222}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e858cdbe8022f419dbc679152da744
+      internalID: -5906984701146386657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muerte-Senji1_7
+      rect:
+        serializedVersion: 2
+        x: 262
+        y: 5
+        width: 35
+        height: 34
+      alignment: 9
+      pivot: {x: 0.4857143, y: 0.7647059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b3c2d4ce9538a44bbef6abc87000bc9
+      internalID: -3273701644921112547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

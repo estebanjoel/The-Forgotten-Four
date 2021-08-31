@@ -1,0 +1,553 @@
+fileFormatVersion: 2
+guid: ac8e4c8458f496847beaacd6df14af04
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7428076289040130061
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_0
+  - first:
+      213: 8639829411343121599
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_1
+  - first:
+      213: -7048100060091831548
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_2
+  - first:
+      213: -2373846530437062703
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_3
+  - first:
+      213: -875654333001416569
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_4
+  - first:
+      213: 3680702726801377371
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_5
+  - first:
+      213: -2615597188183692952
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_6
+  - first:
+      213: 9080942959949568543
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_7
+  - first:
+      213: -8176557396390499287
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_8
+  - first:
+      213: 3366575003940099462
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_9
+  - first:
+      213: 2625919786289080605
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_10
+  - first:
+      213: 8260995075082443854
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_11
+  - first:
+      213: -8683566898791025279
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_12
+  - first:
+      213: 847103198862568291
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_13
+  - first:
+      213: -3414449685255938767
+    second: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+      5 5_14
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1035
+        width: 513
+        height: 259
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aed380071d0afe4bb428e74f8e3199b
+      internalID: -7428076289040130061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_1
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 1035.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d093c9010204c148858ac50a6962adb
+      internalID: 8639829411343121599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_2
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 1035.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ceaaf988eb33a44a8a47cb84df3d283
+      internalID: -7048100060091831548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 777.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8292dcfbeafdc3b47b8083eda09abf36
+      internalID: -2373846530437062703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_4
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 777.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d841d8344637a4f42b751e9417e0a5f7
+      internalID: -875654333001416569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_5
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 777.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ce2edfbda8c8c24a86ba94f064dd006
+      internalID: 3680702726801377371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 519.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42000659327127340a0ef195ee4f0524
+      internalID: -2615597188183692952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_7
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 519.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d575c3aefb1ac4a8e0bfbba6231f4a
+      internalID: 9080942959949568543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_8
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 519.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba76cf4b243840c4f84017446ca0ac4d
+      internalID: -8176557396390499287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 261.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c8cfd61731f6c040beab2164eb5ed2d
+      internalID: 3366575003940099462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_10
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 261.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7ad597cb9df5645930f9d5019c45e5
+      internalID: 2625919786289080605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_11
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 261.2
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbbdad85a8d29c244a2b4023eb01140d
+      internalID: 8260995075082443854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3.2000122
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec557fda76fc6c84f949905e2e5f78b2
+      internalID: -8683566898791025279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_13
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 3.2000122
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7367cbbd3fd3d2645b6d9c1cf64e8dab
+      internalID: 847103198862568291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DS DSi - Super Robot Taisen OG Saga Endless Frontier - Battle Backgrounds
+        5 5_14
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 3.2000122
+        width: 513
+        height: 258.8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4045aac37e15665499d3a27ef26b309e
+      internalID: -3414449685255938767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

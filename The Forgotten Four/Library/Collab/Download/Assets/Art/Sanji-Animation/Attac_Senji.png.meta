@@ -1,0 +1,247 @@
+fileFormatVersion: 2
+guid: bca51a26c67abe645b453307a4be3f35
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8811103769838408955
+    second: Attac_Senji_0
+  - first:
+      213: 2419142617923573244
+    second: Attac_Senji_1
+  - first:
+      213: 3898984009881329779
+    second: Attac_Senji_2
+  - first:
+      213: -1482032499686137555
+    second: Attac_Senji_3
+  - first:
+      213: 5463633661638783896
+    second: Attac_Senji_4
+  - first:
+      213: -3705292187251975287
+    second: Attac_Senji_5
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Attac_Senji_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 2
+        width: 29
+        height: 44
+      alignment: 9
+      pivot: {x: 0.61545384, y: 0.49669158}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 963b34c2971552b4bb95b75f0a03d7de
+      internalID: -8811103769838408955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attac_Senji_1
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 2
+        width: 90
+        height: 42
+      alignment: 9
+      pivot: {x: 0.50808734, y: 0.50693196}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eec448d6887f0c241a0c1655f85bd862
+      internalID: 2419142617923573244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attac_Senji_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2
+        width: 74
+        height: 43
+      alignment: 9
+      pivot: {x: 0.6140972, y: 0.516927}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4a0f5043ad76d468853737d0c96914
+      internalID: 3898984009881329779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attac_Senji_3
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 2
+        width: 54
+        height: 44
+      alignment: 9
+      pivot: {x: 0.80603564, y: 0.54131484}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb7de412fd630c843b8ced166307045e
+      internalID: -1482032499686137555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attac_Senji_4
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2
+        width: 54
+        height: 44
+      alignment: 9
+      pivot: {x: 0.7984642, y: 0.5112132}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb08cede40e13b6469262c349c1664b1
+      internalID: 5463633661638783896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Attac_Senji_5
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 2
+        width: 29
+        height: 44
+      alignment: 9
+      pivot: {x: 0.6310014, y: 0.5039246}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1efaa3664d6734da2a9e852e65fe5f
+      internalID: -3705292187251975287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,171 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2481591332640085013
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 496777504546603936}
+  - component: {fileID: 1865510377650529763}
+  - component: {fileID: 3258367778292548047}
+  - component: {fileID: 4895238713074386505}
+  - component: {fileID: 595015721973038089}
+  m_Layer: 0
+  m_Name: Firehead
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &496777504546603936
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481591332640085013}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &1865510377650529763
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481591332640085013}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -167657763
+  m_SortingLayer: 7
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 8110279689094839872, guid: 84af4ef15f75a72488024cab0d7f8557,
+    type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.81, y: 2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!114 &3258367778292548047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481591332640085013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  battleStats: {fileID: 4895238713074386505}
+  elementalType: 2
+  isWeakToElement: 3
+  minHPModifier: 300
+  maxHPModifier: 400
+  minMPModifier: 0
+  maxMPModifier: 0
+  xpToGive: 200
+--- !u!114 &4895238713074386505
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481591332640085013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae5b95c85c4faa640995d4abe9403348, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  movesAvailable:
+  - Fire Scorch
+  - Fire Blast
+  - Fire Shuriken
+  charName: Firehead
+  currentHp: 60
+  maxHP: 60
+  currentMP: 0
+  maxMP: 0
+  strength: 20
+  dexterity: 1
+  vitality: 20
+  defence: 10
+  element: 15
+  spirit: 5
+  wpnPower: 20
+  armrPower: 10
+  evasion: 0
+  initiative: 1
+  accuracy: 10
+  mgcPower: 10
+  mgcDefence: 2
+  fireResistance: 50
+  iceResistance: 1
+  electricResistance: 10
+  plasmaResistance: 10
+  psychicResistance: 10
+  toxicResistance: 10
+  hasDied: 0
+  hasAnAlteratedStat: 0
+  alteratedStatTimer: 0
+  previousAlteratedStats: 
+  previousAlteratedStatsName: 
+  theSprite: {fileID: 0}
+  deadSprite: {fileID: 21300000, guid: bf66bcacbb0d27743af9f193cd5e4ba4, type: 3}
+  aliveSprite: {fileID: 8110279689094839872, guid: 84af4ef15f75a72488024cab0d7f8557,
+    type: 3}
+  fadeSpeed: 1
+--- !u!114 &595015721973038089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481591332640085013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 000eff6092adf9846b76820e4bbb44c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isHealer: 0
+  battleReference: {fileID: 4895238713074386505}
