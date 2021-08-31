@@ -1,0 +1,454 @@
+fileFormatVersion: 2
+guid: 34f3bffa954acc94790074b605cdd8ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 39377887411209436
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_0"
+  - first:
+      213: 5672128452017725510
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_1"
+  - first:
+      213: -1598430785787324863
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_2"
+  - first:
+      213: 7705839446118576792
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_3"
+  - first:
+      213: 8234042292263254958
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_4"
+  - first:
+      213: 3917673931152108641
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_5"
+  - first:
+      213: -7723854179648621676
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_6"
+  - first:
+      213: 7833600037353311845
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_7"
+  - first:
+      213: 610403525142672078
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_8"
+  - first:
+      213: -5006090220533771842
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_9"
+  - first:
+      213: -272207845203652687
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_10"
+  - first:
+      213: 2788289564218063085
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_11"
+  - first:
+      213: -3527659448527305429
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_12"
+  - first:
+      213: -5204818517746894895
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_13"
+  - first:
+      213: 2529396025329803515
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_14"
+  - first:
+      213: 6268943317424449543
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_15"
+  - first:
+      213: -8260493483260612444
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_16"
+  - first:
+      213: 8324449944821997483
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_17"
+  - first:
+      213: 501786614946551749
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_18"
+  - first:
+      213: -4224370146487328090
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_19"
+  - first:
+      213: 6566029783844615710
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_20"
+  - first:
+      213: -1391300545983448833
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_21"
+  - first:
+      213: -9215269264476079120
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_22"
+  - first:
+      213: 7821160657949108902
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_23"
+  - first:
+      213: 1118669577979928842
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_24"
+  - first:
+      213: 8500757400194563040
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_25"
+  - first:
+      213: 1514573116437128064
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_26"
+  - first:
+      213: 7272335480112918575
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_27"
+  - first:
+      213: -4890628140030306744
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_28"
+  - first:
+      213: -8901100987635998680
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_29"
+  - first:
+      213: 530863520729802613
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_30"
+  - first:
+      213: 1721371366007999008
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_31"
+  - first:
+      213: -4933522095324524219
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_32"
+  - first:
+      213: 143107725944643734
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_33"
+  - first:
+      213: 84419458700970574
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_34"
+  - first:
+      213: -6043412855955355952
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_35"
+  - first:
+      213: -7654943531378325912
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_36"
+  - first:
+      213: 6910133825881375498
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_37"
+  - first:
+      213: -5270419223323902328
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_38"
+  - first:
+      213: 7378140721596815171
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_39"
+  - first:
+      213: 2019620365451015199
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_40"
+  - first:
+      213: -8808472115456755715
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_41"
+  - first:
+      213: 3038626562648568322
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_42"
+  - first:
+      213: 3262124221002956287
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_43"
+  - first:
+      213: -6761426492489858449
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_44"
+  - first:
+      213: 3435111711828973284
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_45"
+  - first:
+      213: -5226988230154079269
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_46"
+  - first:
+      213: 2225636802378022273
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_47"
+  - first:
+      213: -7421425982475365823
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_48"
+  - first:
+      213: -736781378873007934
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_49"
+  - first:
+      213: -9006914661088813875
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_50"
+  - first:
+      213: 5729613565689693594
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_51"
+  - first:
+      213: 5446662940184493013
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_52"
+  - first:
+      213: 7815204289496503752
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_53"
+  - first:
+      213: -1762984986998669777
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_54"
+  - first:
+      213: 5182890274941262475
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_55"
+  - first:
+      213: 7332723487744643266
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_56"
+  - first:
+      213: -7881842459766466848
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_57"
+  - first:
+      213: -8532736999745991535
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_58"
+  - first:
+      213: 6452304145532010096
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_59"
+  - first:
+      213: 7472908083982059493
+    second: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_60"
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_4"
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 587
+        width: 211
+        height: 224
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc5eb6f3f796c0469c9f5a7aaadcfa6
+      internalID: 8234042292263254958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_5"
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 559
+        width: 261
+        height: 280
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3379d68c551eaa439958c484eb23221
+      internalID: 3917673931152108641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_6"
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 557
+        width: 283
+        height: 282
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4be8c85716b1394aabbd1fce4e53e9f
+      internalID: -7723854179648621676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_17"
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 216
+        width: 243
+        height: 239
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32f9f87ba7fd154186c04e2fec13e4a
+      internalID: 8324449944821997483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_0"
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 622
+        width: 191
+        height: 171
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2640152ea8bc06429be2c994c10eeda
+      internalID: 39377887411209436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_2"
+      rect:
+        serializedVersion: 2
+        x: 988
+        y: 234
+        width: 216
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dae66e3b376766a48aecaa07c9b2e72f
+      internalID: -1598430785787324863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_1"
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 217
+        width: 235
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4fbb1d6c13de54095160bfdaa0766b
+      internalID: 5672128452017725510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "marcos-de-la-animaci\xF3n-de-la-explosi\xF3n-del-arte-del-pixel-69520683_3"
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 205
+        width: 257
+        height: 261
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2eaadd99dd5f5c04cad643ab66cd27af
+      internalID: 7705839446118576792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

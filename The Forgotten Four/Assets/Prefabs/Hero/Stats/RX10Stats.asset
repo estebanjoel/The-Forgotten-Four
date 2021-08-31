@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd69ed0a2fd134f4e995bbfe7c874c7d, type: 3}
+  m_Name: RX10Stats
+  m_EditorClassIdentifier: 
+  currentHP: 0
+  maxHP: 0
+  currentMP: 0
+  maxMP: 0
+  strength: 15
+  dexterity: 10
+  vitality: 11
+  defence: 15
+  element: 11
+  spirit: 11
+  weaponPower: 0
+  armourPower: 0
+  evasion: 0
+  initiative: 0
+  accuracy: 0
+  magicPower: 0
+  magicDefence: 0
+  fireResistance: 0
+  iceResistance: 0
+  electricResistance: 0
+  plasmaResistance: 0
+  psychicResistance: 0
+  toxicResistance: 0

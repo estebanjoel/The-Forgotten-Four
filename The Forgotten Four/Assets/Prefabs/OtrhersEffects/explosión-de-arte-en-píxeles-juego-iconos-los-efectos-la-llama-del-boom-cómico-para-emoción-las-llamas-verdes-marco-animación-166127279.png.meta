@@ -1,0 +1,298 @@
+fileFormatVersion: 2
+guid: 71f271db514cf6f499ee9c306d9d36a7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7182412346386830672
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_0"
+  - first:
+      213: -3552062768291652647
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_1"
+  - first:
+      213: 3827205023218505757
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_2"
+  - first:
+      213: -7289845098633737544
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_3"
+  - first:
+      213: -3751814130811855183
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_4"
+  - first:
+      213: -5795301324839207434
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_5"
+  - first:
+      213: -3002806377757662414
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_6"
+  - first:
+      213: -8099393817134800048
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_7"
+  - first:
+      213: 6594408784238650412
+    second: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_8"
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_0"
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 654
+        width: 400
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2974093c15c1f204e8ab85103eaafba8
+      internalID: 7182412346386830672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_1"
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 654
+        width: 383
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69117b4c1334e5c42af12c8ca86ded6f
+      internalID: -3552062768291652647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_2"
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 654
+        width: 400
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13f85b7b57cacad4bb50407597fe4a5f
+      internalID: 3827205023218505757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_3"
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 654
+        width: 400
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820f751f587029c43ba578ae0430ca92
+      internalID: -7289845098633737544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_4"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 299
+        width: 400
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e660c357f114a5f40804102f32703903
+      internalID: -3751814130811855183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_5"
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 299
+        width: 400
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2657dfbc3c13c3040b19a7f961989fcd
+      internalID: -5795301324839207434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_6"
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 299
+        width: 400
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19afca4da5c2c940bde76c427125880
+      internalID: -3002806377757662414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "explosi\xF3n-de-arte-en-p\xEDxeles-juego-iconos-los-efectos-la-llama-del-boom-c\xF3mico-para-emoci\xF3n-las-llamas-verdes-marco-animaci\xF3n-166127279_7"
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 299
+        width: 400
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c54b7c3e42aa8479d04c36909609a6
+      internalID: -8099393817134800048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

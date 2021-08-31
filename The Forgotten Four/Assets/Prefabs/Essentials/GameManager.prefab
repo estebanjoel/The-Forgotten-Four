@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &811674307490381137
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 811674307490381136}
+  - component: {fileID: 811674307490381139}
+  - component: {fileID: 1468932186}
+  - component: {fileID: 2260886369985511417}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 2974397684917235467, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 4294967295
+  m_IsActive: 1
+--- !u!4 &811674307490381136
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811674307490381137}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.22581846, y: -2.660224, z: 0}
+  m_LocalScale: {x: 8.3025, y: 10.849999, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &811674307490381139
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811674307490381137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66bcf3f8755e9924390f3e6ec0bbad64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventManager: {fileID: 1468932186}
+  levelManager: {fileID: 2260886369985511417}
+  enemiesOnScreen: []
+  battleManager: {fileID: 0}
+  theMenu: {fileID: 0}
+  lvlMusic: {fileID: 0}
+  checkPoints: []
+  startPoint: {fileID: 0}
+  lastCheckPoint: {fileID: 0}
+  gameHasBeenSaved: 0
+  battleActive: 0
+  hasBeenAnLevelUP: 0
+  levelUPChars: 00000000
+  savePoints: []
+  bossIsDead: 0
+  itemsHeld:
+  - Potion
+  - Aether
+  - Revive
+  - Copper Sword
+  - Copper Staff
+  - Copper Axe
+  - Cloth Cloak
+  - Iron Chainmail
+  - Copper Hammer
+  - Silver Sword
+  - Leather Cloak
+  - Golden Chainmail
+  - Silver Axe
+  - Silver Staff
+  - Silver Hammer
+  numberOfItems: 020000000100000001000000010000000100000001000000020000000100000001000000010000000000000000000000000000000000000000000000
+  referenceItems:
+  - {fileID: 3023121704571074130, guid: 2ca45439cb1b9d54e8c7b22657f18b69, type: 3}
+  - {fileID: 8660169834841956031, guid: 3d5b7887a5aa8824eaf9fb297fb240ff, type: 3}
+  - {fileID: 4489973478428446036, guid: 62d4b9093536cf84e9ab0039e0f0f134, type: 3}
+  - {fileID: 4363380378984606681, guid: 8f01b96a6a1f7c342922b3b05ed11fe7, type: 3}
+  - {fileID: 7711394865450077912, guid: 0633224bf17e5454d9fe73bb50a0d626, type: 3}
+  - {fileID: 1308249723414537011, guid: 616de5fb801a2f240ba8e72167ddfa45, type: 3}
+  - {fileID: 6887406164111976674, guid: ccc06d2751d16af4ebb6d426b3bec362, type: 3}
+  - {fileID: 1586608013172771226, guid: bca9bb42ebfa5a948a9da6901b8c9bf8, type: 3}
+  - {fileID: 3556141338799734398, guid: 3ff87a9b8ec8f364c97c92005dd3bf5e, type: 3}
+  - {fileID: 5104574000962944578, guid: 19d7037b328e3194ab73d7bc32151f6a, type: 3}
+  - {fileID: 6124704189741220336, guid: 2366dd337aa29a24583f4a77d22ffddc, type: 3}
+  - {fileID: 4822842687171767242, guid: 825d5a3458ef4f94ab1702154e240acb, type: 3}
+  - {fileID: 5454482939659143533, guid: 8a4096dde8100b544bd85eccb45bd9de, type: 3}
+  - {fileID: 6138909851310033967, guid: 2a9687558d6c54942aa87307f2842b5e, type: 3}
+  - {fileID: 2706220775029951831, guid: 35f11550561478445a8b777b9e918151, type: 3}
+  levelCrates: []
+  credits: 0
+  warningText: {fileID: 0}
+  battleTransitionSFX: {fileID: 8300000, guid: 38533c535081c7949aea6f6222f6ba57, type: 3}
+  portalSFX: {fileID: 8300000, guid: 474a1ae1d11994045bbb835d3b7a8ee8, type: 3}
+--- !u!114 &1468932186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811674307490381137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eac89d9f7ef69d2418bca679de476de1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  eventPanel: {fileID: 0}
+--- !u!114 &2260886369985511417
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 811674307490381137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 286bae9512b01bb4d82522de7481a9e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentScene: 
+  levels:
+  - Level0
+  - Level1
+  - Level2
+  - Level3

@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd69ed0a2fd134f4e995bbfe7c874c7d, type: 3}
+  m_Name: FireheadStats
+  m_EditorClassIdentifier: 
+  currentHP: 20
+  maxHP: 20
+  currentMP: 1
+  maxMP: 1
+  strength: 30
+  dexterity: 10
+  vitality: 15
+  defence: 8
+  element: 10
+  spirit: 4
+  weaponPower: 18
+  armourPower: 7
+  evasion: 5
+  initiative: 5
+  accuracy: 7
+  magicPower: 10
+  magicDefence: 5
+  fireResistance: 10
+  iceResistance: 1
+  electricResistance: 2
+  plasmaResistance: 2
+  psychicResistance: 2
+  toxicResistance: 2
