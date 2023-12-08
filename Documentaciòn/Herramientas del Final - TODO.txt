@@ -1,0 +1,46 @@
+herramientas para el final (más las que ya tengo del parcial 1):
+
+- CustomInspectors:
+
+Mínimos:
+1. CustomInspector del BattleManager
+2. CustomInspector de los BattleChar
+3. CustomInspector de Items
+
+Recomendados:
+4. CustomInspector de UICanvas
+5. CustomInspector de GameManager
+
+- Editor Windows:
+
+Mínimos:
+1. Ventana de Sistema de Diálogos (Previo a desarrollar sistema de diálogos en el 
+juego)
+
+Recomendados:
+2. Organizador de EnemyChars según su categoría (si son bosses o no) y su elemento
+
+
+- OnSceneGUI:
+
+Mínimo:
+1.Hacer un detector de essentials y objetos de nivel, que me devuelva un helpbox 
+de tipo warning si me falta algun prefab esencial o necesario para el correcto 
+funcionamiento de un esencial. O que me devuelva un helpbox de tipo info si tengo 
+todos los esenciales y prefabs necesarios para los esenciales seteados correctamente 
+en la escena.
+
+Recomendado:
+2.
+
+- ScriptableObjects:
+
+Mínimo:
+1. Convertir Item a ScriptableObject
+2. Convertir BattleMove a ScriptableObject
+(Hecho <Falta testear ingame>) 3. Crear un ScriptableObject de Stats (Y sirva tanto para los CharStats como los BattleChars)
+4. Crear un ScriptableObject que contenga todos los objetos del nivel que el GameManager necesita setear cada vez que inicie un nuevo nivel.
+
+Recomendados:
+5. 
+6.
