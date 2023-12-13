@@ -296,7 +296,7 @@ public class PlayerMenu : MonoBehaviour
             if(GameManager.instance.itemsHeld[i] == myChars[character].equippedWpn)
             {
                 equipCharPanels[character].equippedWeapon.equippedItemText.text = myChars[character].equippedWpn;
-                equipCharPanels[character].equippedWeapon.equippedItemReference = GameManager.instance.referenceItems[i];
+                equipCharPanels[character].equippedWeapon.equippedItemReference = (EquipItem) GameManager.instance.referenceItems[i];
                 equipCharPanels[character].equippedWeapon.equippedItemSprite.sprite =equipCharPanels[character].equippedWeapon.equippedItemReference.itemSprite;
                 break;
             }
@@ -306,7 +306,7 @@ public class PlayerMenu : MonoBehaviour
             if(GameManager.instance.itemsHeld[i] == myChars[character].equippedArmr)
             {
                 equipCharPanels[character].equippedArmor.equippedItemText.text = myChars[character].equippedArmr;
-                equipCharPanels[character].equippedArmor.equippedItemReference = GameManager.instance.referenceItems[i];
+                equipCharPanels[character].equippedArmor.equippedItemReference = (EquipItem) GameManager.instance.referenceItems[i];
                 equipCharPanels[character].equippedArmor.equippedItemSprite.sprite =equipCharPanels[character].equippedArmor.equippedItemReference.itemSprite;
                 break;
             }
@@ -330,10 +330,19 @@ public class PlayerMenu : MonoBehaviour
     {
         EquipMenuButton[] myButtons = equipCharPanels[character].panelButtons.buttons;
         int buttonsAvailable = 0;
-        List<Item> myItems = new List<Item>();
+        List<EquipItem> myItems = new List<EquipItem>();
         for(int i = 0; i < GameManager.instance.referenceItems.Length;i++)
         {
-            if(GameManager.instance.referenceItems[i].isArmor || GameManager.instance.referenceItems[i].isWeapon)
+            EquipItem item = (EquipItem) GameManager.instance.referenceItems[i];
+            if(item != null)
+            {
+                if(GameManager.instance.numberOfItems[i]>0)
+                {
+                    buttonsAvailable++;
+                    myItems.Add(item);
+                }
+            }
+            /*if(GameManager.instance.referenceItems[i].isArmor || GameManager.instance.referenceItems[i].isWeapon)
             {
                 if(GameManager.instance.numberOfItems[i]>0)
                 {
@@ -341,7 +350,7 @@ public class PlayerMenu : MonoBehaviour
                     myItems.Add(GameManager.instance.referenceItems[i]);
                 }
                 
-            } 
+            }*/
         }
         for(int i = 0; i < myButtons.Length; i++)
         {
@@ -349,7 +358,7 @@ public class PlayerMenu : MonoBehaviour
             {
                 myButtons[i].gameObject.SetActive(true);
                 myButtons[i].itemReference = myItems[i];
-                if(myItems[i].isArmor)
+                if(myItems[i].isArmour)
                 {
                     myButtons[i].isArmor = true;
                     myButtons[i].isWeapon = false;

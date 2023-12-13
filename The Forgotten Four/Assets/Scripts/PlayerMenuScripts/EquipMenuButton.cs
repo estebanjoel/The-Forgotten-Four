@@ -9,7 +9,7 @@ public class EquipMenuButton : MonoBehaviour
     public Image itemSprite;
     public Text itemNameText;
     public Text itemQuantityText;
-    public Item itemReference;
+    public EquipItem itemReference;
     int statModifier;
     public bool isWeapon, isArmor;
     bool isAvailable;
@@ -81,7 +81,7 @@ public class EquipMenuButton : MonoBehaviour
         {
             if(isArmor)
             {
-                statModifier = itemReference.armorStrength - myPanel.equippedArmor.equippedItemReference.armorStrength;
+                statModifier = itemReference.armourStrength - myPanel.equippedArmor.equippedItemReference.armourStrength;
                 myPanel.armorPowerText.transform.GetChild(0).gameObject.SetActive(true);
                 Text modifierText = myPanel.armorPowerText.transform.GetChild(0).GetComponent<Text>();
                 if(statModifier<0)
@@ -126,7 +126,7 @@ public class EquipMenuButton : MonoBehaviour
         if(isArmor)
         {
             int armrPwr = myChar.GetCharStats().GetArmourPower();
-            armrPwr-= myPanel.equippedArmor.equippedItemReference.armorStrength;
+            armrPwr-= myPanel.equippedArmor.equippedItemReference.armourStrength;
             for(int i = 0; i<GameManager.instance.itemsHeld.Length;i++)
             {
                 if(GameManager.instance.itemsHeld[i] == myPanel.equippedArmor.equippedItemReference.itemName)
@@ -143,7 +143,7 @@ public class EquipMenuButton : MonoBehaviour
                     break;
                 }
             }
-            armrPwr+= itemReference.armorStrength;
+            armrPwr+= itemReference.armourStrength;
             myChar.GetCharStats().SetArmourPower(armrPwr);
             myChar.equippedArmr = itemReference.itemName;
             for(int i = 0; i<GameManager.instance.itemsHeld.Length;i++)

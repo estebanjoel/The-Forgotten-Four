@@ -1,0 +1,6 @@
+TODO 13/12:
+
+Hecho: Corregido scriptableObject Item con sus respectivas herencias para que sean utilizables en los scripts ya creados (falta testear)
+Hacer en Casa: Sacar capturas del proyecto viejo (collab) con los valores necesarios para implementar en los scriptable Objects creados
+
+TODO 14/12:

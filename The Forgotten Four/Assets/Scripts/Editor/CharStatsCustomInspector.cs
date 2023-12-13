@@ -398,7 +398,7 @@ public class CharStatsCustomInspector : Editor
 
       for(int i = 0; i < itemsGuids.Length; i++)
       {
-         Item newItem = (Item)AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(itemsGuids[i]), typeof(Item));
+         EquipItem newItem = (EquipItem)AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(itemsGuids[i]), typeof(Item));
          if(CheckIfItemIsCompatibleWithChar(newItem))
          {
             items[i] = newItem.name;
@@ -432,7 +432,7 @@ public class CharStatsCustomInspector : Editor
       return compatibleItems;
    }
 
-   private bool CheckIfItemIsCompatibleWithChar(Item item)
+   private bool CheckIfItemIsCompatibleWithChar(EquipItem item)
    {
       switch(item.itemCharTarget)
       {
@@ -485,12 +485,12 @@ public class CharStatsCustomInspector : Editor
 
    private void setWeaponAndArmorValues()
    {
-      Item equippedItem = (Item) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Items/Armor/" + charStats.equippedArmr + ".prefab", typeof(Item));
-      equippedArmrPower = equippedItem.armorStrength;
-      equippedItem.armorStrength += charStats.GetCharStats().GetArmourPower();
-      charStats.GetCharStats().SetArmourPower(equippedItem.armorStrength);
+      EquipItem equippedItem = (EquipItem) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Items/Armor/" + charStats.equippedArmr + ".prefab", typeof(Item));
+      equippedArmrPower = equippedItem.armourStrength;
+      equippedItem.armourStrength += charStats.GetCharStats().GetArmourPower();
+      charStats.GetCharStats().SetArmourPower(equippedItem.armourStrength);
 
-      equippedItem = (Item) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Items/Weapons/" + charStats.equippedWpn + ".prefab", typeof(Item));
+      equippedItem = (EquipItem) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Items/Weapons/" + charStats.equippedWpn + ".prefab", typeof(Item));
       equippedWpnPower = equippedItem.weaponStrength;
       equippedItem.weaponStrength += charStats.GetCharStats().GetWeaponPower();
       charStats.GetCharStats().SetWeaponPower(equippedItem.weaponStrength);

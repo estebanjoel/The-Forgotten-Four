@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using GameEnums;
 
+[CreateAssetMenu(fileName = "Stats", menuName = "Improvus/Create Item/Consumable Item", order = 0)]
 public class Consumable : Item
 {
-    bool affectHP;
-    bool affectMP;
-    bool revivePlayer;
+    public bool affectHP;
+    public bool affectMP;
+    public bool revivePlayer;
+
     public override void UseItem(CharStats selectedCharacter, Item[] myItems, int[] myItemsQuantity)
     {
         for (int i = 0; i < myItems.Length; i++)
@@ -51,6 +53,82 @@ public class Consumable : Item
                 if (currentHP > selectedCharacter.GetCharStats().GetMaxHP()) selectedCharacter.GetCharStats().SetCurrentHP(selectedCharacter.GetCharStats().GetMaxHP());
                 else selectedCharacter.GetCharStats().SetCurrentHP(currentHP);
             }
+        }
+    }
+
+    public void UseItemInBattle(BattleChar activeCharacter, Item[] myItems, int[] myItemsQuantity)
+    {
+        for (int i = 0; i < myItems.Length; i++)
+        {
+            if (myItems[i].itemName == itemName)
+            {
+                myItemsQuantity[i]--;
+                ApplyItemEffectInBattle(activeCharacter);
+            }
+        }
+    }
+
+    public void ApplyItemEffectInBattle(BattleChar selectedCharacter)
+    {
+        if (affectHP)
+        {
+            ItemVFXInBattle(selectedCharacter, 0, Color.green, false,amountToChange);
+            selectedCharacter.currentHp += amountToChange;
+
+            if (selectedCharacter.currentHp > selectedCharacter.maxHP)
+            {
+                selectedCharacter.currentHp = selectedCharacter.maxHP;
+            }
+        }
+
+        if (affectMP)
+        {
+            ItemVFXInBattle(selectedCharacter, 1, Color.green, true,amountToChange);
+            selectedCharacter.currentMP += amountToChange;
+
+            if (selectedCharacter.currentMP > selectedCharacter.maxMP)
+            {
+                selectedCharacter.currentMP = selectedCharacter.maxMP;
+            }
+        }
+
+        if (revivePlayer)
+        {
+            if (selectedCharacter.currentHp == 0)
+            {
+                selectedCharacter.currentHp += Mathf.FloorToInt((selectedCharacter.maxHP * amountToChange) / selectedCharacter.maxHP);
+                ItemVFXInBattle(selectedCharacter, 2, Color.green, false,amountToChange);
+            }
+
+            else
+            {
+                selectedCharacter.currentHp += 0;
+                ItemVFXInBattle(selectedCharacter, 2, Color.green, false, 0);
+                selectedCharacter.SetAnimatorTrigger("reviveTrigger");
+            }
+        }
+    }
+
+    public void ItemVFXInBattle(BattleChar selectedCharacter, int effectIndex, Color numberColor, bool isMP, int numberOnScreen)
+    {
+        GameObject effect = Instantiate(BattleManager.instance.battleItems.itemEffects[effectIndex]);
+        PlayItemAudioInBattle();
+        effect.transform.SetParent(selectedCharacter.transform);
+        effect.transform.position = new Vector3(selectedCharacter.transform.position.x + 0.1f,selectedCharacter.transform.position.y+0.5f,selectedCharacter.transform.position.z);
+        Instantiate(BattleManager.instance.damageNumber, selectedCharacter.transform.position, selectedCharacter.transform.rotation).SetDamage(numberOnScreen);
+        GameObject.FindObjectOfType<DamageNumber>().GetComponentInChildren<Text>().color = numberColor;
+        if (isMP)
+        {
+            GameObject.FindObjectOfType<DamageNumber>().GetComponentInChildren<Text>().text += " MP";
+        }
+    }
+
+    public void PlayItemAudioInBattle()
+    {
+        AudioManager.instance.BattleSFX[1].clip = itemAudio;
+        if (!AudioManager.instance.BattleSFX[1].isPlaying)
+        {
+            AudioManager.instance.BattleSFX[1].Play();
         }
     }
 }

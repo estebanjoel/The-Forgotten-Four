@@ -1092,7 +1092,8 @@ public class BattleManager : MonoBehaviour
         {
             if (myItems[i].itemName == itemName)
             {
-                myItems[i].UseItemInBattle(activeBattlers[selectedTarget], myItems, GameManager.instance.numberOfItems);
+                Consumable itemToUse = (Consumable) myItems[i];
+                itemToUse.UseItemInBattle(activeBattlers[selectedTarget], myItems, GameManager.instance.numberOfItems);
                 break;
             }
         }

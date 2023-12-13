@@ -145,8 +145,9 @@ public class CharStats : MonoBehaviour
         {
             if (myItems[i] == equippedWpn)
             {
+                EquipItem myEquippedItem = (EquipItem) GameManager.instance.referenceItems[i];
                 int wpnPwr = GetCharStats().GetWeaponPower();
-                wpnPwr += GameManager.instance.referenceItems[i].weaponStrength;
+                wpnPwr += myEquippedItem.weaponStrength;
                 GetCharStats().SetWeaponPower(wpnPwr);
             }
         }
@@ -154,8 +155,9 @@ public class CharStats : MonoBehaviour
         {
             if (myItems[i] == equippedArmr)
             {
+                EquipItem myEquippedItem = (EquipItem) GameManager.instance.referenceItems[i];
                 int armrPwr = GetCharStats().GetArmourPower();
-                armrPwr += GameManager.instance.referenceItems[i].armorStrength;
+                armrPwr += myEquippedItem.armourStrength;
                 GetCharStats().SetArmourPower(armrPwr);
             }
         }

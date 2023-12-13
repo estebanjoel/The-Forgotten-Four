@@ -11,7 +11,8 @@ public class BattleItems : MonoBehaviour
     {
         for (int i = 0; i < myItems.Length; i++)
         {
-            if (myItems[i].isItem)
+            Consumable consumableItem = (Consumable) myItems[i];
+            if (consumableItem != null)
             {
                 items.Add(myItems[i]);
             }

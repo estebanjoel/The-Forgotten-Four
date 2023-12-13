@@ -32,22 +32,30 @@ public class ItemTargetButton : MonoBehaviour
     public string ModifyMessage()
     {
         messageModifier = "";
-        
-        if (itemToUse.affectHP)
+        Consumable consumableItem = (Consumable) itemToUse;
+        EquipItem equipItem = (EquipItem) itemToUse;
+        if(consumableItem != null)
         {
-            messageModifier = targetName + " has recovered " + itemToUse.amountToChange + "HP!";
+            if (consumableItem.affectHP)
+            {
+                messageModifier = targetName + " has recovered " + itemToUse.amountToChange + "HP!";
+            }
+            if (consumableItem.affectMP)
+            {
+                messageModifier = targetName + " has recovered " + itemToUse.amountToChange + "HP!";
+            }
+            if (consumableItem.revivePlayer)
+            {
+                messageModifier = targetName + " has been revived!";
+            }
         }
-        if (itemToUse.affectMP)
-        {
-            messageModifier = targetName + " has recovered " + itemToUse.amountToChange + "HP!";
-        }
-        if (itemToUse.revivePlayer)
-        {
-            messageModifier = targetName + " has been revived!";
-        }
-        if(itemToUse.isArmor || itemToUse.isWeapon)
-        {
-            messageModifier = targetName + " has equipped the " + itemToUse.itemName + "!";
+
+        if(equipItem != null)
+        {            
+            if(equipItem.isArmour || equipItem.isWeapon)
+            {
+                messageModifier = targetName + " has equipped the " + itemToUse.itemName + "!";
+            }
         }
 
         return messageModifier;

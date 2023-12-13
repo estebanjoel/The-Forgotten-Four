@@ -7,5 +7,5 @@ public class EquippedItem : MonoBehaviour
 {
     public Image equippedItemSprite;
     public Text equippedItemText;
-    public Item equippedItemReference;
+    public EquipItem equippedItemReference;
 }
