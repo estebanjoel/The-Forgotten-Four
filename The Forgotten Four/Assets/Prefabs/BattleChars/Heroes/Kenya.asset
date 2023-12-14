@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e073ed0ef57084642bf337adcc24b212, type: 3}
+  m_Name: Kenya
+  m_EditorClassIdentifier: 
+  isPlayer: 1
+  movesAvailable:
+  - 
+  - 
+  - 
+  charName: 
+  battleStats: {fileID: 11400000, guid: b46c2b15a067fb74ebe997c491c94486, type: 2}
+  currentHp: 0
+  maxHP: 0
+  currentMP: 0
+  maxMP: 0
+  strength: 0
+  dexterity: 0
+  vitality: 0
+  defence: 0
+  element: 0
+  spirit: 0
+  wpnPower: 0
+  armrPower: 0
+  evasion: 0
+  initiative: 0
+  accuracy: 0
+  mgcPower: 0
+  mgcDefence: 0
+  fireResistance: 0
+  iceResistance: 0
+  electricResistance: 0
+  plasmaResistance: 0
+  psychicResistance: 0
+  toxicResistance: 0
+  hasDied: 0
+  hasAnAlteratedStat: 0
+  alteratedStatTimer: 0
+  previousAlteratedStats: 
+  previousAlteratedStatsName: 
+  theSprite: {fileID: 0}
+  deadSprite: {fileID: 0}
+  aliveSprite: {fileID: 0}
+  anim: {fileID: 0}
+  heroCharSpecifics: {fileID: 0}

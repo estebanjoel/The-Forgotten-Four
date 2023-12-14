@@ -27,7 +27,7 @@ public class BattleTargetButton : MonoBehaviour
 
     public void SingleAction()
     {
-        if (!BattleManager.instance.activeBattlers[activeBattlerTarget].isPlayer)
+        if (!BattleManager.instance.activeBattlers[activeBattlerTarget].chara.isPlayer)
         {
             BattleManager.instance.PlayerAttack(moveName, activeBattlerTarget);
             BattleManager.instance.battleUI.playerHasSelectedAnOption = false;
@@ -58,13 +58,13 @@ public class BattleTargetButton : MonoBehaviour
     }
     public void MultipleAction()
     {
-        if (!BattleManager.instance.activeBattlers[activeBattlerTarget].isPlayer)
+        if (!BattleManager.instance.activeBattlers[activeBattlerTarget].chara.isPlayer)
         {
             for(int i = 0; i<BattleManager.instance.activeBattlers.Count;i++)
             {
-                if(!BattleManager.instance.activeBattlers[i].isPlayer)
+                if(!BattleManager.instance.activeBattlers[i].chara.isPlayer)
                 {
-                    if(BattleManager.instance.activeBattlers[i].currentHp>0) BattleManager.instance.PlayerAttack(moveName, i);
+                    if(BattleManager.instance.activeBattlers[i].chara.currentHp>0) BattleManager.instance.PlayerAttack(moveName, i);
                 }
             }
             BattleManager.instance.battleUI.playerHasSelectedAnOption = false;
@@ -78,14 +78,14 @@ public class BattleTargetButton : MonoBehaviour
                 {
                     for(int j = 0; j < BattleManager.instance.activeBattlers.Count; j++)
                     {
-                        if(BattleManager.instance.activeBattlers[j].isPlayer)
+                        if(BattleManager.instance.activeBattlers[j].chara.isPlayer)
                         {
-                            if(BattleManager.instance.activeBattlers[j].currentHp>0) BattleManager.instance.CypherToPlayer(moveName, j);
-                            if(BattleManager.instance.activeBattlers[j].hasAnAlteratedStat)
+                            if(BattleManager.instance.activeBattlers[j].chara.currentHp>0) BattleManager.instance.CypherToPlayer(moveName, j);
+                            if(BattleManager.instance.activeBattlers[j].chara.hasAnAlteratedStat)
                             {
-                                for(int k=0; k<BattleManager.instance.activeBattlers[j].previousAlteratedStatsName.Count;k++)
+                                for(int k=0; k<BattleManager.instance.activeBattlers[j].chara.previousAlteratedStatsName.Count;k++)
                                 {
-                                    if(BattleManager.instance.activeBattlers[j].previousAlteratedStatsName[k] == GameEnums.statTarget.Initiative)
+                                    if(BattleManager.instance.activeBattlers[j].chara.previousAlteratedStatsName[k] == GameEnums.statTarget.Initiative)
                                     {
                                         hasInitiativeChanged = true;
                                         break;
@@ -105,9 +105,9 @@ public class BattleTargetButton : MonoBehaviour
                 {
                     for(int j = 0; j < BattleManager.instance.activeBattlers.Count; j++)
                     {
-                        if(BattleManager.instance.activeBattlers[j].isPlayer)
+                        if(BattleManager.instance.activeBattlers[j].chara.isPlayer)
                         {
-                            if(BattleManager.instance.activeBattlers[j].currentHp>0) BattleManager.instance.ItemToPlayer(moveName, j);
+                            if(BattleManager.instance.activeBattlers[j].chara.currentHp>0) BattleManager.instance.ItemToPlayer(moveName, j);
                         }
                     }
                     BattleManager.instance.battleUI.playerHasSelectedAnOption = false;

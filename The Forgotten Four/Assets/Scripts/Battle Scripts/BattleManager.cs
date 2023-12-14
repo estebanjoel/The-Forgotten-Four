@@ -22,11 +22,11 @@ public class BattleManager : MonoBehaviour
     public bool playerFirst, enemyFirst;
     public bool battleHasEnded;
     public GameObject enemyAttackEffect;
-    public BattleChar[] playerPrefabs;
-    public BattleChar[] enemyPrefabs;
+    public Battler[] playerPrefabs;
+    public EnemyBattler[] enemyPrefabs;
     public Transform[] playerPositions;
     public Transform[] enemyPositions;
-    public List<BattleChar> activeBattlers = new List<BattleChar>();
+    public List<Battler> activeBattlers = new List<Battler>();
     public int currentTurn;
     public int chanceToFlee;
     public int pointsInCasePlayerGoesBack;
@@ -62,7 +62,7 @@ public class BattleManager : MonoBehaviour
         {
             if (turnWaiting)
             {
-                if (activeBattlers[currentTurn].isPlayer)
+                if (activeBattlers[currentTurn].chara.isPlayer)
                 {
                     if (canCheckPanels) battleUI.CheckActiveBattlePanel(instance);
                 }
@@ -81,9 +81,9 @@ public class BattleManager : MonoBehaviour
         battleScene.transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = battleSprite;
     }
 
-    public static int sortByInitiative(BattleChar p1, BattleChar p2)
+    public static int sortByInitiative(Battler p1, Battler p2)
     {
-        return (p2.initiative.CompareTo(p1.initiative));
+        return (p2.chara.initiative.CompareTo(p1.chara.initiative));
     }
 
     public void PlayerAdvantage()
@@ -98,15 +98,15 @@ public class BattleManager : MonoBehaviour
         playerFirst = false;
     }
 
-    public List<BattleChar> SpecialSort(List<BattleChar> battlers)
+    public List<Battler> SpecialSort(List<Battler> battlers)
     {
-        List<BattleChar> newOrder = new List<BattleChar>();
-        List<BattleChar> playerOrder = new List<BattleChar>();
-        List<BattleChar> enemyOrder = new List<BattleChar>();
+        List<Battler> newOrder = new List<Battler>();
+        List<Battler> playerOrder = new List<Battler>();
+        List<Battler> enemyOrder = new List<Battler>();
         
         for (int i = 0; i < battlers.Count; i++)
         {
-            if (battlers[i].isPlayer)
+            if (battlers[i].chara.isPlayer)
             {
                 playerOrder.Add(battlers[i]);
             }
@@ -152,7 +152,7 @@ public class BattleManager : MonoBehaviour
         {
             for(int i = 0; i < activeBattlers.Count; i++)
             {
-                if (!activeBattlers[i].isPlayer) damageCalculator.DealDamage(i, movesList[0].movePower, moveType.Attack, elementType.NonElemental, moveModifier.Physical);
+                if (!activeBattlers[i].chara.isPlayer) damageCalculator.DealDamage(i, movesList[0].movePower, moveType.Attack, elementType.NonElemental, moveModifier.Physical);
             }
         }
 
@@ -160,7 +160,7 @@ public class BattleManager : MonoBehaviour
         {
             for (int i = 0; i < activeBattlers.Count; i++)
             {
-                if (activeBattlers[i].isPlayer) damageCalculator.DealDamage(i, movesList[0].movePower, moveType.Attack, elementType.NonElemental, moveModifier.Physical);
+                if (activeBattlers[i].chara.isPlayer) damageCalculator.DealDamage(i, movesList[0].movePower, moveType.Attack, elementType.NonElemental, moveModifier.Physical);
             }
         }
     }
@@ -168,7 +168,7 @@ public class BattleManager : MonoBehaviour
     public void SetPlayerStats(int player)
     {
         CharStats thePlayer = PlayerController.instance.partyStats[player];
-        activeBattlers[player].SetCharacterStats(thePlayer);
+        activeBattlers[player].chara.SetCharacterStats(thePlayer);
         battleUI.charStats[player].gameObject.SetActive(true);
     }
 
@@ -197,10 +197,10 @@ public class BattleManager : MonoBehaviour
                     {
                         for (int j = 0; j < playerPrefabs.Length; j++)
                         {
-                            if (playerPrefabs[j].charName == PlayerController.instance.partyStats[i].charName)
+                            if (playerPrefabs[j].chara.charName == PlayerController.instance.partyStats[i].charName)
                             {
                                 playerPositions[i].gameObject.SetActive(true);
-                                BattleChar newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
+                                Battler newPlayer = Instantiate(playerPrefabs[j], playerPositions[i].position, playerPositions[i].rotation);
                                 newPlayer.transform.parent = playerPositions[i];
                                 activeBattlers.Add(newPlayer);
                                 SetPlayerStats(i);
@@ -220,9 +220,9 @@ public class BattleManager : MonoBehaviour
                     {
                         for (int j = 0; j < enemyPrefabs.Length; j++)
                         {
-                            if (enemyPrefabs[j].charName == enemiesToSpawn[i])
+                            if (enemyPrefabs[j].chara.charName == enemiesToSpawn[i])
                             {
-                                BattleChar newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].transform.position, enemyPositions[i].transform.rotation);
+                                EnemyBattler newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].transform.position, enemyPositions[i].transform.rotation);
                                 newEnemy.transform.parent = enemyPositions[i];
                                 activeBattlers.Add(newEnemy);
                             }
@@ -276,9 +276,9 @@ public class BattleManager : MonoBehaviour
         if (!firstTurnStarted)
         {
             yield return new WaitForSeconds(1.5f);
-            if (activeBattlers[currentTurn].isPlayer)
+            if (activeBattlers[currentTurn].chara.isPlayer)
             {
-                battleUI.ChangeTopPanelText("Is " + activeBattlers[currentTurn].charName + "'s turn");
+                battleUI.ChangeTopPanelText("Is " + activeBattlers[currentTurn].chara.charName + "'s turn");
             }
             else
             {
@@ -307,15 +307,15 @@ public class BattleManager : MonoBehaviour
         currentTurn++;
         if (currentTurn >= activeBattlers.Count) currentTurn = 0;
         turnWaiting = true;
-        if(activeBattlers[currentTurn].hasAnAlteratedStat)
+        if(activeBattlers[currentTurn].chara.hasAnAlteratedStat)
         {
-            if(activeBattlers[currentTurn].alteratedStatTimer>0) activeBattlers[currentTurn].alteratedStatTimer--;
+            if(activeBattlers[currentTurn].chara.alteratedStatTimer>0) activeBattlers[currentTurn].chara.alteratedStatTimer--;
             else
             {
                 bool hasInitiativeChanged = false;
-                for(int i = 0; i<activeBattlers[currentTurn].previousAlteratedStatsName.Count; i++)
+                for(int i = 0; i<activeBattlers[currentTurn].chara.previousAlteratedStatsName.Count; i++)
                 {
-                    if(activeBattlers[currentTurn].previousAlteratedStatsName[i] == statTarget.Initiative)
+                    if(activeBattlers[currentTurn].chara.previousAlteratedStatsName[i] == statTarget.Initiative)
                     {
                         hasInitiativeChanged = true;
                         break;
@@ -330,7 +330,7 @@ public class BattleManager : MonoBehaviour
 
     public void SortBattlers()
     {
-        BattleChar currentChar = activeBattlers[currentTurn];
+        Battler currentChar = activeBattlers[currentTurn];
         activeBattlers.Sort(sortByInitiative);
         for(int i = 0; i<activeBattlers.Count;i++)
         {
@@ -349,13 +349,13 @@ public class BattleManager : MonoBehaviour
 
         for (int i = 0; i < activeBattlers.Count; i++)
         {       
-            if (activeBattlers[i].currentHp < 0) activeBattlers[i].currentHp = 0;
+            if (activeBattlers[i].chara.currentHp < 0) activeBattlers[i].chara.currentHp = 0;
 
-            if (activeBattlers[i].currentHp == 0)
+            if (activeBattlers[i].chara.currentHp == 0)
             {
-                if (activeBattlers[i].isPlayer)
+                if (activeBattlers[i].chara.isPlayer)
                 {
-                    if(!activeBattlers[i].IsCharDeathAnimationActive()) activeBattlers[i].SetAnimatorTrigger("deathTrigger");
+                    if(!activeBattlers[i].chara.IsCharDeathAnimationActive()) activeBattlers[i].chara.SetAnimatorTrigger("deathTrigger");
                 } 
 
                 else
@@ -367,9 +367,9 @@ public class BattleManager : MonoBehaviour
 
             else
             {
-                if (activeBattlers[i].isPlayer)
+                if (activeBattlers[i].chara.isPlayer)
                 {
-                    if(activeBattlers[i].IsCharDeathAnimationActive()) activeBattlers[i].SetAnimatorTrigger("reviveTrigger");
+                    if(activeBattlers[i].chara.IsCharDeathAnimationActive()) activeBattlers[i].chara.SetAnimatorTrigger("reviveTrigger");
                     allPlayersDead = false;
                     canCheckPanels = true;
                 }
@@ -402,7 +402,7 @@ public class BattleManager : MonoBehaviour
 
         else
         {
-            while (activeBattlers[currentTurn].currentHp == 0)
+            while (activeBattlers[currentTurn].chara.currentHp == 0)
             {
                 currentTurn++;
                 if (currentTurn >= activeBattlers.Count)
@@ -413,9 +413,9 @@ public class BattleManager : MonoBehaviour
 
             battleUI.UpdateUIStats(instance);
             battleUI.ShowPanel(battleUI.topPanel);
-            if (activeBattlers[currentTurn].isPlayer)
+            if (activeBattlers[currentTurn].chara.isPlayer)
             {
-                battleUI.ChangeTopPanelText("Is " + activeBattlers[currentTurn].charName + "'s turn");
+                battleUI.ChangeTopPanelText("Is " + activeBattlers[currentTurn].chara.charName + "'s turn");
             }
             else
             {
@@ -428,9 +428,9 @@ public class BattleManager : MonoBehaviour
 
     public void CheckSpecials()
     {
-        if(activeBattlers[currentTurn].GetComponent<YakovChar>() != null)
+        if(activeBattlers[currentTurn].GetComponent<YakovSpecifics>() != null)
         {
-            if(activeBattlers[currentTurn].GetComponent<YakovChar>().CheckIfIsDrunk())
+            if(activeBattlers[currentTurn].GetComponent<YakovSpecifics>().CheckIfIsDrunk())
             {
                 StartCoroutine(YakovDrunkTurnCo());
                 turnWaiting = false;
@@ -455,7 +455,7 @@ public class BattleManager : MonoBehaviour
                 {
                     for(int j = 0; j < activeBattlers.Count; j++)
                     {
-                        if(activeBattlers[j].isPlayer && activeBattlers[j].currentHp > 0)
+                        if(activeBattlers[j].chara.isPlayer && activeBattlers[j].chara.currentHp > 0)
                         {
                             StartCoroutine(PlayerAttackCo(movesList[i].moveName, j));
                         }
@@ -467,7 +467,7 @@ public class BattleManager : MonoBehaviour
         else if(randomAction>10 && randomAction>=50)
         {
             int randomTarget = Random.Range(0, activeBattlers.Count);
-            while(activeBattlers[randomTarget].isPlayer || activeBattlers[randomTarget].currentHp<=0)
+            while(activeBattlers[randomTarget].chara.isPlayer || activeBattlers[randomTarget].chara.currentHp<=0)
             {
                 randomTarget = Random.Range(0, activeBattlers.Count);
             }
@@ -483,7 +483,7 @@ public class BattleManager : MonoBehaviour
         else if(randomAction>50 && randomAction>=90)
         {
             int randomTarget = Random.Range(0, activeBattlers.Count);
-            while(!activeBattlers[randomTarget].isPlayer || activeBattlers[randomTarget].currentHp<=0)
+            while(!activeBattlers[randomTarget].chara.isPlayer || activeBattlers[randomTarget].chara.currentHp<=0)
             {
                 randomTarget = Random.Range(0, activeBattlers.Count);
             }
@@ -505,7 +505,7 @@ public class BattleManager : MonoBehaviour
                 {
                     for(int j = 0; j < activeBattlers.Count; j++)
                     {
-                        if(!activeBattlers[j].isPlayer && activeBattlers[j].currentHp > 0)
+                        if(!activeBattlers[j].chara.isPlayer && activeBattlers[j].chara.currentHp > 0)
                         {
                             StartCoroutine(PlayerAttackCo(movesList[i].moveName, j));
                         }
@@ -523,7 +523,7 @@ public class BattleManager : MonoBehaviour
                     BattleMove cure = movesList[i];
                     for(int j = 0; j < activeBattlers.Count; j++)
                     {
-                        if(activeBattlers[j].isPlayer && activeBattlers[j].currentHp > 0)
+                        if(activeBattlers[j].chara.isPlayer && activeBattlers[j].chara.currentHp > 0)
                         {
                             CypherToPlayer(cure.moveName, j);
                         }
@@ -538,7 +538,7 @@ public class BattleManager : MonoBehaviour
     
     public bool CheckIfCurrentBattlerIsBoss(int battler)
     {
-        if(!activeBattlers[battler].isPlayer)
+        if(!activeBattlers[battler].chara.isPlayer)
         {
             if(activeBattlers[battler].GetComponent<BattleEnemyIA>().isBoss) return true;
             else return false;
@@ -556,11 +556,11 @@ public class BattleManager : MonoBehaviour
             if(target>-1)
             {
                 yield return new WaitForSeconds(1f);
-                for(int i = 0; i<activeBattlers[currentTurn].movesAvailable.Count;i++)
+                for(int i = 0; i<activeBattlers[currentTurn].chara.movesAvailable.Count;i++)
                 {
                     for(int j = 0; j<movesList.Length;j++)
                     {
-                        if(activeBattlers[currentTurn].movesAvailable[i] == movesList[j].moveName)
+                        if(activeBattlers[currentTurn].chara.movesAvailable[i] == movesList[j].moveName)
                         {
                             if(movesList[j].eType==elementType.Heal) StartCoroutine(EnemyHealCo(target, currentTurn, movesList[j]));
                         }
@@ -583,13 +583,13 @@ public class BattleManager : MonoBehaviour
         NextTurn();
     }
 
-    public bool AttackProbability(BattleChar attacker, BattleChar target)
+    public bool AttackProbability(Battler attacker, Battler target)
     {
         int attackerProbability = Random.Range(1, 21);
         if (attackerProbability == 20) return true;
         int targetProbability = Random.Range(1, 21);
         if (targetProbability == 20) return false;
-        float attackResult = (attacker.dexterity + attacker.accuracy + attackerProbability) - (target.dexterity + target.evasion + targetProbability/2);
+        float attackResult = (attacker.chara.dexterity + attacker.chara.accuracy + attackerProbability) - (target.chara.dexterity + target.chara.evasion + targetProbability/2);
         if (attackResult > 0)
         {
             return true;
@@ -606,7 +606,7 @@ public class BattleManager : MonoBehaviour
         List<int> players = new List<int>();
         for (int i = 0; i < activeBattlers.Count; i++)
         {
-            if (activeBattlers[i].isPlayer && activeBattlers[i].currentHp > 0) players.Add(i);
+            if (activeBattlers[i].chara.isPlayer && activeBattlers[i].chara.currentHp > 0) players.Add(i);
         }
 
         int selectedTarget = players[Random.Range(0, players.Count)];
@@ -619,10 +619,10 @@ public class BattleManager : MonoBehaviour
         int selectedAttack = 0;
         while(!hasSelectedAnAttack)
         {
-            int selectAttack = Random.Range(0, activeBattlers[currentTurn].movesAvailable.Count);
+            int selectAttack = Random.Range(0, activeBattlers[currentTurn].chara.movesAvailable.Count);
             for (int i = 0; i < movesList.Length; i++)
             {
-                if (movesList[i].moveName == activeBattlers[currentTurn].movesAvailable[selectAttack])
+                if (movesList[i].moveName == activeBattlers[currentTurn].chara.movesAvailable[selectAttack])
                 {
                     if(movesList[i].eType != elementType.Heal && movesList[i].eType != elementType.Support)
                     {
@@ -676,7 +676,7 @@ public class BattleManager : MonoBehaviour
     {
         Instantiate(enemyAttackEffect, activeBattlers[caster].transform.position, activeBattlers[caster].transform.rotation);
         yield return new WaitForSeconds(1f);
-        int modifier = Mathf.FloorToInt((healMove.movePower + activeBattlers[caster].spirit + activeBattlers[caster].mgcPower) * Random.Range(0.9f,1.5f));
+        int modifier = Mathf.FloorToInt((healMove.movePower + activeBattlers[caster].chara.spirit + activeBattlers[caster].chara.mgcPower) * Random.Range(0.9f,1.5f));
         moveClip = healMove.myAudioClip;
         yield return new WaitForSeconds(.5f);
         AttackEffect attackEffect = Instantiate(healMove.myEffect, activeBattlers[target].transform.position, activeBattlers[target].transform.rotation);
@@ -685,8 +685,8 @@ public class BattleManager : MonoBehaviour
         yield return new WaitForSeconds(1f);
         Instantiate(BattleManager.instance.damageNumber, BattleManager.instance.activeBattlers[target].transform.position, BattleManager.instance.activeBattlers[target].transform.rotation).SetDamage(modifier);
         GameObject.FindObjectOfType<DamageNumber>().GetComponentInChildren<Text>().color = Color.green;
-        activeBattlers[target].currentHp+=modifier;
-        if(activeBattlers[target].currentHp > activeBattlers[target].maxHP) activeBattlers[target].currentHp = activeBattlers[target].maxHP;
+        activeBattlers[target].chara.currentHp+=modifier;
+        if(activeBattlers[target].chara.currentHp > activeBattlers[target].chara.maxHP) activeBattlers[target].chara.currentHp = activeBattlers[target].chara.maxHP;
     }
     public void PlayerAttack(string moveName, int selectedTarget)
     {
@@ -712,8 +712,8 @@ public class BattleManager : MonoBehaviour
                 m = movesList[i].mType;
                 e = movesList[i].eType;
                 mM = movesList[i].mModifier;
-                if(m==moveType.Attack) activeBattlers[currentTurn].SetAnimatorTrigger("attackTrigger");
-                if(m==moveType.Cypher) activeBattlers[currentTurn].SetAnimatorTrigger("cypherTrigger");
+                if(m==moveType.Attack) activeBattlers[currentTurn].chara.SetAnimatorTrigger("attackTrigger");
+                if(m==moveType.Cypher) activeBattlers[currentTurn].chara.SetAnimatorTrigger("cypherTrigger");
                 yield return new WaitForSeconds(1f);
                 AttackEffect attackEffect = Instantiate(movesList[i].myEffect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation);
                 attackEffect.GetComponent<SpriteRenderer>().flipX = true;
@@ -754,12 +754,12 @@ public class BattleManager : MonoBehaviour
                 audioManager.PlayMoveAudio(moveClip);
                 if (movesList[i].eType == elementType.Heal) HealCypher(i, selectedTarget, currentTurn);
                 if (movesList[i].eType == elementType.Support) SupportCypher(i, selectedTarget, currentTurn);
-                if (movesList[i].eType == elementType.None && moveName == "Vodka Madness") activeBattlers[selectedTarget].GetComponent<YakovChar>().VodkaMadness();
+                if (movesList[i].eType == elementType.None && moveName == "Vodka Madness") activeBattlers[selectedTarget].GetComponent<YakovSpecifics>().VodkaMadness();
                 break;
             }
         }
         
-        activeBattlers[currentTurn].SetAnimatorTrigger("cypherTrigger");
+        activeBattlers[currentTurn].chara.SetAnimatorTrigger("cypherTrigger");
         battleUI.HidePanel(battleUI.targetMenu);
         battleUI.HidePanel(battleUI.playerPanel);
         canCheckPanels = false;
@@ -767,8 +767,8 @@ public class BattleManager : MonoBehaviour
 
     public void HealCypher(int move, int selectedCharacter, int caster)
     {
-        int amountToHeal = Mathf.FloorToInt(((activeBattlers[caster].spirit * Random.Range(0.9f, 1.5f) + movesList[move].movePower) * Random.Range(0.9f, 1.25f)));
-        activeBattlers[selectedCharacter].currentHp += amountToHeal;
+        int amountToHeal = Mathf.FloorToInt(((activeBattlers[caster].chara.spirit * Random.Range(0.9f, 1.5f) + movesList[move].movePower) * Random.Range(0.9f, 1.25f)));
+        activeBattlers[selectedCharacter].chara.currentHp += amountToHeal;
         Instantiate(movesList[move].myEffect, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation);
         DamageNumber cypherNumber = Instantiate(damageNumber, activeBattlers[selectedCharacter].transform.position, activeBattlers[selectedCharacter].transform.rotation);
         cypherNumber.GetComponentInChildren<Text>().text = amountToHeal.ToString();
@@ -781,8 +781,8 @@ public class BattleManager : MonoBehaviour
         statTarget statToModify = statTarget.None;
         BattleMove myMove = movesList[move];
         statToModify = SelectStat(myMove, statToModify);
-        float modifier = (float) (myMove.movePower + activeBattlers[caster].element)/10;
-        if(activeBattlers[selectedCharacter].hasAnAlteratedStat) RestorePreviousStatsValues(selectedCharacter);
+        float modifier = (float) (myMove.movePower + activeBattlers[caster].chara.element)/10;
+        if(activeBattlers[selectedCharacter].chara.hasAnAlteratedStat) RestorePreviousStatsValues(selectedCharacter);
         UpdateBattleCharStats(selectedCharacter, modifier, statToModify);
     }
 
@@ -791,7 +791,7 @@ public class BattleManager : MonoBehaviour
         GameObject obj = null;
         for(int i = 0; i<playerPrefabs.Length;i++)
         {
-            if(playerPrefabs[i].charName == activeBattlers[target].charName)
+            if(playerPrefabs[i].chara.charName == activeBattlers[target].chara.charName)
             {
                 obj = battleUI.statsToModifyPanels[i];
             }
@@ -799,222 +799,222 @@ public class BattleManager : MonoBehaviour
         switch(stat)
         {
             case statTarget.Strength:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].strength);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Strength);
-                activeBattlers[target].strength=Mathf.FloorToInt(activeBattlers[target].strength + modifier);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.strength);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Strength);
+                activeBattlers[target].chara.strength=Mathf.FloorToInt(activeBattlers[target].chara.strength + modifier);
                 battleUI.SetStatToModifyText(obj,"STR");
                 break;
             case statTarget.Dexterity:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].dexterity);
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].accuracy);
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].evasion);
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].initiative);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Dexterity);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Accuracy);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Evasion);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Initiative);
-                activeBattlers[target].dexterity=Mathf.FloorToInt(activeBattlers[target].dexterity + modifier);
-                activeBattlers[target].evasion += Mathf.FloorToInt(activeBattlers[target].dexterity * Random.Range(0.5f, 0.75f));
-                activeBattlers[target].initiative += Mathf.FloorToInt(activeBattlers[target].dexterity * Random.Range(0.5f, 0.1f));
-                activeBattlers[target].accuracy += Mathf.FloorToInt(activeBattlers[target].dexterity * Random.Range(0.5f, 0.75f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.dexterity);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.accuracy);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.evasion);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.initiative);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Dexterity);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Accuracy);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Evasion);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Initiative);
+                activeBattlers[target].chara.dexterity=Mathf.FloorToInt(activeBattlers[target].chara.dexterity + modifier);
+                activeBattlers[target].chara.evasion += Mathf.FloorToInt(activeBattlers[target].chara.dexterity * Random.Range(0.5f, 0.75f));
+                activeBattlers[target].chara.initiative += Mathf.FloorToInt(activeBattlers[target].chara.dexterity * Random.Range(0.5f, 0.1f));
+                activeBattlers[target].chara.accuracy += Mathf.FloorToInt(activeBattlers[target].chara.dexterity * Random.Range(0.5f, 0.75f));
                 battleUI.SetStatToModifyText(obj,"DEX");
                 break;
             case statTarget.Vitality:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].vitality);
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].maxHP);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Vitality);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.HP);
-                activeBattlers[target].vitality=Mathf.FloorToInt(activeBattlers[target].vitality + modifier);
-                activeBattlers[target].maxHP = Mathf.FloorToInt(activeBattlers[target].maxHP * 1.05f + (activeBattlers[target].vitality * 2.5f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.vitality);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.maxHP);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Vitality);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.HP);
+                activeBattlers[target].chara.vitality=Mathf.FloorToInt(activeBattlers[target].chara.vitality + modifier);
+                activeBattlers[target].chara.maxHP = Mathf.FloorToInt(activeBattlers[target].chara.maxHP * 1.05f + (activeBattlers[target].chara.vitality * 2.5f));
                 battleUI.SetStatToModifyText(obj,"VIT");
                 break;
             case statTarget.Defence:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].defence);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Defence);
-                activeBattlers[target].defence=Mathf.FloorToInt(activeBattlers[target].defence + modifier);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.defence);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Defence);
+                activeBattlers[target].chara.defence=Mathf.FloorToInt(activeBattlers[target].chara.defence + modifier);
                 battleUI.SetStatToModifyText(obj,"DEF");
                 break;
             case statTarget.Element:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].element);
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].mgcPower);
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].maxMP);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Element);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.MagicPower);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.MP);
-                activeBattlers[target].element=Mathf.FloorToInt(activeBattlers[target].element + modifier);
-                activeBattlers[target].mgcPower += Mathf.FloorToInt(activeBattlers[target].element * Random.Range(0.125f, 0.25f));
-                activeBattlers[target].maxMP += Mathf.FloorToInt(activeBattlers[target].element * 1.05f);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.element);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.mgcPower);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.maxMP);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Element);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.MagicPower);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.MP);
+                activeBattlers[target].chara.element=Mathf.FloorToInt(activeBattlers[target].chara.element + modifier);
+                activeBattlers[target].chara.mgcPower += Mathf.FloorToInt(activeBattlers[target].chara.element * Random.Range(0.125f, 0.25f));
+                activeBattlers[target].chara.maxMP += Mathf.FloorToInt(activeBattlers[target].chara.element * 1.05f);
                 battleUI.SetStatToModifyText(obj,"ELE");
                 break;
             case statTarget.Spirit:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].spirit);
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].mgcDefence);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Spirit);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.MagicDefence);
-                activeBattlers[target].spirit=Mathf.FloorToInt(activeBattlers[target].spirit + modifier);
-                activeBattlers[target].mgcDefence += Mathf.FloorToInt(activeBattlers[target].spirit * Random.Range(0.125f, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.spirit);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.mgcDefence);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Spirit);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.MagicDefence);
+                activeBattlers[target].chara.spirit=Mathf.FloorToInt(activeBattlers[target].chara.spirit + modifier);
+                activeBattlers[target].chara.mgcDefence += Mathf.FloorToInt(activeBattlers[target].chara.spirit * Random.Range(0.125f, 0.25f));
                 battleUI.SetStatToModifyText(obj,"SPI");
                 break;
             case statTarget.WeaponPower:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].wpnPower);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.WeaponPower);
-                activeBattlers[target].wpnPower=Mathf.FloorToInt(activeBattlers[target].wpnPower + modifier);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.wpnPower);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.WeaponPower);
+                activeBattlers[target].chara.wpnPower=Mathf.FloorToInt(activeBattlers[target].chara.wpnPower + modifier);
                 battleUI.SetStatToModifyText(obj,"W.P.");
                 break;
             case statTarget.ArmorPower:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].armrPower);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.ArmorPower);
-                activeBattlers[target].armrPower=Mathf.FloorToInt(activeBattlers[target].armrPower + modifier);
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.armrPower);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.ArmorPower);
+                activeBattlers[target].chara.armrPower=Mathf.FloorToInt(activeBattlers[target].chara.armrPower + modifier);
                 battleUI.SetStatToModifyText(obj,"A.P.");
                 break;
             case statTarget.MagicPower:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].mgcPower);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.MagicPower);
-                activeBattlers[target].mgcPower += Mathf.FloorToInt(activeBattlers[target].element * Random.Range(0.125f, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.mgcPower);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.MagicPower);
+                activeBattlers[target].chara.mgcPower += Mathf.FloorToInt(activeBattlers[target].chara.element * Random.Range(0.125f, 0.25f));
                 battleUI.SetStatToModifyText(obj,"M.P.");
                 break;
             case statTarget.MagicDefence:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].mgcDefence);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.MagicDefence);
-                activeBattlers[target].mgcDefence += Mathf.FloorToInt(activeBattlers[target].spirit * Random.Range(0.125f, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.mgcDefence);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.MagicDefence);
+                activeBattlers[target].chara.mgcDefence += Mathf.FloorToInt(activeBattlers[target].chara.spirit * Random.Range(0.125f, 0.25f));
                 battleUI.SetStatToModifyText(obj,"M.D.");
                 break;
             case statTarget.Accuracy:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].accuracy);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Accuracy);
-                activeBattlers[target].accuracy += Mathf.FloorToInt(activeBattlers[target].dexterity * Random.Range(0.5f, 0.75f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.accuracy);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Accuracy);
+                activeBattlers[target].chara.accuracy += Mathf.FloorToInt(activeBattlers[target].chara.dexterity * Random.Range(0.5f, 0.75f));
                 battleUI.SetStatToModifyText(obj,"ACC");
                 break;
             case statTarget.Evasion:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].evasion);
-                activeBattlers[target].evasion += Mathf.FloorToInt(activeBattlers[target].dexterity * Random.Range(0.5f, 0.75f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.evasion);
+                activeBattlers[target].chara.evasion += Mathf.FloorToInt(activeBattlers[target].chara.dexterity * Random.Range(0.5f, 0.75f));
                 battleUI.SetStatToModifyText(obj,"EVA");
                 break;
             case statTarget.Initiative:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].initiative);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.Initiative);
-                activeBattlers[target].initiative += Mathf.FloorToInt(activeBattlers[target].dexterity * Random.Range(0.5f, 0.1f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.initiative);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.Initiative);
+                activeBattlers[target].chara.initiative += Mathf.FloorToInt(activeBattlers[target].chara.dexterity * Random.Range(0.5f, 0.1f));
                 battleUI.SetStatToModifyText(obj,"INI");
                 break;
             case statTarget.FireResistance:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].fireResistance);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.FireResistance);
-                activeBattlers[target].fireResistance += Mathf.FloorToInt(activeBattlers[target].spirit * Random.Range(0, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.fireResistance);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.FireResistance);
+                activeBattlers[target].chara.fireResistance += Mathf.FloorToInt(activeBattlers[target].chara.spirit * Random.Range(0, 0.25f));
                 battleUI.SetStatToModifyText(obj,"FireR");
                 break;
             case statTarget.IceResistance:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].iceResistance);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.IceResistance);
-                activeBattlers[target].iceResistance += Mathf.FloorToInt(activeBattlers[target].spirit * Random.Range(0, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.iceResistance);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.IceResistance);
+                activeBattlers[target].chara.iceResistance += Mathf.FloorToInt(activeBattlers[target].chara.spirit * Random.Range(0, 0.25f));
                 battleUI.SetStatToModifyText(obj,"IceR");
                 break;
             case statTarget.ElectricResistance:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].electricResistance);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.ElectricResistance);
-                activeBattlers[target].electricResistance += Mathf.FloorToInt(activeBattlers[target].spirit * Random.Range(0, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.electricResistance);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.ElectricResistance);
+                activeBattlers[target].chara.electricResistance += Mathf.FloorToInt(activeBattlers[target].chara.spirit * Random.Range(0, 0.25f));
                 battleUI.SetStatToModifyText(obj,"ElecR");
                 break;
             case statTarget.PlasmaResistance:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].plasmaResistance);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.PlasmaResistance);
-                activeBattlers[target].plasmaResistance += Mathf.FloorToInt(activeBattlers[target].spirit * Random.Range(0, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.plasmaResistance);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.PlasmaResistance);
+                activeBattlers[target].chara.plasmaResistance += Mathf.FloorToInt(activeBattlers[target].chara.spirit * Random.Range(0, 0.25f));
                 battleUI.SetStatToModifyText(obj,"PlasR");
                 break;
             case statTarget.PsychicResistance:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].psychicResistance);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.PsychicResistance);
-                activeBattlers[target].psychicResistance += Mathf.FloorToInt(activeBattlers[target].spirit * Random.Range(0, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.psychicResistance);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.PsychicResistance);
+                activeBattlers[target].chara.psychicResistance += Mathf.FloorToInt(activeBattlers[target].chara.spirit * Random.Range(0, 0.25f));
                 battleUI.SetStatToModifyText(obj,"PsyR");
                 break;
             case statTarget.ToxicResistance:
-                activeBattlers[target].previousAlteratedStats.Add(activeBattlers[target].toxicResistance);
-                activeBattlers[target].previousAlteratedStatsName.Add(statTarget.ToxicResistance);
-                activeBattlers[target].toxicResistance += Mathf.FloorToInt(activeBattlers[target].spirit * Random.Range(0, 0.25f));
+                activeBattlers[target].chara.previousAlteratedStats.Add(activeBattlers[target].chara.toxicResistance);
+                activeBattlers[target].chara.previousAlteratedStatsName.Add(statTarget.ToxicResistance);
+                activeBattlers[target].chara.toxicResistance += Mathf.FloorToInt(activeBattlers[target].chara.spirit * Random.Range(0, 0.25f));
                 battleUI.SetStatToModifyText(obj,"ToxR");
                 break;
         }
-        activeBattlers[target].changeAlteredStatBool(true);
-        activeBattlers[target].setAlteredStatTimer(3);
+        activeBattlers[target].chara.changeAlteredStatBool(true);
+        activeBattlers[target].chara.setAlteredStatTimer(3);
         battleUI.UpdateUIStats(this);
     }
 
     public void RestorePreviousStatsValues(int target)
     {
-        while (activeBattlers[target].previousAlteratedStats.Count>0)
+        while (activeBattlers[target].chara.previousAlteratedStats.Count>0)
         {
-            switch(activeBattlers[target].previousAlteratedStatsName[0])
+            switch(activeBattlers[target].chara.previousAlteratedStatsName[0])
             {
                 case statTarget.Strength:
-                    activeBattlers[target].strength = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.strength = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.Dexterity:
-                    activeBattlers[target].dexterity = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.dexterity = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.Vitality:
-                    activeBattlers[target].vitality = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.vitality = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.Defence:
-                    activeBattlers[target].defence = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.defence = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.Element:
-                    activeBattlers[target].element = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.element = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.Spirit:
-                    activeBattlers[target].spirit = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.spirit = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.WeaponPower:
-                    activeBattlers[target].wpnPower = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.wpnPower = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.ArmorPower:
-                    activeBattlers[target].armrPower = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.armrPower = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.MagicPower:
-                    activeBattlers[target].mgcPower = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.mgcPower = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.MagicDefence:
-                    activeBattlers[target].mgcDefence = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.mgcDefence = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.Accuracy:
-                    activeBattlers[target].accuracy = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.accuracy = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.Evasion:
-                    activeBattlers[target].evasion = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.evasion = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.Initiative:
-                    activeBattlers[target].initiative = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.initiative = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.FireResistance:
-                    activeBattlers[target].fireResistance = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.fireResistance = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.IceResistance:
-                    activeBattlers[target].iceResistance = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.iceResistance = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.ElectricResistance:
-                    activeBattlers[target].electricResistance = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.electricResistance = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.PlasmaResistance:
-                    activeBattlers[target].plasmaResistance = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.plasmaResistance = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.PsychicResistance:
-                    activeBattlers[target].psychicResistance = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.psychicResistance = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.ToxicResistance:
-                    activeBattlers[target].toxicResistance = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.toxicResistance = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.HP:
-                    activeBattlers[target].maxHP = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.maxHP = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
                 case statTarget.MP:
-                    activeBattlers[target].maxMP = activeBattlers[target].previousAlteratedStats[0];
+                    activeBattlers[target].chara.maxMP = activeBattlers[target].chara.previousAlteratedStats[0];
                     break;
             }
-            activeBattlers[target].previousAlteratedStats.RemoveAt(0);
-            activeBattlers[target].previousAlteratedStatsName.RemoveAt(0);
+            activeBattlers[target].chara.previousAlteratedStats.RemoveAt(0);
+            activeBattlers[target].chara.previousAlteratedStatsName.RemoveAt(0);
         }
-        activeBattlers[target].changeAlteredStatBool(false);
-        activeBattlers[target].setAlteredStatTimer(0);
-        activeBattlers[target].previousAlteratedStats.Clear();
-        activeBattlers[target].previousAlteratedStatsName.Clear();
+        activeBattlers[target].chara.changeAlteredStatBool(false);
+        activeBattlers[target].chara.setAlteredStatTimer(0);
+        activeBattlers[target].chara.previousAlteratedStats.Clear();
+        activeBattlers[target].chara.previousAlteratedStatsName.Clear();
     }
 
     public statTarget SelectStat(BattleMove battleMove, statTarget stat)
@@ -1198,14 +1198,14 @@ public class BattleManager : MonoBehaviour
         transform.GetChild(0).transform.Find("Canvas").gameObject.SetActive(false);
         for (int i = 0; i < activeBattlers.Count; i++)
         {
-            if (activeBattlers[i].isPlayer)
+            if (activeBattlers[i].chara.isPlayer)
             {
                 for (int j = 0; j < PlayerController.instance.partyStats.Length; j++)
                 {
-                    if (activeBattlers[i].charName == PlayerController.instance.partyStats[j].charName)
+                    if (activeBattlers[i].chara.charName == PlayerController.instance.partyStats[j].charName)
                     {
-                        PlayerController.instance.partyStats[j].GetCharStats().SetCurrentHP(activeBattlers[i].currentHp);
-                        PlayerController.instance.partyStats[j].GetCharStats().SetCurrentMP(activeBattlers[i].currentMP);
+                        PlayerController.instance.partyStats[j].GetCharStats().SetCurrentHP(activeBattlers[i].chara.currentHp);
+                        PlayerController.instance.partyStats[j].GetCharStats().SetCurrentMP(activeBattlers[i].chara.currentMP);
                     }
                 }
             }

@@ -4,3 +4,5 @@ Hecho: Corregido scriptableObject Item con sus respectivas herencias para que se
 Hacer en Casa: Sacar capturas del proyecto viejo (collab) con los valores necesarios para implementar en los scriptable Objects creados
 
 TODO 14/12:
+Hecho: Creado ScriptableObject de BattleChar y su herencia (EnemyChar). Seteados BattleChars en script Battler para ser utilizado como nuevo id de battlechar en los scripts de batalla.
+Queda por hacer: Crear los scriptableObjects de cada personaje (heroes y enemigos), setear las variables correspondientes en las capturas y setear en los nuevos prefabs correspondientes

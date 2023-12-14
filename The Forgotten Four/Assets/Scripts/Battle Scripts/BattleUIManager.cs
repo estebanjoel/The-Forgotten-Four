@@ -58,7 +58,7 @@ public class BattleUIManager : MonoBehaviour
             previousPanel.SetActive(true);
             if (previousPanel == cypherMenu)
             {
-                bm.activeBattlers[bm.currentTurn].currentMP += bm.pointsInCasePlayerGoesBack;
+                bm.activeBattlers[bm.currentTurn].chara.currentMP += bm.pointsInCasePlayerGoesBack;
             }
             currentPanel = previousPanel;
             if (currentPanel == cypherMenu || currentPanel == itemMenu)
@@ -107,22 +107,22 @@ public class BattleUIManager : MonoBehaviour
 
         for (int i = 0; i < bm.activeBattlers.Count; i++)
         {
-            if (bm.activeBattlers[i].isPlayer)
+            if (bm.activeBattlers[i].chara.isPlayer)
             {
                 ShowPanel(playerPanel);
                 ChangeCurrentPanel(playerButtonsHolder);
                 for (int j = 0; j < playerName.Length; j++)
                 {
-                    if (playerName[j].text == bm.activeBattlers[i].charName)
+                    if (playerName[j].text == bm.activeBattlers[i].chara.charName)
                     {
-                        BattleChar playerData = bm.activeBattlers[i];
+                        Battler playerData = bm.activeBattlers[i];
                         charStats[j].gameObject.SetActive(true);
-                        playerName[j].text = playerData.charName;
-                        playerHP[j].text = Mathf.Clamp(playerData.currentHp, 0, int.MaxValue) + " / " + playerData.maxHP;
-                        playerMP[j].text = Mathf.Clamp(playerData.currentMP, 0, int.MaxValue) + " / " + playerData.maxMP;
-                        hpBarFillers[j].fillAmount = (((float)playerData.currentHp * 1) / (float)playerData.maxHP);
-                        mpBarFillers[j].fillAmount = (((float)playerData.currentMP * 1) / (float)playerData.maxMP);
-                        if(!bm.activeBattlers[i].hasAnAlteratedStat) HidePanel(statsToModifyPanels[j]);
+                        playerName[j].text = playerData.chara.charName;
+                        playerHP[j].text = Mathf.Clamp(playerData.chara.currentHp, 0, int.MaxValue) + " / " + playerData.chara.maxHP;
+                        playerMP[j].text = Mathf.Clamp(playerData.chara.currentMP, 0, int.MaxValue) + " / " + playerData.chara.maxMP;
+                        hpBarFillers[j].fillAmount = (((float)playerData.chara.currentHp * 1) / (float)playerData.chara.maxHP);
+                        mpBarFillers[j].fillAmount = (((float)playerData.chara.currentMP * 1) / (float)playerData.chara.maxMP);
+                        if(!bm.activeBattlers[i].chara.hasAnAlteratedStat) HidePanel(statsToModifyPanels[j]);
                         else ShowPanel(statsToModifyPanels[j]);
                     }
                 }
@@ -191,7 +191,7 @@ public class BattleUIManager : MonoBehaviour
                     List<int> enemies = new List<int>();
                     for (int i = 0; i < BattleManager.instance.activeBattlers.Count; i++)
                     {
-                        if (!BattleManager.instance.activeBattlers[i].isPlayer)
+                        if (!BattleManager.instance.activeBattlers[i].chara.isPlayer)
                         {
                             enemies.Add(i);
                         }
@@ -199,12 +199,12 @@ public class BattleUIManager : MonoBehaviour
 
                     for (int i = 0; i < buttons.targetButtons.Length; i++)
                     {
-                        if (enemies.Count > i && BattleManager.instance.activeBattlers[enemies[i]].currentHp > 0)
+                        if (enemies.Count > i && BattleManager.instance.activeBattlers[enemies[i]].chara.currentHp > 0)
                         {
                             buttons.targetButtons[i].gameObject.SetActive(true);
                             buttons.targetButtons[i].moveName = moveName;
                             buttons.targetButtons[i].activeBattlerTarget = enemies[i];
-                            buttons.targetButtons[i].targetName.text = BattleManager.instance.activeBattlers[enemies[i]].charName;
+                            buttons.targetButtons[i].targetName.text = BattleManager.instance.activeBattlers[enemies[i]].chara.charName;
                             buttons.targetButtons[i].isSingle = true;
                         }
 
@@ -220,7 +220,7 @@ public class BattleUIManager : MonoBehaviour
                     List<int> players = new List<int>();
                     for (int i = 0; i < BattleManager.instance.activeBattlers.Count; i++)
                     {
-                        if (BattleManager.instance.activeBattlers[i].isPlayer)
+                        if (BattleManager.instance.activeBattlers[i].chara.isPlayer)
                         {
                             players.Add(i);
                         }
@@ -233,7 +233,7 @@ public class BattleUIManager : MonoBehaviour
                             buttons.targetButtons[i].gameObject.SetActive(true);
                             buttons.targetButtons[i].moveName = moveName;
                             buttons.targetButtons[i].activeBattlerTarget = players[i];
-                            buttons.targetButtons[i].targetName.text = BattleManager.instance.activeBattlers[players[i]].charName;
+                            buttons.targetButtons[i].targetName.text = BattleManager.instance.activeBattlers[players[i]].chara.charName;
                             buttons.targetButtons[i].isSingle = true;
                         }
 
@@ -249,7 +249,7 @@ public class BattleUIManager : MonoBehaviour
                 buttons.targetButtons[0].gameObject.SetActive(true);
                 buttons.targetButtons[0].moveName = moveName;
                 buttons.targetButtons[0].activeBattlerTarget = BattleManager.instance.currentTurn;
-                buttons.targetButtons[0].targetName.text = BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].charName;
+                buttons.targetButtons[0].targetName.text = BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].chara.charName;
                 buttons.targetButtons[0].isSingle = true;
                 for(int i = 1; i< buttons.targetButtons.Length;i++)
                 {
@@ -263,7 +263,7 @@ public class BattleUIManager : MonoBehaviour
                 {
                     for(int i = 0; i<BattleManager.instance.activeBattlers.Count; i++)
                     {
-                        if(!BattleManager.instance.activeBattlers[i].isPlayer)
+                        if(!BattleManager.instance.activeBattlers[i].chara.isPlayer)
                         {
                             firstIndex = i;
                             break;
@@ -274,7 +274,7 @@ public class BattleUIManager : MonoBehaviour
                 {
                     for(int i = 0; i<BattleManager.instance.activeBattlers.Count; i++)
                     {
-                        if(BattleManager.instance.activeBattlers[i].isPlayer)
+                        if(BattleManager.instance.activeBattlers[i].chara.isPlayer)
                         {
                             firstIndex = i;
                             break;
@@ -297,7 +297,7 @@ public class BattleUIManager : MonoBehaviour
             List<int> players = new List<int>();
             for (int i = 0; i < BattleManager.instance.activeBattlers.Count; i++)
             {
-                if (BattleManager.instance.activeBattlers[i].isPlayer)
+                if (BattleManager.instance.activeBattlers[i].chara.isPlayer)
                 {
                     players.Add(i);
                 }
@@ -310,7 +310,7 @@ public class BattleUIManager : MonoBehaviour
                     buttons.targetButtons[i].gameObject.SetActive(true);
                     buttons.targetButtons[i].moveName = moveName;
                     buttons.targetButtons[i].activeBattlerTarget = players[i];
-                    buttons.targetButtons[i].targetName.text = BattleManager.instance.activeBattlers[players[i]].charName;
+                    buttons.targetButtons[i].targetName.text = BattleManager.instance.activeBattlers[players[i]].chara.charName;
                     buttons.targetButtons[i].isSingle = true;
                 }
 
@@ -326,7 +326,7 @@ public class BattleUIManager : MonoBehaviour
     public void openCypherMenu()
     {
         ChangeCurrentPanel(cypherMenu);
-        if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].movesAvailable.Count == 0)
+        if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].chara.movesAvailable.Count == 0)
         {
             ShowPanel(topPanel);
             ChangeTopPanelText("Not Cyphers Available");
@@ -340,10 +340,10 @@ public class BattleUIManager : MonoBehaviour
             playerHasSelectedAnOption = true;
             for (int i = 0; i < buttons.cypherButtons.Length; i++)
             {
-                if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].movesAvailable.Count > i)
+                if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].chara.movesAvailable.Count > i)
                 {
                     buttons.cypherButtons[i].gameObject.SetActive(true);
-                    buttons.cypherButtons[i].cypherName = BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].movesAvailable[i];
+                    buttons.cypherButtons[i].cypherName = BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].chara.movesAvailable[i];
                     buttons.cypherButtons[i].nameText.text = buttons.cypherButtons[i].cypherName;
                     for (int j = 0; j < BattleManager.instance.movesList.Length; j++)
                     {

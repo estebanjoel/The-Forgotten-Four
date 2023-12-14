@@ -6,7 +6,7 @@ using GameEnums;
 public class EnemyStats : MonoBehaviour
 {
     // Start is called before the first frame update
-    public EnemyChar enemyStats;
+    public BattleEnemyChar enemyStats;
     public elementType elementalType;
     public elementType isWeakToElement;
     public int minHPModifier, maxHPModifier, minMPModifier, maxMPModifier, xpToGive;

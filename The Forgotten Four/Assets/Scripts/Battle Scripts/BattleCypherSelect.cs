@@ -12,12 +12,12 @@ public class BattleCypherSelect : MonoBehaviour
 
     public void Press()
     {
-        if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP >= cypherCost)
+        if (BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].chara.currentMP >= cypherCost)
         {
             BattleManager.instance.battleUI.HidePanel(BattleManager.instance.battleUI.cypherMenu);
             BattleManager.instance.battleUI.ShowPanel(BattleManager.instance.battleUI.playerStatsPanel);
             BattleManager.instance.battleUI.OpenTargetMenu(cypherName);
-            BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].currentMP -= cypherCost;
+            BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn].chara.currentMP -= cypherCost;
             BattleManager.instance.pointsInCasePlayerGoesBack = cypherCost;
         }
 

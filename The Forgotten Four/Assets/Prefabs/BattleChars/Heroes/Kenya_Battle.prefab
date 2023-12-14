@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4694180959435849094}
   - component: {fileID: 4694180959435849092}
-  - component: {fileID: 4694180959435849093}
   - component: {fileID: 7916478135588876754}
+  - component: {fileID: 5206017417733925147}
   m_Layer: 0
   m_Name: Kenya_Battle
   m_TagString: Untagged
@@ -83,56 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4694180959435849093
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4694180959435849095}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16372ce5385bc344fb121dd6896eb81c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 1
-  movesAvailable:
-  - Fire Scorch
-  - Toxic Spear
-  - Ice Shot
-  charName: Kenya
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
-  strength: 0
-  dexterity: 0
-  vitality: 0
-  defence: 0
-  element: 0
-  spirit: 0
-  wpnPower: 0
-  armrPower: 0
-  evasion: 0
-  initiative: 0
-  accuracy: 0
-  mgcPower: 0
-  mgcDefence: 0
-  fireResistance: 0
-  iceResistance: 0
-  electricResistance: 0
-  plasmaResistance: 0
-  psychicResistance: 0
-  toxicResistance: 0
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 4694180959435849092}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 7916478135588876754}
 --- !u!95 &7916478135588876754
 Animator:
   serializedVersion: 3
@@ -152,3 +102,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5206017417733925147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4694180959435849095}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c081b601b934934419f7c2400e521cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: 68f5d3ed6a149104aaf335978d5646c7, type: 2}

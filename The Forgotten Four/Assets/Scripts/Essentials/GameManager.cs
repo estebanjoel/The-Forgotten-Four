@@ -427,7 +427,7 @@ public class GameManager : MonoBehaviour
         {
             for (int k = 0; k < BattleManager.instance.enemyPrefabs.Length; k++)
             {
-                if (enemiesOnScreen[i].enemyParty[j] == BattleManager.instance.enemyPrefabs[k].charName) xp += BattleManager.instance.enemyPrefabs[k].GetComponent<EnemyStats>().xpToGive;
+                if (enemiesOnScreen[i].enemyParty[j] == BattleManager.instance.enemyPrefabs[k].chara.charName) xp += BattleManager.instance.enemyPrefabs[k].GetComponent<EnemyStats>().xpToGive;
             }
         }
         enemiesOnScreen[i].gameObject.SetActive(false);

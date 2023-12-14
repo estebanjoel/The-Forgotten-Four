@@ -19,13 +19,13 @@ public class showTargetInBattleScene : MonoBehaviour
             {
                 if(BattleManager.instance.movesList[i].mTarget == GameEnums.moveTarget.All)
                 {
-                    if(BattleManager.instance.activeBattlers[myTarget].isPlayer)
+                    if(BattleManager.instance.activeBattlers[myTarget].chara.isPlayer)
                     {
                         for(int j = 0; j<BattleManager.instance.activeBattlers.Count;j++)
                         {
-                            if(BattleManager.instance.activeBattlers[j].isPlayer)
+                            if(BattleManager.instance.activeBattlers[j].chara.isPlayer)
                             {
-                                if(BattleManager.instance.activeBattlers[j].currentHp>0) BattleManager.instance.indicators.SetTargetIndicator(BattleManager.instance.activeBattlers, j);
+                                if(BattleManager.instance.activeBattlers[j].chara.currentHp>0) BattleManager.instance.indicators.SetTargetIndicator(BattleManager.instance.activeBattlers, j);
                             }
                         }
                     }
@@ -34,9 +34,9 @@ public class showTargetInBattleScene : MonoBehaviour
                     {
                         for(int j = 0; j<BattleManager.instance.activeBattlers.Count;j++)
                         {
-                            if(!BattleManager.instance.activeBattlers[j].isPlayer)
+                            if(!BattleManager.instance.activeBattlers[j].chara.isPlayer)
                             {
-                                if(BattleManager.instance.activeBattlers[j].currentHp>0) BattleManager.instance.indicators.SetTargetIndicator(BattleManager.instance.activeBattlers, j);
+                                if(BattleManager.instance.activeBattlers[j].chara.currentHp>0) BattleManager.instance.indicators.SetTargetIndicator(BattleManager.instance.activeBattlers, j);
                             }
                         }
                     }

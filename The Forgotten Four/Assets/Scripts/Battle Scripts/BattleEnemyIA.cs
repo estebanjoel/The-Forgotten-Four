@@ -7,7 +7,7 @@ public class BattleEnemyIA : MonoBehaviour
 {
     public bool isHealer;
     public bool isBoss;
-    public BattleChar battleReference;
+    public BattleEnemyChar battleReference;
     public Animator anim;
 
     void Start() 
@@ -37,9 +37,9 @@ public class BattleEnemyIA : MonoBehaviour
     {
         for(int i = 0; i<BattleManager.instance.activeBattlers.Count;i++)
         {
-            if(!BattleManager.instance.activeBattlers[i].isPlayer)
+            if(!BattleManager.instance.activeBattlers[i].chara.isPlayer)
             {
-                if(BattleManager.instance.activeBattlers[i].currentHp<=(BattleManager.instance.activeBattlers[i].maxHP/4))
+                if(BattleManager.instance.activeBattlers[i].chara.currentHp<=(BattleManager.instance.activeBattlers[i].chara.maxHP/4))
                 {
                     index = i;
                     return index;
@@ -52,5 +52,17 @@ public class BattleEnemyIA : MonoBehaviour
     public void SetBossAnimationTrigger(string trigger)
     {
         anim.SetTrigger(trigger);
+    }
+
+    void Update()
+    {
+        if (battleReference.shouldFade)
+        {
+            battleReference.theSprite.color = new Color(Mathf.MoveTowards(battleReference.theSprite.color.r, 1f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(battleReference.theSprite.color.g, 0f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(battleReference.theSprite.color.b, 0f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(battleReference.theSprite.color.a, 0f, battleReference.fadeSpeed * Time.deltaTime));
+            if (battleReference.theSprite.color.a == 0)
+            {
+                gameObject.SetActive(false);
+            }
+        }
     }
 }

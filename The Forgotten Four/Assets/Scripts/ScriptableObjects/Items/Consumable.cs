@@ -56,7 +56,7 @@ public class Consumable : Item
         }
     }
 
-    public void UseItemInBattle(BattleChar activeCharacter, Item[] myItems, int[] myItemsQuantity)
+    public void UseItemInBattle(Battler activeCharacter, Item[] myItems, int[] myItemsQuantity)
     {
         for (int i = 0; i < myItems.Length; i++)
         {
@@ -68,48 +68,48 @@ public class Consumable : Item
         }
     }
 
-    public void ApplyItemEffectInBattle(BattleChar selectedCharacter)
+    public void ApplyItemEffectInBattle(Battler selectedCharacter)
     {
         if (affectHP)
         {
             ItemVFXInBattle(selectedCharacter, 0, Color.green, false,amountToChange);
-            selectedCharacter.currentHp += amountToChange;
+            selectedCharacter.chara.currentHp += amountToChange;
 
-            if (selectedCharacter.currentHp > selectedCharacter.maxHP)
+            if (selectedCharacter.chara.currentHp > selectedCharacter.chara.maxHP)
             {
-                selectedCharacter.currentHp = selectedCharacter.maxHP;
+                selectedCharacter.chara.currentHp = selectedCharacter.chara.maxHP;
             }
         }
 
         if (affectMP)
         {
             ItemVFXInBattle(selectedCharacter, 1, Color.green, true,amountToChange);
-            selectedCharacter.currentMP += amountToChange;
+            selectedCharacter.chara.currentMP += amountToChange;
 
-            if (selectedCharacter.currentMP > selectedCharacter.maxMP)
+            if (selectedCharacter.chara.currentMP > selectedCharacter.chara.maxMP)
             {
-                selectedCharacter.currentMP = selectedCharacter.maxMP;
+                selectedCharacter.chara.currentMP = selectedCharacter.chara.maxMP;
             }
         }
 
         if (revivePlayer)
         {
-            if (selectedCharacter.currentHp == 0)
+            if (selectedCharacter.chara.currentHp == 0)
             {
-                selectedCharacter.currentHp += Mathf.FloorToInt((selectedCharacter.maxHP * amountToChange) / selectedCharacter.maxHP);
+                selectedCharacter.chara.currentHp += Mathf.FloorToInt((selectedCharacter.chara.maxHP * amountToChange) / selectedCharacter.chara.maxHP);
                 ItemVFXInBattle(selectedCharacter, 2, Color.green, false,amountToChange);
             }
 
             else
             {
-                selectedCharacter.currentHp += 0;
+                selectedCharacter.chara.currentHp += 0;
                 ItemVFXInBattle(selectedCharacter, 2, Color.green, false, 0);
-                selectedCharacter.SetAnimatorTrigger("reviveTrigger");
+                selectedCharacter.chara.SetAnimatorTrigger("reviveTrigger");
             }
         }
     }
 
-    public void ItemVFXInBattle(BattleChar selectedCharacter, int effectIndex, Color numberColor, bool isMP, int numberOnScreen)
+    public void ItemVFXInBattle(Battler selectedCharacter, int effectIndex, Color numberColor, bool isMP, int numberOnScreen)
     {
         GameObject effect = Instantiate(BattleManager.instance.battleItems.itemEffects[effectIndex]);
         PlayItemAudioInBattle();

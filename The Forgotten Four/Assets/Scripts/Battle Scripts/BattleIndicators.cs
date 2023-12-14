@@ -7,7 +7,7 @@ public class BattleIndicators : MonoBehaviour
     public GameObject turnIndicator, targetIndicator;
     public Transform[] indicatorPositions;
 
-    public void SetTurnIndicator(List<BattleChar> battlers, int currentTurn)
+    public void SetTurnIndicator(List<Battler> battlers, int currentTurn)
     {
         for (int i = 0; i < indicatorPositions.Length; i++)
         {
@@ -48,7 +48,7 @@ public class BattleIndicators : MonoBehaviour
         }
     }
 
-    public void SetTargetIndicator(List<BattleChar> battlers, int target)
+    public void SetTargetIndicator(List<Battler> battlers, int target)
     {
         for (int i = 0; i < indicatorPositions.Length; i++)
         {

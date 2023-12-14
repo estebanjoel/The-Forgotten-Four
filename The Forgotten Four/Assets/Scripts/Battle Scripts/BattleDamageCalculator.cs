@@ -14,25 +14,25 @@ public class BattleDamageCalculator : MonoBehaviour
     {
         atkPwr = 0;
         defPwr = 0;
-        BattleChar charAttacker = BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn];
-        BattleChar charTarget = BattleManager.instance.activeBattlers[target];
+        Battler charAttacker = BattleManager.instance.activeBattlers[BattleManager.instance.currentTurn];
+        Battler charTarget = BattleManager.instance.activeBattlers[target];
         switch (m)
         {
             case moveType.Attack:
-                atkPwr = charAttacker.strength + charAttacker.wpnPower;
-                defPwr = charTarget.defence + charTarget.armrPower;
+                atkPwr = charAttacker.chara.strength + charAttacker.chara.wpnPower;
+                defPwr = charTarget.chara.defence + charTarget.chara.armrPower;
                 break;
             case moveType.Cypher:
                 switch(mM)
                 {
                     case moveModifier.Physical:
-                        atkPwr = charAttacker.strength + charAttacker.wpnPower;
+                        atkPwr = charAttacker.chara.strength + charAttacker.chara.wpnPower;
                         break;
                     case moveModifier.Element:
-                        atkPwr = charAttacker.element + charAttacker.mgcPower;
+                        atkPwr = charAttacker.chara.element + charAttacker.chara.mgcPower;
                         break;
                 }
-                defPwr = charTarget.spirit + charTarget.mgcDefence;
+                defPwr = charTarget.chara.spirit + charTarget.chara.mgcDefence;
                 break;
         }
         damageCalc = ((atkPwr / defPwr) * movePower * (movePower * Random.Range(.65f, .75f))) * Random.Range(.5f, .75f);
@@ -41,11 +41,11 @@ public class BattleDamageCalculator : MonoBehaviour
         if (critProbability >= critRate) damageCalc *= Random.Range(1.75f, 2.1f);
         int damageToGive = Mathf.RoundToInt(damageCalc);
         if (damageToGive < 0) damageToGive = 0;
-        BattleManager.instance.activeBattlers[target].currentHp -= damageToGive;
-        if(BattleManager.instance.activeBattlers[target].isPlayer)
+        BattleManager.instance.activeBattlers[target].chara.currentHp -= damageToGive;
+        if(BattleManager.instance.activeBattlers[target].chara.isPlayer)
         {
-            if(BattleManager.instance.activeBattlers[target].currentHp>0) BattleManager.instance.activeBattlers[target].SetAnimatorTrigger("hitTrigger");
-            else BattleManager.instance.activeBattlers[target].SetAnimatorTrigger("deathTrigger");
+            if(BattleManager.instance.activeBattlers[target].chara.currentHp>0) BattleManager.instance.activeBattlers[target].chara.SetAnimatorTrigger("hitTrigger");
+            else BattleManager.instance.activeBattlers[target].chara.SetAnimatorTrigger("deathTrigger");
         }
         else if(BattleManager.instance.CheckIfCurrentBattlerIsBoss(target))
         {
@@ -59,8 +59,8 @@ public class BattleDamageCalculator : MonoBehaviour
 
     public float CalculateElementalResistance(int target, float movePower, elementType e)
     {
-        BattleChar charTarget = BattleManager.instance.activeBattlers[target];
-        if (!charTarget.isPlayer)
+        Battler charTarget = BattleManager.instance.activeBattlers[target];
+        if (!charTarget.chara.isPlayer)
         {
             if (charTarget.GetComponent<EnemyStats>().elementalType == e) movePower /= 2;
             if (charTarget.GetComponent<EnemyStats>().isWeakToElement == e) movePower *= 2;
@@ -69,22 +69,22 @@ public class BattleDamageCalculator : MonoBehaviour
         switch (e)
         {
             case elementType.Fire:
-                movePower -= ((movePower * charTarget.fireResistance) / 50);
+                movePower -= ((movePower * charTarget.chara.fireResistance) / 50);
                 break;
             case elementType.Ice:
-                movePower -= ((movePower * charTarget.iceResistance) / 50);
+                movePower -= ((movePower * charTarget.chara.iceResistance) / 50);
                 break;
             case elementType.Electric:
-                movePower -= ((movePower * charTarget.electricResistance) / 50);
+                movePower -= ((movePower * charTarget.chara.electricResistance) / 50);
                 break;
             case elementType.Plasma:
-                movePower -= ((movePower * charTarget.plasmaResistance) / 50);
+                movePower -= ((movePower * charTarget.chara.plasmaResistance) / 50);
                 break;
             case elementType.Psychic:
-                movePower -= ((movePower * charTarget.psychicResistance) / 50);
+                movePower -= ((movePower * charTarget.chara.psychicResistance) / 50);
                 break;
             case elementType.Toxic:
-                movePower -= ((movePower * charTarget.toxicResistance) / 50);
+                movePower -= ((movePower * charTarget.chara.toxicResistance) / 50);
                 break;
         }
 

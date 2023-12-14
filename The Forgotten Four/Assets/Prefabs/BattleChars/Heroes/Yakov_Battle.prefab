@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 474466420782655950}
   - component: {fileID: 474466420782655544}
-  - component: {fileID: 474466420782655530}
   - component: {fileID: 7279681565445048909}
+  - component: {fileID: 2813412245384205351}
+  - component: {fileID: 6649412027750394248}
   m_Layer: 0
   m_Name: Yakov_Battle
   m_TagString: Untagged
@@ -83,57 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &474466420782655530
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 474466420782655962}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8edf93f0e750e4446b8861eda5b2d533, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 1
-  movesAvailable:
-  - Cure
-  - Psychic Shot
-  charName: Yakov
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
-  strength: 0
-  dexterity: 0
-  vitality: 0
-  defence: 0
-  element: 0
-  spirit: 0
-  wpnPower: 0
-  armrPower: 0
-  evasion: 0
-  initiative: 0
-  accuracy: 0
-  mgcPower: 0
-  mgcDefence: 0
-  fireResistance: 0
-  iceResistance: 0
-  electricResistance: 0
-  plasmaResistance: 0
-  psychicResistance: 0
-  toxicResistance: 0
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 474466420782655544}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 7279681565445048909}
-  isDrunk: 0
-  drunkTemp: 0
 --- !u!95 &7279681565445048909
 Animator:
   serializedVersion: 3
@@ -153,3 +103,31 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2813412245384205351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474466420782655962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c081b601b934934419f7c2400e521cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: 048b5fc075d6fd747bb6c44ae8450fea, type: 2}
+--- !u!114 &6649412027750394248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 474466420782655962}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cfb39a5be9190494e8d157796ff22e86, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  heroName: Yakov
+  isDrunk: 0
+  drunkTemp: 0

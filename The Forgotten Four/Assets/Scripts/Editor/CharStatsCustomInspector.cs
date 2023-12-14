@@ -485,12 +485,12 @@ public class CharStatsCustomInspector : Editor
 
    private void setWeaponAndArmorValues()
    {
-      EquipItem equippedItem = (EquipItem) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Items/Armor/" + charStats.equippedArmr + ".prefab", typeof(Item));
+      EquipItem equippedItem = (EquipItem) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Items/Armor/" + charStats.equippedArmr + ".asset", typeof(Item));
       equippedArmrPower = equippedItem.armourStrength;
       equippedItem.armourStrength += charStats.GetCharStats().GetArmourPower();
       charStats.GetCharStats().SetArmourPower(equippedItem.armourStrength);
 
-      equippedItem = (EquipItem) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Items/Weapons/" + charStats.equippedWpn + ".prefab", typeof(Item));
+      equippedItem = (EquipItem) AssetDatabase.LoadAssetAtPath("Assets/Prefabs/Items/Weapons/" + charStats.equippedWpn + ".asset", typeof(Item));
       equippedWpnPower = equippedItem.weaponStrength;
       equippedItem.weaponStrength += charStats.GetCharStats().GetWeaponPower();
       charStats.GetCharStats().SetWeaponPower(equippedItem.weaponStrength);

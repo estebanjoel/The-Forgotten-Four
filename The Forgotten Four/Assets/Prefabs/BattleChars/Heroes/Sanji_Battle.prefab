@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5298288328463038314}
   - component: {fileID: 5298288328463038312}
-  - component: {fileID: 5298288328463038313}
   - component: {fileID: 1380937197530106729}
+  - component: {fileID: 4639162716261536744}
   m_Layer: 0
   m_Name: Sanji_Battle
   m_TagString: Untagged
@@ -83,54 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5298288328463038313
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5298288328463038315}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3a5c8338c8aa70248a154eb4e56a26ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 1
-  movesAvailable:
-  - Plasmic Blade
-  charName: Sanji
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
-  strength: 0
-  dexterity: 0
-  vitality: 0
-  defence: 0
-  element: 0
-  spirit: 0
-  wpnPower: 0
-  armrPower: 0
-  evasion: 0
-  initiative: 0
-  accuracy: 0
-  mgcPower: 0
-  mgcDefence: 0
-  fireResistance: 0
-  iceResistance: 0
-  electricResistance: 0
-  plasmaResistance: 0
-  psychicResistance: 0
-  toxicResistance: 0
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 5298288328463038312}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 1380937197530106729}
 --- !u!95 &1380937197530106729
 Animator:
   serializedVersion: 3
@@ -150,3 +102,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &4639162716261536744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5298288328463038315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c081b601b934934419f7c2400e521cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: 17f5efd7ab6bae34f868d8e4b9e24672, type: 2}

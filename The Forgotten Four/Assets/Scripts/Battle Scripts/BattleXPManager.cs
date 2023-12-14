@@ -41,7 +41,7 @@ public class BattleXPManager : MonoBehaviour
                 PlayerController.instance.partyStats[i].CheckExp();
                 for (int j = 0; j < bm.activeBattlers.Count; j++)
                 {
-                    if (PlayerController.instance.partyStats[i].charName == bm.activeBattlers[j].charName)
+                    if (PlayerController.instance.partyStats[i].charName == bm.activeBattlers[j].chara.charName)
                     {
                         DamageNumber expNumber = Instantiate(bm.damageNumber, bm.activeBattlers[j].transform.position, bm.activeBattlers[j].transform.rotation);
                         expNumber.GetComponentInChildren<Text>().text = "^" + xpGained + " XP";

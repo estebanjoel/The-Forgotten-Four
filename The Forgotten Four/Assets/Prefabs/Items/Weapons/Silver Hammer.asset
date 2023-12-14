@@ -18,8 +18,8 @@ MonoBehaviour:
   itemSprite: {fileID: 0}
   itemAudio: {fileID: 0}
   amountToChange: 0
-  itemCharTarget: 0
-  isWeapon: 0
+  itemCharTarget: 7
+  isWeapon: 1
   weaponStrength: 0
   isArmour: 0
   armourStrength: 0

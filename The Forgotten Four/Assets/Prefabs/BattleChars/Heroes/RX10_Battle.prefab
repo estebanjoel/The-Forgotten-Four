@@ -10,10 +10,10 @@ GameObject:
   m_Component:
   - component: {fileID: 5450571335198547958}
   - component: {fileID: 5450571335198547456}
-  - component: {fileID: 5450571335198547474}
   - component: {fileID: 8485627399349341195}
+  - component: {fileID: 6595622548759902011}
   m_Layer: 0
-  m_Name: RX10_Battle 1
+  m_Name: RX10_Battle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -83,54 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5450571335198547474
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5450571335198547938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 19eeef36f0d04ff49aae625bf5f734eb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 1
-  movesAvailable:
-  - Cannon Bullet
-  charName: RX10
-  currentHp: 0
-  maxHP: 0
-  currentMP: 0
-  maxMP: 0
-  strength: 0
-  dexterity: 0
-  vitality: 0
-  defence: 0
-  element: 0
-  spirit: 0
-  wpnPower: 0
-  armrPower: 0
-  evasion: 0
-  initiative: 0
-  accuracy: 0
-  mgcPower: 0
-  mgcDefence: 0
-  fireResistance: 0
-  iceResistance: 0
-  electricResistance: 0
-  plasmaResistance: 0
-  psychicResistance: 0
-  toxicResistance: 0
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 5450571335198547456}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 8485627399349341195}
 --- !u!95 &8485627399349341195
 Animator:
   serializedVersion: 3
@@ -150,3 +102,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &6595622548759902011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5450571335198547938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c081b601b934934419f7c2400e521cbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: b6f4420f04838ab41be231ceeace4899, type: 2}
