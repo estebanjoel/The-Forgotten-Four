@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Fire Shuriken
+  m_EditorClassIdentifier: 
+  moveName: Fire Shuriken
+  mType: 1
+  eType: 2
+  mModifier: 0
+  mTarget: 0
+  sTarget: 0
+  movePower: 8
+  moveCost: 7
+  myEffect: {fileID: 8825983791188534834, guid: 6e5cfcab400e92d41a3e6ed6b08d08c2,
+    type: 3}
+  myAudioClip: {fileID: 8300000, guid: 8c77850bf78c07a49b57e00fe175d6a6, type: 3}
+  description: Fire Cypher in form of classic shurikens. Ideal for ninjas.

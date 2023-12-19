@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b3f971702602534d98ada121720c68b, type: 3}
+  m_Name: Stalker
+  m_EditorClassIdentifier: 
+  isPlayer: 0
+  movesAvailable:
+  - Enemy Slash
+  - Fire Burst
+  - Neon Missile
+  - Electric Impact
+  charName: RX10
+  battleStats: {fileID: 11400000, guid: 15da270c71954ac47b63e33148248447, type: 2}
+  currentHp: 75
+  maxHP: 75
+  currentMP: 20
+  maxMP: 20
+  strength: 42
+  dexterity: 15
+  vitality: 25
+  defence: 10
+  element: 20
+  spirit: 4
+  wpnPower: 27
+  armrPower: 15
+  evasion: 2
+  initiative: 3
+  accuracy: 5
+  mgcPower: 15
+  mgcDefence: 7
+  fireResistance: 1
+  iceResistance: 1
+  electricResistance: 10
+  plasmaResistance: 0
+  psychicResistance: 5
+  toxicResistance: 3
+  hasDied: 0
+  hasAnAlteratedStat: 0
+  alteratedStatTimer: 0
+  previousAlteratedStats: 
+  previousAlteratedStatsName: 
+  shouldFade: 0
+  fadeSpeed: 1
+  isBoss: 1
+  enemyCharSpecifics: {fileID: 0}

@@ -6,3 +6,16 @@ Hacer en Casa: Sacar capturas del proyecto viejo (collab) con los valores necesa
 TODO 14/12:
 Hecho: Creado ScriptableObject de BattleChar y su herencia (EnemyChar). Seteados BattleChars en script Battler para ser utilizado como nuevo id de battlechar en los scripts de batalla.
 Queda por hacer: Crear los scriptableObjects de cada personaje (heroes y enemigos), setear las variables correspondientes en las capturas y setear en los nuevos prefabs correspondientes
+
+TODO 19/12:
+Hecho: Hechos todos los ScriptableObjects de la consigna
+- Items
+- BattleChars
+- Stats
+- BattleMoves
+
+Corregido y modificado código necesario para sus correctas implementaciones. Creados e implementados todos los scriptableObjects para su correcto funcionamiento en el proyecto (testeo opcional).
+
+TODO: 20/12 CustomInspectors (Mínimos) y OnSceneGUI
+
+TODO 21/12: Editor Windows (Organizador de EnemyBattlers) + Documentación a entregar

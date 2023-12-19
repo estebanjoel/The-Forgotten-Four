@@ -104,7 +104,7 @@ public class Consumable : Item
             {
                 selectedCharacter.chara.currentHp += 0;
                 ItemVFXInBattle(selectedCharacter, 2, Color.green, false, 0);
-                selectedCharacter.chara.SetAnimatorTrigger("reviveTrigger");
+                selectedCharacter.SetAnimatorTrigger("reviveTrigger");
             }
         }
     }

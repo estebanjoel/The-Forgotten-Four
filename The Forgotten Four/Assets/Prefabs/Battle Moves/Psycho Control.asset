@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Psycho Control
+  m_EditorClassIdentifier: 
+  moveName: Psycho Control
+  mType: 1
+  eType: 6
+  mModifier: 0
+  mTarget: 0
+  sTarget: 0
+  movePower: 9
+  moveCost: 15
+  myEffect: {fileID: 3142584032211947338, guid: ffc20732dbb4b654eb621f009fd4b748,
+    type: 3}
+  myAudioClip: {fileID: 8300000, guid: 2887ef7e2f44bc34abf1ce43fb01f4c4, type: 3}
+  description: Deals enhanced Psychic damage.

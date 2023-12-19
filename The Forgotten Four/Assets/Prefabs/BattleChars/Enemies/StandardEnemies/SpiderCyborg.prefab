@@ -11,8 +11,9 @@ GameObject:
   - component: {fileID: 3894404545812778199}
   - component: {fileID: 2725444113928577794}
   - component: {fileID: 8135464976359454939}
-  - component: {fileID: 2460689085504184264}
   - component: {fileID: 7613500314973081009}
+  - component: {fileID: 779757577572901589}
+  - component: {fileID: 5547785467093512462}
   m_Layer: 0
   m_Name: SpiderCyborg
   m_TagString: Untagged
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 2460689085504184264}
+  enemyStats: {fileID: 11400000, guid: 7957e5dc0ab12bc4a9b5ac61ea1ca19f, type: 2}
   elementalType: 1
   isWeakToElement: 2
   minHPModifier: 150
@@ -104,59 +105,6 @@ MonoBehaviour:
   minMPModifier: 0
   maxMPModifier: 0
   xpToGive: 100
---- !u!114 &2460689085504184264
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6660446092715668934}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f099d1f8fd08284cbdd52baba02fa3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
-  movesAvailable:
-  - Enemy Slash
-  - Toxic Spear
-  charName: Spider-Cyborg
-  battleStats: {fileID: 11400000, guid: 2b101ec142309fe499d80e90521bcf42, type: 2}
-  currentHp: 5
-  maxHP: 5
-  currentMP: 2
-  maxMP: 2
-  strength: 30
-  dexterity: 15
-  vitality: 7
-  defence: 2
-  element: 7
-  spirit: 3
-  wpnPower: 30
-  armrPower: 2
-  evasion: 10
-  initiative: 15
-  accuracy: 20
-  mgcPower: 5
-  mgcDefence: 5
-  fireResistance: 0
-  iceResistance: 1
-  electricResistance: 1
-  plasmaResistance: 1
-  psychicResistance: 1
-  toxicResistance: 5
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 2725444113928577794}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 0}
-  shouldFade: 0
-  fadeSpeed: 1
-  isBoss: 0
 --- !u!114 &7613500314973081009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,5 +119,41 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHealer: 0
   isBoss: 0
-  battleReference: {fileID: 2460689085504184264}
-  anim: {fileID: 0}
+  battleReference: {fileID: 11400000, guid: 7957e5dc0ab12bc4a9b5ac61ea1ca19f, type: 2}
+  anim: {fileID: 5547785467093512462}
+  iaSprite: {fileID: 2725444113928577794}
+--- !u!114 &779757577572901589
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6660446092715668934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9806f03bb3ada84eaa8b286cc34502c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: 7957e5dc0ab12bc4a9b5ac61ea1ca19f, type: 2}
+  anim: {fileID: 5547785467093512462}
+  enemyStats: {fileID: 8135464976359454939}
+  ia: {fileID: 7613500314973081009}
+--- !u!95 &5547785467093512462
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6660446092715668934}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

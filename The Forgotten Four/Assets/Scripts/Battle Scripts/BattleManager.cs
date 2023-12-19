@@ -168,8 +168,17 @@ public class BattleManager : MonoBehaviour
     public void SetPlayerStats(int player)
     {
         CharStats thePlayer = PlayerController.instance.partyStats[player];
-        activeBattlers[player].chara.SetCharacterStats(thePlayer);
+        activeBattlers[player].chara.SetCharacterStats(thePlayer.GetCharStats(), true);
+        BattleHeroChar tempChar = (BattleHeroChar)activeBattlers[player].chara;
+        tempChar.SetCyphersOnBattle(thePlayer);
+        BattleChar newChar = (BattleChar)tempChar;
+        activeBattlers[player].chara = newChar;
         battleUI.charStats[player].gameObject.SetActive(true);
+    }
+
+    public void SetEnemyStats(int enemy)
+    {
+        activeBattlers[enemy].chara.SetCharacterStats(activeBattlers[enemy].chara.BattleStats, false);
     }
 
     public void BattleStart(string[] enemiesToSpawn, int exp)
@@ -225,6 +234,7 @@ public class BattleManager : MonoBehaviour
                                 EnemyBattler newEnemy = Instantiate(enemyPrefabs[j], enemyPositions[i].transform.position, enemyPositions[i].transform.rotation);
                                 newEnemy.transform.parent = enemyPositions[i];
                                 activeBattlers.Add(newEnemy);
+                                SetEnemyStats(i);
                             }
                         }
                     }
@@ -355,7 +365,7 @@ public class BattleManager : MonoBehaviour
             {
                 if (activeBattlers[i].chara.isPlayer)
                 {
-                    if(!activeBattlers[i].chara.IsCharDeathAnimationActive()) activeBattlers[i].chara.SetAnimatorTrigger("deathTrigger");
+                    if(!activeBattlers[i].IsCharDeathAnimationActive()) activeBattlers[i].SetAnimatorTrigger("deathTrigger");
                 } 
 
                 else
@@ -369,7 +379,7 @@ public class BattleManager : MonoBehaviour
             {
                 if (activeBattlers[i].chara.isPlayer)
                 {
-                    if(activeBattlers[i].chara.IsCharDeathAnimationActive()) activeBattlers[i].chara.SetAnimatorTrigger("reviveTrigger");
+                    if(activeBattlers[i].IsCharDeathAnimationActive()) activeBattlers[i].SetAnimatorTrigger("reviveTrigger");
                     allPlayersDead = false;
                     canCheckPanels = true;
                 }
@@ -712,8 +722,8 @@ public class BattleManager : MonoBehaviour
                 m = movesList[i].mType;
                 e = movesList[i].eType;
                 mM = movesList[i].mModifier;
-                if(m==moveType.Attack) activeBattlers[currentTurn].chara.SetAnimatorTrigger("attackTrigger");
-                if(m==moveType.Cypher) activeBattlers[currentTurn].chara.SetAnimatorTrigger("cypherTrigger");
+                if(m==moveType.Attack) activeBattlers[currentTurn].SetAnimatorTrigger("attackTrigger");
+                if(m==moveType.Cypher) activeBattlers[currentTurn].SetAnimatorTrigger("cypherTrigger");
                 yield return new WaitForSeconds(1f);
                 AttackEffect attackEffect = Instantiate(movesList[i].myEffect, activeBattlers[selectedTarget].transform.position, activeBattlers[selectedTarget].transform.rotation);
                 attackEffect.GetComponent<SpriteRenderer>().flipX = true;
@@ -759,7 +769,7 @@ public class BattleManager : MonoBehaviour
             }
         }
         
-        activeBattlers[currentTurn].chara.SetAnimatorTrigger("cypherTrigger");
+        activeBattlers[currentTurn].SetAnimatorTrigger("cypherTrigger");
         battleUI.HidePanel(battleUI.targetMenu);
         battleUI.HidePanel(battleUI.playerPanel);
         canCheckPanels = false;

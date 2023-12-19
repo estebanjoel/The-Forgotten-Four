@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 1462716163595847969}
   - component: {fileID: 4374218308572883012}
   - component: {fileID: 4596204223757576298}
-  - component: {fileID: 3794243130429835506}
   - component: {fileID: -4382431021693122967}
   - component: {fileID: 4455172736717707}
+  - component: {fileID: 3743166972202821491}
   m_Layer: 0
   m_Name: Wolf
   m_TagString: Untagged
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 3794243130429835506}
+  enemyStats: {fileID: 11400000, guid: c70f74ab51f45e04f97f39be697ccb4d, type: 2}
   elementalType: 1
   isWeakToElement: 2
   minHPModifier: 150
@@ -105,58 +105,6 @@ MonoBehaviour:
   minMPModifier: 5
   maxMPModifier: 10
   xpToGive: 100
---- !u!114 &3794243130429835506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 44123987266266342}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f099d1f8fd08284cbdd52baba02fa3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
-  movesAvailable:
-  - Enemy Slash
-  charName: Wolf
-  battleStats: {fileID: 11400000, guid: c8034510e8e31a240ab574ececc49bee, type: 2}
-  currentHp: 10
-  maxHP: 10
-  currentMP: 0
-  maxMP: 0
-  strength: 25
-  dexterity: 10
-  vitality: 10
-  defence: 3
-  element: 10
-  spirit: 2
-  wpnPower: 20
-  armrPower: 2
-  evasion: 4
-  initiative: 4
-  accuracy: 10
-  mgcPower: 2
-  mgcDefence: 2
-  fireResistance: 0
-  iceResistance: 1
-  electricResistance: 1
-  plasmaResistance: 1
-  psychicResistance: 1
-  toxicResistance: 2
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 4374218308572883012}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 4455172736717707}
-  shouldFade: 0
-  fadeSpeed: 1
-  isBoss: 0
 --- !u!114 &-4382431021693122967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,8 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHealer: 0
   isBoss: 0
-  battleReference: {fileID: 3794243130429835506}
-  anim: {fileID: 0}
+  battleReference: {fileID: 11400000, guid: c70f74ab51f45e04f97f39be697ccb4d, type: 2}
+  anim: {fileID: 4455172736717707}
+  iaSprite: {fileID: 4374218308572883012}
 --- !u!95 &4455172736717707
 Animator:
   serializedVersion: 3
@@ -192,3 +141,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3743166972202821491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44123987266266342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9806f03bb3ada84eaa8b286cc34502c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: c70f74ab51f45e04f97f39be697ccb4d, type: 2}
+  anim: {fileID: 4455172736717707}
+  enemyStats: {fileID: 4596204223757576298}
+  ia: {fileID: -4382431021693122967}

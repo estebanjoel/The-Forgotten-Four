@@ -115,3 +115,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chara: {fileID: 11400000, guid: 68f5d3ed6a149104aaf335978d5646c7, type: 2}
+  anim: {fileID: 7916478135588876754}

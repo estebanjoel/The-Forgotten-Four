@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Cannon Bullet
+  m_EditorClassIdentifier: 
+  moveName: Cannon Bullet
+  mType: 1
+  eType: 5
+  mModifier: 1
+  mTarget: 0
+  sTarget: 0
+  movePower: 8
+  moveCost: 15
+  myEffect: {fileID: 438103810524284538, guid: 4b8d7a0348cbc07419b4368ed97089b6, type: 3}
+  myAudioClip: {fileID: 8300000, guid: 5543cefa2f8fc9e40bb3b5af6eac40ad, type: 3}
+  description: Explosive Bullet. Deals Plasma Damage.

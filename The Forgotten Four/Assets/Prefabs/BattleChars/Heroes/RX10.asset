@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: RX10
   m_EditorClassIdentifier: 
   isPlayer: 0
-  movesAvailable: []
-  charName: 
-  battleStats: {fileID: 0}
+  movesAvailable:
+  - Cannon Bullet
+  charName: RX10
+  battleStats: {fileID: 11400000, guid: d17e51b7eb2b62c41a0c4f041c438335, type: 2}
   currentHp: 0
   maxHP: 0
   currentMP: 0
@@ -44,8 +45,4 @@ MonoBehaviour:
   alteratedStatTimer: 0
   previousAlteratedStats: 
   previousAlteratedStatsName: 
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 0}
   heroCharSpecifics: {fileID: 0}

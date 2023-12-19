@@ -44,8 +44,8 @@ public class BattleDamageCalculator : MonoBehaviour
         BattleManager.instance.activeBattlers[target].chara.currentHp -= damageToGive;
         if(BattleManager.instance.activeBattlers[target].chara.isPlayer)
         {
-            if(BattleManager.instance.activeBattlers[target].chara.currentHp>0) BattleManager.instance.activeBattlers[target].chara.SetAnimatorTrigger("hitTrigger");
-            else BattleManager.instance.activeBattlers[target].chara.SetAnimatorTrigger("deathTrigger");
+            if(BattleManager.instance.activeBattlers[target].chara.currentHp>0) BattleManager.instance.activeBattlers[target].SetAnimatorTrigger("hitTrigger");
+            else BattleManager.instance.activeBattlers[target].SetAnimatorTrigger("deathTrigger");
         }
         else if(BattleManager.instance.CheckIfCurrentBattlerIsBoss(target))
         {

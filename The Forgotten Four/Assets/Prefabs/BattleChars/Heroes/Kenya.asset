@@ -14,10 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isPlayer: 1
   movesAvailable:
-  - 
-  - 
-  - 
-  charName: 
+  - Fire Scorch
+  - Toxic Spear
+  - Ice Shot
+  charName: Kenya
   battleStats: {fileID: 11400000, guid: b46c2b15a067fb74ebe997c491c94486, type: 2}
   currentHp: 0
   maxHP: 0
@@ -47,8 +47,4 @@ MonoBehaviour:
   alteratedStatTimer: 0
   previousAlteratedStats: 
   previousAlteratedStatsName: 
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 0}
   heroCharSpecifics: {fileID: 0}

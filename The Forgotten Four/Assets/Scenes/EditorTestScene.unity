@@ -210,6 +210,126 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: cypherList.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: playerLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: hpModifier
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: mpModifier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: weaponPowerModifier
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: armorPowerModifier
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: magicPowerModifier
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: magicDefenceModifier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: accuracyModifier
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: evasionModifier
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: initiativeModifier
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: fireResistanceModifier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: iceResistanceModifier
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: electricResistanceModifier
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: plasmaResistanceModifier
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: psychicResistanceModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: toxicResistanceModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: cypherList.Array.data[1]
+      value: Fire Shuriken
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: strengthModifier
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: vitalityModifier
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: elementModifier
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: cypherList.Array.data[2]
+      value: Fast Booster
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: cypherList.Array.data[3]
+      value: Death Touch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5841464013290205371, guid: df88e739f3502384ea24dfd0d0e73438,
+        type: 3}
+      propertyPath: currentCypherIndex
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5841464014218886113, guid: df88e739f3502384ea24dfd0d0e73438,
         type: 3}
       propertyPath: m_LocalPosition.x

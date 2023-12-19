@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Plasmic Blade
+  m_EditorClassIdentifier: 
+  moveName: Plasmic Blade
+  mType: 1
+  eType: 5
+  mModifier: 1
+  mTarget: 0
+  sTarget: 0
+  movePower: 7
+  moveCost: 5
+  myEffect: {fileID: 471221198, guid: 65e72958103df4645a4df539a839d53c, type: 3}
+  myAudioClip: {fileID: 8300000, guid: cc6699269b4c1d44ea1e860518b9bb73, type: 3}
+  description: Deals Plasma Damage. Ideal for Melee.

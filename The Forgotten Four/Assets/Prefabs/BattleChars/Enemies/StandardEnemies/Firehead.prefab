@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 496777504546603936}
   - component: {fileID: 1865510377650529763}
   - component: {fileID: 3258367778292548047}
-  - component: {fileID: 4895238713074386505}
   - component: {fileID: 595015721973038089}
   - component: {fileID: 2756194907783310156}
+  - component: {fileID: 8506665460741991090}
   m_Layer: 0
   m_Name: Firehead
   m_TagString: Untagged
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 4895238713074386505}
+  enemyStats: {fileID: 11400000, guid: 9ec2e48a98db77440990c9cf9e940eb2, type: 2}
   elementalType: 2
   isWeakToElement: 3
   minHPModifier: 350
@@ -105,59 +105,6 @@ MonoBehaviour:
   minMPModifier: 0
   maxMPModifier: 0
   xpToGive: 200
---- !u!114 &4895238713074386505
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2481591332640085013}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f099d1f8fd08284cbdd52baba02fa3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
-  movesAvailable:
-  - Fire Scorch
-  - Fire Burst
-  charName: Firehead
-  battleStats: {fileID: 11400000, guid: eb4e79ed87426314a95130757abe2863, type: 2}
-  currentHp: 20
-  maxHP: 20
-  currentMP: 1
-  maxMP: 1
-  strength: 30
-  dexterity: 10
-  vitality: 15
-  defence: 8
-  element: 10
-  spirit: 4
-  wpnPower: 18
-  armrPower: 7
-  evasion: 5
-  initiative: 5
-  accuracy: 7
-  mgcPower: 10
-  mgcDefence: 5
-  fireResistance: 10
-  iceResistance: 1
-  electricResistance: 2
-  plasmaResistance: 2
-  psychicResistance: 2
-  toxicResistance: 2
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 1865510377650529763}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 2756194907783310156}
-  shouldFade: 0
-  fadeSpeed: 1
-  isBoss: 0
 --- !u!114 &595015721973038089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,8 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHealer: 0
   isBoss: 0
-  battleReference: {fileID: 4895238713074386505}
-  anim: {fileID: 0}
+  battleReference: {fileID: 11400000, guid: 9ec2e48a98db77440990c9cf9e940eb2, type: 2}
+  anim: {fileID: 2756194907783310156}
+  iaSprite: {fileID: 1865510377650529763}
 --- !u!95 &2756194907783310156
 Animator:
   serializedVersion: 3
@@ -193,3 +141,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8506665460741991090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2481591332640085013}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9806f03bb3ada84eaa8b286cc34502c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: 9ec2e48a98db77440990c9cf9e940eb2, type: 2}
+  anim: {fileID: 2756194907783310156}
+  enemyStats: {fileID: 3258367778292548047}
+  ia: {fileID: 595015721973038089}

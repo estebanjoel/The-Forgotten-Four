@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Electric Barrage
+  m_EditorClassIdentifier: 
+  moveName: Electric Barrage
+  mType: 1
+  eType: 4
+  mModifier: 0
+  mTarget: 1
+  sTarget: 0
+  movePower: 7
+  moveCost: 15
+  myEffect: {fileID: 9112706491703925390, guid: d65039192a2ed5d42bef4d4c3c8149f3,
+    type: 3}
+  myAudioClip: {fileID: 8300000, guid: f919bdf4128cbec45b8296fa55cdd55d, type: 3}
+  description: Attacks all foes with shocking grenades. Deals Electric damage.

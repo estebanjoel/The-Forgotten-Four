@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Death Touch
+  m_EditorClassIdentifier: 
+  moveName: Death Touch
+  mType: 1
+  eType: 1
+  mModifier: 0
+  mTarget: 0
+  sTarget: 0
+  movePower: 10
+  moveCost: 12
+  myEffect: {fileID: -1803233857964393863, guid: 86d5c403f37d1ac44b0e335f0ac9a02a,
+    type: 3}
+  myAudioClip: {fileID: 8300000, guid: 32a085624b9f652458773be29e8fc6c1, type: 3}
+  description: A deadly Cypher that deals a lot of damage to a single target.

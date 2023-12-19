@@ -13981,22 +13981,22 @@ MonoBehaviour:
   enemyAttackEffect: {fileID: 5679410887219159490, guid: a188e78bbfceea14eab97f271e4e260a,
     type: 3}
   playerPrefabs:
-  - {fileID: 5298288328463038313, guid: 35ba549c72dcc164388fff5508b134ae, type: 3}
-  - {fileID: 4694180959435849093, guid: 0c3e7f2b5881e7f498e2d49338c14f48, type: 3}
-  - {fileID: 474466420782655530, guid: f016b76cb2529a9448a29579d5e766c9, type: 3}
-  - {fileID: 5450571335198547474, guid: ab0c7039263b42b499c75792da9aba54, type: 3}
+  - {fileID: 4639162716261536744, guid: 35ba549c72dcc164388fff5508b134ae, type: 3}
+  - {fileID: 5206017417733925147, guid: 0c3e7f2b5881e7f498e2d49338c14f48, type: 3}
+  - {fileID: 2813412245384205351, guid: f016b76cb2529a9448a29579d5e766c9, type: 3}
+  - {fileID: 6595622548759902011, guid: ab0c7039263b42b499c75792da9aba54, type: 3}
   enemyPrefabs:
-  - {fileID: 3794243130429835506, guid: 55d4856b8c075a047b64ff72f8d4be89, type: 3}
-  - {fileID: 2460689085504184264, guid: 80b67e69e0bac0242af4f830490fc31a, type: 3}
-  - {fileID: 7037567223203449728, guid: dd3454fc32f9f87408fb92421ff08f71, type: 3}
-  - {fileID: 4895238713074386505, guid: 331cf993e2d9b0c4a85fdf77cd68cc50, type: 3}
+  - {fileID: 3743166972202821491, guid: 55d4856b8c075a047b64ff72f8d4be89, type: 3}
+  - {fileID: 779757577572901589, guid: 80b67e69e0bac0242af4f830490fc31a, type: 3}
+  - {fileID: 2847590957171031497, guid: dd3454fc32f9f87408fb92421ff08f71, type: 3}
+  - {fileID: 5432861213557312237, guid: 7b2d017e982bf294abeb69c4f98c527b, type: 3}
   - {fileID: 653901355270528454, guid: 6f8391d28e817354cb8beede931e10a0, type: 3}
-  - {fileID: 5443752541006593255, guid: 7b2d017e982bf294abeb69c4f98c527b, type: 3}
-  - {fileID: 1777499108510507433, guid: 6e7bb586ae2750e45a6f2765439efb3a, type: 3}
-  - {fileID: 7856926430615023549, guid: b1745430303d60b4aa941838728a4705, type: 3}
-  - {fileID: 3855359351657745007, guid: d293fa8aaaf47b147a0738d2aea714e6, type: 3}
-  - {fileID: 2600642257858482791, guid: 26c4f1916a677a14d81a13fc1c33548c, type: 3}
-  - {fileID: 6327701778588489590, guid: c99711ea6e518b747bb5e74555c7427b, type: 3}
+  - {fileID: 8506665460741991090, guid: 331cf993e2d9b0c4a85fdf77cd68cc50, type: 3}
+  - {fileID: 3146201136392051414, guid: 6e7bb586ae2750e45a6f2765439efb3a, type: 3}
+  - {fileID: 7700827803952572142, guid: b1745430303d60b4aa941838728a4705, type: 3}
+  - {fileID: 5081656722204879438, guid: d293fa8aaaf47b147a0738d2aea714e6, type: 3}
+  - {fileID: 5437800209897151542, guid: c99711ea6e518b747bb5e74555c7427b, type: 3}
+  - {fileID: 5710909919406818667, guid: 26c4f1916a677a14d81a13fc1c33548c, type: 3}
   playerPositions:
   - {fileID: 6951170310718145746}
   - {fileID: 6951170311226557726}
@@ -14018,270 +14018,28 @@ MonoBehaviour:
   pointsInCasePlayerGoesBack: 0
   turnWaiting: 0
   movesList:
-  - moveName: Slash
-    mType: 0
-    eType: 1
-    mModifier: 1
-    mTarget: 0
-    sTarget: 0
-    movePower: 6
-    moveCost: 0
-    myEffect: {fileID: 1264693213300763469, guid: 46b22afbd3ac52f4d937513c252bd8e6,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: bae9ee224305c334e80a67fa1efa5b47, type: 3}
-    description: 
-  - moveName: Plasmic Blade
-    mType: 1
-    eType: 5
-    mModifier: 1
-    mTarget: 0
-    sTarget: 0
-    movePower: 7
-    moveCost: 5
-    myEffect: {fileID: 471221198, guid: 65e72958103df4645a4df539a839d53c, type: 3}
-    myAudioClip: {fileID: 8300000, guid: cc6699269b4c1d44ea1e860518b9bb73, type: 3}
-    description: Deals Plasma Damage. Ideal for Melee.
-  - moveName: Fire Scorch
-    mType: 1
-    eType: 2
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 7
-    moveCost: 5
-    myEffect: {fileID: 3518291014868864311, guid: 2a822965225ef3f46bc913f80f8b8ce8,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: c7865fd595be8a046a018f3e24771dd6, type: 3}
-    description: Basic scorch cypher. Deals Fire Damage.
-  - moveName: Cannon Bullet
-    mType: 1
-    eType: 5
-    mModifier: 1
-    mTarget: 0
-    sTarget: 0
-    movePower: 8
-    moveCost: 15
-    myEffect: {fileID: 438103810524284538, guid: 4b8d7a0348cbc07419b4368ed97089b6,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 5543cefa2f8fc9e40bb3b5af6eac40ad, type: 3}
-    description: Explosive Bullet. Deals Plasma Damage.
-  - moveName: Toxic Spear
-    mType: 1
-    eType: 7
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 7
-    moveCost: 5
-    myEffect: {fileID: -161041959080155184, guid: aa2aecfa621432047903f6467df062e9,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: d580d0953e120bc4784c41b17e697db2, type: 3}
-    description: Spear made of poisonous oinment. Deals Toxic damage.
-  - moveName: Fire Burst
-    mType: 1
-    eType: 2
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 9
-    moveCost: 20
-    myEffect: {fileID: 8825983791188534834, guid: 6e5cfcab400e92d41a3e6ed6b08d08c2,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 8c77850bf78c07a49b57e00fe175d6a6, type: 3}
-    description: Advanced Cypher. Deals Fire damage.
-  - moveName: Cure
-    mType: 1
-    eType: 8
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 85
-    moveCost: 10
-    myEffect: {fileID: 5159156889303098412, guid: 1d4cc1cdcc75ba84b8850b4c3be2221d,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 2197b7071791ba54b8c5bf606a1dfe6a, type: 3}
-    description: Simple heal cypher.
-  - moveName: Ice Shot
-    mType: 1
-    eType: 3
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 7
-    moveCost: 5
-    myEffect: {fileID: 4025501441953184998, guid: e19c3836d83a06340a900e1ffc642db6,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 61e73f3e692c640eb9f9c7ee724ac862, type: 3}
-    description: Simple shot Cypher. Deals Ice damage.
-  - moveName: Fire Shuriken
-    mType: 1
-    eType: 2
-    mModifier: 1
-    mTarget: 0
-    sTarget: 0
-    movePower: 8
-    moveCost: 7
-    myEffect: {fileID: 8825983791188534834, guid: 6e5cfcab400e92d41a3e6ed6b08d08c2,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 8c77850bf78c07a49b57e00fe175d6a6, type: 3}
-    description: Fire Cypher in form of classic shurikens. Ideal for ninjas.
-  - moveName: Fast Booster
-    mType: 1
-    eType: 9
-    mModifier: 0
-    mTarget: 1
-    sTarget: 2
-    movePower: 13
-    moveCost: 10
-    myEffect: {fileID: 227123037604035221, guid: b392c1899a137e445bd4c3480197cd52,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 0712635f06f89e9439277d9c0f036b8d, type: 3}
-    description: Support Cypher. Boost the party's defence during 3 turns.
-  - moveName: Death Touch
-    mType: 1
-    eType: 1
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 10
-    moveCost: 12
-    myEffect: {fileID: -1803233857964393863, guid: 86d5c403f37d1ac44b0e335f0ac9a02a,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 32a085624b9f652458773be29e8fc6c1, type: 3}
-    description: A deadly Cypher that deals a lot of damage to a single target.
-  - moveName: Fire Dragon
-    mType: 1
-    eType: 2
-    mModifier: 0
-    mTarget: 1
-    sTarget: 0
-    movePower: 7
-    moveCost: 8
-    myEffect: {fileID: 553388479, guid: 9abd622c007b09d4880c91c7874eb6a5, type: 3}
-    myAudioClip: {fileID: 8300000, guid: 02ebc5dabe8e4ae45b1034a08e923a92, type: 3}
-    description: Cypher in form of a dragon that exhales a powerfull flame which deals
-      Fire damage to all the enemies.
-  - moveName: Ice Breaker
-    mType: 1
-    eType: 3
-    mModifier: 0
-    mTarget: 1
-    sTarget: 0
-    movePower: 7
-    moveCost: 8
-    myEffect: {fileID: 4025501441953184998, guid: e19c3836d83a06340a900e1ffc642db6,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 61e73f3e692c640eb9f9c7ee724ac862, type: 3}
-    description: A great piece of ice which shatters into little projectiles. Deals
-      Ice damage to all enemies.
-  - moveName: Electric Impact
-    mType: 1
-    eType: 4
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 10
-    moveCost: 10
-    myEffect: {fileID: 3014363897724789555, guid: c27ab5d429fa71f4ba0e191189eb5ede,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: f919bdf4128cbec45b8296fa55cdd55d, type: 3}
-    description: Impacts a deadly shock to a foe. Deals Electric damage.
-  - moveName: Cure All
-    mType: 1
-    eType: 8
-    mModifier: 0
-    mTarget: 1
-    sTarget: 0
-    movePower: 60
-    moveCost: 20
-    myEffect: {fileID: 5159156889303098412, guid: 1d4cc1cdcc75ba84b8850b4c3be2221d,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 2197b7071791ba54b8c5bf606a1dfe6a, type: 3}
-    description: Cures all allies.
-  - moveName: Psionic Shot
-    mType: 1
-    eType: 6
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 6
-    moveCost: 5
-    myEffect: {fileID: 901126388, guid: ae0db0ffc7aa3864b80fa70eb9a54629, type: 3}
-    myAudioClip: {fileID: 8300000, guid: 9347dabc1ca10264daeeb9cfb1131286, type: 3}
-    description: Single psionic beam. Deals Psychic damage.
-  - moveName: Vodka Madness
-    mType: 1
-    eType: 0
-    mModifier: 0
-    mTarget: 2
-    sTarget: 0
-    movePower: 0
-    moveCost: 15
-    myEffect: {fileID: 4025501441953184998, guid: e19c3836d83a06340a900e1ffc642db6,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: fe58af53a4274b34aac9753aaa83b103, type: 3}
-    description: The caster goes into a drunken state during 3 turns. Along these
-      effect, the caster will randomly attack or cure any allies or foes.
-  - moveName: Psycho Control
-    mType: 1
-    eType: 6
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 9
-    moveCost: 15
-    myEffect: {fileID: 3142584032211947338, guid: ffc20732dbb4b654eb621f009fd4b748,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: 2887ef7e2f44bc34abf1ce43fb01f4c4, type: 3}
-    description: Deals enhanced Psychic damage.
-  - moveName: Neon Missile
-    mType: 1
-    eType: 5
-    mModifier: 1
-    mTarget: 0
-    sTarget: 0
-    movePower: 9
-    moveCost: 20
-    myEffect: {fileID: 4761734427822247889, guid: 051105e23a9d97b46bcb566160f41418,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: a03a8831d95ef44a2b870d4b4850f7d0, type: 3}
-    description: Fires a plasmic missile using the casters Strength. Deals Plasma
-      damage.
-  - moveName: Electric Barrage
-    mType: 1
-    eType: 4
-    mModifier: 0
-    mTarget: 1
-    sTarget: 0
-    movePower: 7
-    moveCost: 15
-    myEffect: {fileID: 9112706491703925390, guid: d65039192a2ed5d42bef4d4c3c8149f3,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: f919bdf4128cbec45b8296fa55cdd55d, type: 3}
-    description: Attacks all foes with shocking granades. Deals Electric damage.
-  - moveName: Plasma Beam
-    mType: 1
-    eType: 5
-    mModifier: 0
-    mTarget: 0
-    sTarget: 0
-    movePower: 11
-    moveCost: 25
-    myEffect: {fileID: 781839091, guid: adfeb3a6ab5b11843bb4a00ab1a9a8e2, type: 3}
-    myAudioClip: {fileID: 8300000, guid: 45129facdf9a45e4192b169f8958889e, type: 3}
-    description: Fires a beam of pure destruction. Deals Plasma damage.
-  - moveName: Enemy Slash
-    mType: 0
-    eType: 0
-    mModifier: 1
-    mTarget: 0
-    sTarget: 0
-    movePower: 3
-    moveCost: 0
-    myEffect: {fileID: 1264693213300763469, guid: 46b22afbd3ac52f4d937513c252bd8e6,
-      type: 3}
-    myAudioClip: {fileID: 8300000, guid: bae9ee224305c334e80a67fa1efa5b47, type: 3}
-    description: 
+  - {fileID: 11400000, guid: cc320226d85d1224ea498584d707c9c4, type: 2}
+  - {fileID: 11400000, guid: f54c7914a410e4647806116236728e36, type: 2}
+  - {fileID: 11400000, guid: 38d959efe7832694f9f7e18525b12f8e, type: 2}
+  - {fileID: 11400000, guid: 469d2cb7909c2404daa7a68c1d9c524b, type: 2}
+  - {fileID: 11400000, guid: a0d86729a09048a489c3ca94eb16871c, type: 2}
+  - {fileID: 11400000, guid: 6c85421efc5be8d42857656cff68e9c8, type: 2}
+  - {fileID: 11400000, guid: 0c5480a6a51694545bd1c6e2ab3e0209, type: 2}
+  - {fileID: 11400000, guid: 5faf18c7f30f220478debe97c8a1f2e9, type: 2}
+  - {fileID: 11400000, guid: d0c0cbc713890864a9f54502f5bdeb24, type: 2}
+  - {fileID: 11400000, guid: 62cf2f8204dd09448bafa53710116b4c, type: 2}
+  - {fileID: 11400000, guid: 9784d57ca569afb4f8fcf7a45f2461d7, type: 2}
+  - {fileID: 11400000, guid: d4902101701b8c34e8fa7b5cf691c70e, type: 2}
+  - {fileID: 11400000, guid: c62d65c35e4f4094892452dd3cdeb559, type: 2}
+  - {fileID: 11400000, guid: b808c95b905de394c977bfc175987272, type: 2}
+  - {fileID: 11400000, guid: 4d6031484a0b2fe4ab8ee8667269108c, type: 2}
+  - {fileID: 11400000, guid: d336aaee20c715f4e9ec14971422f56f, type: 2}
+  - {fileID: 11400000, guid: 75ece1c42b3b496419dc5dbb5f735d46, type: 2}
+  - {fileID: 11400000, guid: 1ed66185cbf9cf146a9b9b1987763dab, type: 2}
+  - {fileID: 11400000, guid: 642bce306bcd3684c8201c41d9e0d94c, type: 2}
+  - {fileID: 11400000, guid: 77e772c8a8df60642878bd89b23bd6d8, type: 2}
+  - {fileID: 11400000, guid: 7a38844be1627f94f9357144a19b45e2, type: 2}
+  - {fileID: 11400000, guid: b3e326415e2eedc42a27feebe0855c2d, type: 2}
   damageNumber: {fileID: 289833810769455179, guid: af345c0915a367a46bc80436dac58793,
     type: 3}
 --- !u!114 &6987078572814583895

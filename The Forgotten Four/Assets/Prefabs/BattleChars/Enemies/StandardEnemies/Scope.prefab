@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 653901355270528454}
+  enemyStats: {fileID: 11400000, guid: c44e373597e3b064cad585358f246709, type: 2}
   elementalType: 5
   isWeakToElement: 6
   minHPModifier: 250
@@ -114,50 +114,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 540086562289696070}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f099d1f8fd08284cbdd52baba02fa3d, type: 3}
+  m_Script: {fileID: 11500000, guid: d9806f03bb3ada84eaa8b286cc34502c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 0
-  movesAvailable:
-  - Slash
-  - Cannon Bullet
-  charName: Scope
-  battleStats: {fileID: 11400000, guid: 28e5badc67a0cd94e889f799b5118d3a, type: 2}
-  currentHp: 10
-  maxHP: 10
-  currentMP: 10
-  maxMP: 10
-  strength: 30
-  dexterity: 10
-  vitality: 10
-  defence: 5
-  element: 10
-  spirit: 5
-  wpnPower: 20
-  armrPower: 5
-  evasion: 5
-  initiative: 6
-  accuracy: 9
-  mgcPower: 15
-  mgcDefence: 5
-  fireResistance: 1
-  iceResistance: 1
-  electricResistance: 1
-  plasmaResistance: 5
-  psychicResistance: 0
-  toxicResistance: 1
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 8449097511700987272}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
+  chara: {fileID: 11400000, guid: c44e373597e3b064cad585358f246709, type: 2}
   anim: {fileID: 7545560846709983990}
-  shouldFade: 0
-  fadeSpeed: 1
-  isBoss: 0
+  enemyStats: {fileID: 8296695841421650551}
+  ia: {fileID: 129798026479394827}
 --- !u!114 &129798026479394827
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,8 +135,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHealer: 0
   isBoss: 0
-  battleReference: {fileID: 653901355270528454}
-  anim: {fileID: 0}
+  battleReference: {fileID: 11400000, guid: c44e373597e3b064cad585358f246709, type: 2}
+  anim: {fileID: 7545560846709983990}
+  iaSprite: {fileID: 8449097511700987272}
 --- !u!95 &7545560846709983990
 Animator:
   serializedVersion: 3

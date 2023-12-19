@@ -14,8 +14,7 @@ Recomendados:
 - Editor Windows:
 
 Mínimos:
-1. Ventana de Sistema de Diálogos (Previo a desarrollar sistema de diálogos en el 
-juego)
+1. Ventana de Sistema de Diálogos (Previo a desarrollar sistema de diálogos en el juego)
 
 Recomendados:
 2. Organizador de EnemyChars según su categoría (si son bosses o no) y su elemento

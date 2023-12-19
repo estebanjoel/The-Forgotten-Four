@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6327701778588489593}
   - component: {fileID: 6327701778588489592}
   - component: {fileID: 6327701778588489591}
-  - component: {fileID: 6327701778588489590}
   - component: {fileID: -3736895812023440102}
   - component: {fileID: 6503316885895241819}
+  - component: {fileID: 5437800209897151542}
   m_Layer: 0
   m_Name: RX10(Boss)
   m_TagString: Untagged
@@ -73,12 +73,13 @@ SpriteRenderer:
   m_SortingLayerID: -167657763
   m_SortingLayer: 8
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 9df34f27b3b89e94d90c390d32cca3e1, type: 3}
+  m_Sprite: {fileID: 1822179969504019470, guid: 208f84a7efd64b3488b10fd9625b3511,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.75, y: 1.1}
+  m_Size: {x: 0.76, y: 1.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -96,7 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 6327701778588489590}
+  enemyStats: {fileID: 11400000, guid: a1acaf51734ed244e8e216056f863fd8, type: 2}
   elementalType: 4
   isWeakToElement: 5
   minHPModifier: 1400
@@ -104,61 +105,6 @@ MonoBehaviour:
   minMPModifier: 100
   maxMPModifier: 120
   xpToGive: 1000
---- !u!114 &6327701778588489590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6327701778588489589}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f099d1f8fd08284cbdd52baba02fa3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
-  movesAvailable:
-  - Enemy Slash
-  - Fire Burst
-  - Neon Missile
-  - Electric Impact
-  charName: RX10
-  battleStats: {fileID: 11400000, guid: 15da270c71954ac47b63e33148248447, type: 2}
-  currentHp: 75
-  maxHP: 75
-  currentMP: 20
-  maxMP: 20
-  strength: 42
-  dexterity: 15
-  vitality: 25
-  defence: 10
-  element: 20
-  spirit: 4
-  wpnPower: 27
-  armrPower: 15
-  evasion: 2
-  initiative: 3
-  accuracy: 5
-  mgcPower: 15
-  mgcDefence: 7
-  fireResistance: 1
-  iceResistance: 1
-  electricResistance: 10
-  plasmaResistance: 0
-  psychicResistance: 5
-  toxicResistance: 3
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 6327701778588489592}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 0}
-  shouldFade: 0
-  fadeSpeed: 1
-  isBoss: 1
 --- !u!114 &-3736895812023440102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,8 +119,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHealer: 0
   isBoss: 1
-  battleReference: {fileID: 6327701778588489590}
+  battleReference: {fileID: 11400000, guid: a1acaf51734ed244e8e216056f863fd8, type: 2}
   anim: {fileID: 6503316885895241819}
+  iaSprite: {fileID: 6327701778588489592}
 --- !u!95 &6503316885895241819
 Animator:
   serializedVersion: 3
@@ -194,3 +141,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &5437800209897151542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6327701778588489589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9806f03bb3ada84eaa8b286cc34502c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: a1acaf51734ed244e8e216056f863fd8, type: 2}
+  anim: {fileID: 6503316885895241819}
+  enemyStats: {fileID: 6327701778588489591}
+  ia: {fileID: -3736895812023440102}

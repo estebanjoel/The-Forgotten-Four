@@ -116,6 +116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chara: {fileID: 11400000, guid: 048b5fc075d6fd747bb6c44ae8450fea, type: 2}
+  anim: {fileID: 7279681565445048909}
 --- !u!114 &6649412027750394248
 MonoBehaviour:
   m_ObjectHideFlags: 0

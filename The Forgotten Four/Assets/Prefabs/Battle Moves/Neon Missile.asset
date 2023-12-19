@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Neon Missile
+  m_EditorClassIdentifier: 
+  moveName: Neon Missile
+  mType: 1
+  eType: 5
+  mModifier: 1
+  mTarget: 0
+  sTarget: 0
+  movePower: 9
+  moveCost: 20
+  myEffect: {fileID: 4761734427822247889, guid: 051105e23a9d97b46bcb566160f41418,
+    type: 3}
+  myAudioClip: {fileID: 8300000, guid: a03a8831d95ef44a2b870d4b4850f7d0, type: 3}
+  description: Fires a plasmic missile using the casters Strength. Deals Plasmic damage.

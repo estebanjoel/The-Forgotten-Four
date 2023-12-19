@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 7856926430615023538}
   - component: {fileID: 7856926430615023539}
   - component: {fileID: 7856926430615023548}
-  - component: {fileID: 7856926430615023549}
   - component: {fileID: -570495208049709559}
+  - component: {fileID: 7700827803952572142}
   m_Layer: 0
   m_Name: Plasmic Gear
   m_TagString: Untagged
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 7856926430615023549}
+  enemyStats: {fileID: 11400000, guid: 6fe3ab4078c6d1848aa674ed4bcfd612, type: 2}
   elementalType: 5
   isWeakToElement: 6
   minHPModifier: 650
@@ -103,59 +103,6 @@ MonoBehaviour:
   minMPModifier: 50
   maxMPModifier: 60
   xpToGive: 500
---- !u!114 &7856926430615023549
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7856926430615023550}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f099d1f8fd08284cbdd52baba02fa3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
-  movesAvailable:
-  - Slash
-  - Cannon Bullet
-  charName: Plasmic Gear
-  battleStats: {fileID: 11400000, guid: 7fa58626172d2ed43a8670ef4a1fbf59, type: 2}
-  currentHp: 10
-  maxHP: 10
-  currentMP: 10
-  maxMP: 10
-  strength: 35
-  dexterity: 15
-  vitality: 10
-  defence: 5
-  element: 5
-  spirit: 5
-  wpnPower: 30
-  armrPower: 5
-  evasion: 3
-  initiative: 10
-  accuracy: 10
-  mgcPower: 5
-  mgcDefence: 2
-  fireResistance: 1
-  iceResistance: 1
-  electricResistance: 1
-  plasmaResistance: 5
-  psychicResistance: 0
-  toxicResistance: 1
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 7856926430615023539}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 0}
-  shouldFade: 0
-  fadeSpeed: 1
-  isBoss: 0
 --- !u!114 &-570495208049709559
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,5 +117,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHealer: 0
   isBoss: 0
-  battleReference: {fileID: 7856926430615023549}
+  battleReference: {fileID: 11400000, guid: 6fe3ab4078c6d1848aa674ed4bcfd612, type: 2}
   anim: {fileID: 0}
+  iaSprite: {fileID: 7856926430615023539}
+--- !u!114 &7700827803952572142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7856926430615023550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9806f03bb3ada84eaa8b286cc34502c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: 6fe3ab4078c6d1848aa674ed4bcfd612, type: 2}
+  anim: {fileID: 0}
+  enemyStats: {fileID: 7856926430615023548}
+  ia: {fileID: -570495208049709559}
