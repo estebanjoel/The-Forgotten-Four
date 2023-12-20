@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Stats", menuName = "Improvus/Create Stats", order = 0)]
 public class Stats : ScriptableObject
 {
+    public string charName;
     [Header("HP & MP")]
     [SerializeField] int currentHP;
     [SerializeField] int maxHP;

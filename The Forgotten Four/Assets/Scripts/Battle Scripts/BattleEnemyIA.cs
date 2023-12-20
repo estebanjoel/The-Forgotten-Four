@@ -9,21 +9,22 @@ public class BattleEnemyIA : MonoBehaviour
     public bool isBoss;
     public BattleEnemyChar battleReference;
     public Animator anim;
+    public SpriteRenderer iaSprite;
 
-    void Start() 
+    void Start()
     {
         CheckIfIAmAHealer();
     }
 
     public void CheckIfIAmAHealer()
     {
-        for(int i = 0; i<BattleManager.instance.movesList.Length;i++)
+        for (int i = 0; i < BattleManager.instance.movesList.Length; i++)
         {
-            for(int j = 0; j<battleReference.movesAvailable.Count;j++)
+            for (int j = 0; j < battleReference.movesAvailable.Count; j++)
             {
-                if(BattleManager.instance.movesList[i].moveName == battleReference.movesAvailable[j])
+                if (BattleManager.instance.movesList[i].moveName == battleReference.movesAvailable[j])
                 {
-                    if(BattleManager.instance.movesList[i].eType == elementType.Heal)
+                    if (BattleManager.instance.movesList[i].eType == elementType.Heal)
                     {
                         isHealer = true;
                         break;
@@ -35,11 +36,11 @@ public class BattleEnemyIA : MonoBehaviour
 
     public int CheckForEnemiesWounded(int index)
     {
-        for(int i = 0; i<BattleManager.instance.activeBattlers.Count;i++)
+        for (int i = 0; i < BattleManager.instance.activeBattlers.Count; i++)
         {
-            if(!BattleManager.instance.activeBattlers[i].chara.isPlayer)
+            if (!BattleManager.instance.activeBattlers[i].chara.isPlayer)
             {
-                if(BattleManager.instance.activeBattlers[i].chara.currentHp<=(BattleManager.instance.activeBattlers[i].chara.maxHP/4))
+                if (BattleManager.instance.activeBattlers[i].chara.currentHp <= (BattleManager.instance.activeBattlers[i].chara.maxHP / 4))
                 {
                     index = i;
                     return index;
@@ -58,8 +59,8 @@ public class BattleEnemyIA : MonoBehaviour
     {
         if (battleReference.shouldFade)
         {
-            battleReference.theSprite.color = new Color(Mathf.MoveTowards(battleReference.theSprite.color.r, 1f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(battleReference.theSprite.color.g, 0f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(battleReference.theSprite.color.b, 0f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(battleReference.theSprite.color.a, 0f, battleReference.fadeSpeed * Time.deltaTime));
-            if (battleReference.theSprite.color.a == 0)
+            iaSprite.color = new Color(Mathf.MoveTowards(iaSprite.color.r, 1f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(iaSprite.color.g, 0f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(iaSprite.color.b, 0f, battleReference.fadeSpeed * Time.deltaTime), Mathf.MoveTowards(iaSprite.color.a, 0f, battleReference.fadeSpeed * Time.deltaTime));
+            if (iaSprite.color.a == 0)
             {
                 gameObject.SetActive(false);
             }

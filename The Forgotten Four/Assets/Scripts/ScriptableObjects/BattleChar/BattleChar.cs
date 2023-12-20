@@ -11,6 +11,7 @@ public class BattleChar : ScriptableObject
     public string charName;
     [Header("Stats")]
     [SerializeField] Stats battleStats;
+    public Stats BattleStats { get { return battleStats; } }
     
     [Header("Main Stats")]
     public int currentHp;
@@ -45,55 +46,38 @@ public class BattleChar : ScriptableObject
     public List<int> previousAlteratedStats = new List<int>();
     public List<statTarget> previousAlteratedStatsName = new List<statTarget>();
 
-    public SpriteRenderer theSprite;
-    public Sprite deadSprite, aliveSprite;
+    //public Sprite deadSprite, aliveSprite;
 
-    public Animator anim;
-
-    void Start()
-    {
-    }
+    //public Animator anim;
 
 
-    public void SetCharacterStats(CharStats myChar)
+    public void SetCharacterStats(Stats myChar, bool player)
     {
         charName = myChar.charName;
-        currentHp = myChar.GetCharStats().GetCurrentHP();
-        maxHP = myChar.GetCharStats().GetMaxHP();
-        currentMP = myChar.GetCharStats().GetCurrentMP();
-        maxMP = myChar.GetCharStats().GetMaxMP();
-        strength = myChar.GetCharStats().GetStrength();
-        dexterity = myChar.GetCharStats().GetDexterity();
-        vitality = myChar.GetCharStats().GetVitality();
-        defence = myChar.GetCharStats().GetDefence();
-        element = myChar.GetCharStats().GetElement();
-        spirit = myChar.GetCharStats().GetSpirit();
-        wpnPower = myChar.GetCharStats().GetWeaponPower();
-        armrPower = myChar.GetCharStats().GetArmourPower();
-        evasion = myChar.GetCharStats().GetEvasion();
-        initiative = myChar.GetCharStats().GetInitiative();
-        accuracy = myChar.GetCharStats().GetAccuracy();
-        mgcPower = myChar.GetCharStats().GetMagicPower();
-        mgcDefence = myChar.GetCharStats().GetMagicDefence();
-        fireResistance = myChar.GetCharStats().GetFireResistance();
-        iceResistance = myChar.GetCharStats().GetIceResistance();
-        electricResistance = myChar.GetCharStats().GetElectricResistance();
-        plasmaResistance = myChar.GetCharStats().GetPlasmaResistance();
-        psychicResistance = myChar.GetCharStats().GetPsychicResistance();
-        toxicResistance = myChar.GetCharStats().GetToxicResistance();
-        movesAvailable = myChar.cypherList;
-        isPlayer = true;
-    }
-
-    public void SetAnimatorTrigger(string t)
-    {
-        anim.SetTrigger(t);
-    }
-
-    public bool IsCharDeathAnimationActive()
-    {
-        if(anim.GetCurrentAnimatorClipInfo(0)[0].clip.name == "Death") return true;
-        else return false;
+        currentHp = myChar.GetCurrentHP();
+        maxHP = myChar.GetMaxHP();
+        currentMP = myChar.GetCurrentMP();
+        maxMP = myChar.GetMaxMP();
+        strength = myChar.GetStrength();
+        dexterity = myChar.GetDexterity();
+        vitality = myChar.GetVitality();
+        defence = myChar.GetDefence();
+        element = myChar.GetElement();
+        spirit = myChar.GetSpirit();
+        wpnPower = myChar.GetWeaponPower();
+        armrPower = myChar.GetArmourPower();
+        evasion = myChar.GetEvasion();
+        initiative = myChar.GetInitiative();
+        accuracy = myChar.GetAccuracy();
+        mgcPower = myChar.GetMagicPower();
+        mgcDefence = myChar.GetMagicDefence();
+        fireResistance = myChar.GetFireResistance();
+        iceResistance = myChar.GetIceResistance();
+        electricResistance = myChar.GetElectricResistance();
+        plasmaResistance = myChar.GetPlasmaResistance();
+        psychicResistance = myChar.GetPsychicResistance();
+        toxicResistance = myChar.GetToxicResistance();
+        isPlayer = player;
     }
 
     public void changeAlteredStatBool(bool flag)

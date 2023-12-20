@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Psionic Shot
+  m_EditorClassIdentifier: 
+  moveName: Psionic Shot
+  mType: 1
+  eType: 6
+  mModifier: 0
+  mTarget: 0
+  sTarget: 0
+  movePower: 6
+  moveCost: 5
+  myEffect: {fileID: 901126388, guid: ae0db0ffc7aa3864b80fa70eb9a54629, type: 3}
+  myAudioClip: {fileID: 8300000, guid: 9347dabc1ca10264daeeb9cfb1131286, type: 3}
+  description: Single psionic beam. Deals Psychic damage.

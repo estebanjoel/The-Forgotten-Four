@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using GameEnums;
 
-[System.Serializable]
-public class BattleMove
+[CreateAssetMenu(fileName = "BattleMove", menuName = "Improvus/Battle Objects/Create Battle Move", order = 3)]
+public class BattleMove: ScriptableObject
 {
     public string moveName;
     public moveType mType;

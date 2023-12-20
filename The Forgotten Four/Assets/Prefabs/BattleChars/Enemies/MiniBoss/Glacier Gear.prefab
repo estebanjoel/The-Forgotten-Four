@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 1777499108510507430}
   - component: {fileID: 1777499108510507431}
   - component: {fileID: 1777499108510507432}
-  - component: {fileID: 1777499108510507433}
   - component: {fileID: -2463674532654398466}
+  - component: {fileID: 3146201136392051414}
   m_Layer: 0
   m_Name: Glacier Gear
   m_TagString: Untagged
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 1777499108510507433}
+  enemyStats: {fileID: 11400000, guid: bc987af4e901f3143abf4747b47e0b7e, type: 2}
   elementalType: 3
   isWeakToElement: 4
   minHPModifier: 550
@@ -104,59 +104,6 @@ MonoBehaviour:
   minMPModifier: 100
   maxMPModifier: 120
   xpToGive: 500
---- !u!114 &1777499108510507433
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1777499108510507434}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f099d1f8fd08284cbdd52baba02fa3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
-  movesAvailable:
-  - Slash
-  - Ice Shot
-  charName: Glacier Gear
-  battleStats: {fileID: 11400000, guid: f77a12de1f0ef6342974a498de14d644, type: 2}
-  currentHp: 5
-  maxHP: 5
-  currentMP: 10
-  maxMP: 10
-  strength: 20
-  dexterity: 15
-  vitality: 15
-  defence: 10
-  element: 15
-  spirit: 4
-  wpnPower: 15
-  armrPower: 10
-  evasion: 5
-  initiative: 7
-  accuracy: 8
-  mgcPower: 15
-  mgcDefence: 3
-  fireResistance: 1
-  iceResistance: 5
-  electricResistance: 0
-  plasmaResistance: 1
-  psychicResistance: 1
-  toxicResistance: 1
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 1777499108510507431}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 0}
-  shouldFade: 0
-  fadeSpeed: 1
-  isBoss: 0
 --- !u!114 &-2463674532654398466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,5 +118,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHealer: 0
   isBoss: 0
-  battleReference: {fileID: 1777499108510507433}
+  battleReference: {fileID: 11400000, guid: bc987af4e901f3143abf4747b47e0b7e, type: 2}
   anim: {fileID: 0}
+  iaSprite: {fileID: 1777499108510507431}
+--- !u!114 &3146201136392051414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1777499108510507434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9806f03bb3ada84eaa8b286cc34502c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: bc987af4e901f3143abf4747b47e0b7e, type: 2}
+  anim: {fileID: 0}
+  enemyStats: {fileID: 1777499108510507432}
+  ia: {fileID: -2463674532654398466}

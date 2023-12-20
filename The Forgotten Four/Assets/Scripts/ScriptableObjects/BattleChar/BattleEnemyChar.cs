@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Stats", menuName = "Improvus/Create Battle Char/Enemy", order = 2)]
+[CreateAssetMenu(fileName = "Stats", menuName = "Improvus/Battle Objects/Create Battle Char/Enemy", order = 2)]
 public class BattleEnemyChar : BattleChar
 {
     [Header ("EnemyChar Specific Variables")]

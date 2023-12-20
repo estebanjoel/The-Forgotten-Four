@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 456af6464e3494945b207acf54d08b08, type: 3}
+  m_Name: Fast Booster
+  m_EditorClassIdentifier: 
+  moveName: Fast Booster
+  mType: 1
+  eType: 9
+  mModifier: 0
+  mTarget: 1
+  sTarget: 2
+  movePower: 13
+  moveCost: 10
+  myEffect: {fileID: 227123037604035221, guid: b392c1899a137e445bd4c3480197cd52, type: 3}
+  myAudioClip: {fileID: 8300000, guid: 0712635f06f89e9439277d9c0f036b8d, type: 3}
+  description: Support Cypher. Boost the party's dexterity during 3 turns.

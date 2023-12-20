@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5930531328951418740}
   - component: {fileID: 6812752524155884282}
   - component: {fileID: 8743575795099318621}
-  - component: {fileID: 3855359351657745007}
   - component: {fileID: -4240935790102849695}
+  - component: {fileID: 5081656722204879438}
   m_Layer: 0
   m_Name: Scrapping Guard
   m_TagString: Untagged
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bb738328f7a6d43bb6bc76cc43e943, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyStats: {fileID: 3855359351657745007}
+  enemyStats: {fileID: 11400000, guid: 1a3f0f90248a3354b9251e899bcd20b8, type: 2}
   elementalType: 4
   isWeakToElement: 5
   minHPModifier: 500
@@ -103,59 +103,6 @@ MonoBehaviour:
   minMPModifier: 0
   maxMPModifier: 0
   xpToGive: 450
---- !u!114 &3855359351657745007
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3611173104622678867}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f099d1f8fd08284cbdd52baba02fa3d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isPlayer: 0
-  movesAvailable:
-  - Enemy Slash
-  - Electric Impact
-  charName: Scrapping Guard
-  battleStats: {fileID: 11400000, guid: e110bba99f703a341a1f1cfa27fcceed, type: 2}
-  currentHp: 50
-  maxHP: 50
-  currentMP: 50
-  maxMP: 50
-  strength: 20
-  dexterity: 20
-  vitality: 15
-  defence: 5
-  element: 20
-  spirit: 4
-  wpnPower: 20
-  armrPower: 20
-  evasion: 10
-  initiative: 10
-  accuracy: 20
-  mgcPower: 15
-  mgcDefence: 4
-  fireResistance: 3
-  iceResistance: 3
-  electricResistance: 15
-  plasmaResistance: 1
-  psychicResistance: 3
-  toxicResistance: 3
-  hasDied: 0
-  hasAnAlteratedStat: 0
-  alteratedStatTimer: 0
-  previousAlteratedStats: 
-  previousAlteratedStatsName: 
-  theSprite: {fileID: 6812752524155884282}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 0}
-  shouldFade: 0
-  fadeSpeed: 1
-  isBoss: 0
 --- !u!114 &-4240935790102849695
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -170,5 +117,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isHealer: 0
   isBoss: 0
-  battleReference: {fileID: 3855359351657745007}
+  battleReference: {fileID: 11400000, guid: 1a3f0f90248a3354b9251e899bcd20b8, type: 2}
   anim: {fileID: 0}
+  iaSprite: {fileID: 6812752524155884282}
+--- !u!114 &5081656722204879438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3611173104622678867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9806f03bb3ada84eaa8b286cc34502c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chara: {fileID: 11400000, guid: 1a3f0f90248a3354b9251e899bcd20b8, type: 2}
+  anim: {fileID: 0}
+  enemyStats: {fileID: 8743575795099318621}
+  ia: {fileID: -4240935790102849695}

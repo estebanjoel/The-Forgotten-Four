@@ -13,9 +13,11 @@ MonoBehaviour:
   m_Name: Yakov
   m_EditorClassIdentifier: 
   isPlayer: 1
-  movesAvailable: []
-  charName: 
-  battleStats: {fileID: 0}
+  movesAvailable:
+  - Cure
+  - Psychic Shot
+  charName: Yakov
+  battleStats: {fileID: 11400000, guid: e78a7ff49699f7c489043642aaa03fdc, type: 2}
   currentHp: 0
   maxHP: 0
   currentMP: 0
@@ -44,8 +46,4 @@ MonoBehaviour:
   alteratedStatTimer: 0
   previousAlteratedStats: 
   previousAlteratedStatsName: 
-  theSprite: {fileID: 0}
-  deadSprite: {fileID: 0}
-  aliveSprite: {fileID: 0}
-  anim: {fileID: 0}
   heroCharSpecifics: {fileID: 0}
